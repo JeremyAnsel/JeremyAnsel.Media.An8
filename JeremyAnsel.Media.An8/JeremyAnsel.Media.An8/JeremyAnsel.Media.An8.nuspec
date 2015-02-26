@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://raw.githubusercontent.com/JeremyAnsel/JeremyAnsel.Media.An8/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/JeremyAnsel/JeremyAnsel.Media.An8</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A .Net library to handle Anim8or .an8 files.</description>
+    <copyright>Copyright © 2015 Jérémy Ansel</copyright>
+    <tags>Media 3D Model An8</tags>
+  </metadata>
+  <files>
+    <file src="bin\$configuration$\$id$.pdb" target="lib\net40\" />
+  </files>
+</package>

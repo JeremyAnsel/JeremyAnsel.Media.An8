@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -11,7 +11,10 @@
     <AssemblyName>JeremyAnsel.Media.An8</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <NuGetPackageImportStamp>f675782d</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>d7ffe574</NuGetPackageImportStamp>
+    <SourceLink Condition=" '$(CI)' == 'True' ">true</SourceLink>
+    <SourceLinkRepoUrl>https://raw.githubusercontent.com/JeremyAnsel/JeremyAnsel.Media.An8/{0}/%var2%</SourceLinkRepoUrl>
+    <SourceLinkExclude>Properties\AssemblyInfo.cs</SourceLinkExclude>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -99,7 +102,9 @@
       <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Activez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est le suivant : {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets'))" />
+    <Error Condition="!Exists('..\packages\SourceLink.Build.0.2.1\build\SourceLink.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SourceLink.Build.0.2.1\build\SourceLink.Build.targets'))" />
   </Target>
+  <Import Project="..\packages\SourceLink.Build.0.2.1\build\SourceLink.Build.targets" Condition="Exists('..\packages\SourceLink.Build.0.2.1\build\SourceLink.Build.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
