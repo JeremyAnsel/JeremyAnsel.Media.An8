@@ -1,0 +1,991 @@
+File: an8_format.txt
+Date: 21-Sep-03
+
+Format of Anim8or .an8 Files - V0.85
+------------------------------------
+
+This document describes the .an8 file format used by Anim8or to save
+project data between sessions.
+
+Overview:
+---------
+
+A .an8 file is stored as a text file and can be viewed and edited by
+a simple text editor such at Notepad.  Files are free format much like
+those used by popular programming languages like C.  At the text level
+they are similarly composed of scanner tokens such as identifiers,
+numbers, strings and punctutation.  Tokens are organized into nested
+"chunks" that contain specific data used by each specific chunk.  Chunks
+share a common format so that a parser can easily skip over unrecognized
+or unneeded data.  The .an8 format is designed to be both forward and
+backward compatible to a large degree largely due to chunks.
+
+Tokens:
+-------
+
+The basic tokens use by the .an8 format are:
+
+<$ident>  - identifiers similar to those used by C.  They may begin with
+            letters and the under score character "_" and may contain
+            letters, digits, and underscores.  Case is important so a
+            capital "A" is different from a lower case "a".  No spaces
+            may appear within an <ident>.
+
+<$int>    - integer constants.  One or more digits "0" though "9",
+            A basic <$int> does not include a sign.
+
+<$float>   - floating point constants.  The usual C style floating point
+            numbers are allowed.  Again a <$float> cannot contain a
+            leading sign.
+
+<$string> - string constants.  C style strings beginning and ending with
+            a double quote ".  Internal spaces are allowed.  The
+            backslash character "\" is used to escape special characters
+            such as a double quote " so they may be use in a string.
+            For example the string:
+
+                "He said, \"What do you want?\""
+
+            would have the value:
+
+                He said, "What are you want?"
+
+            Similarly back slashes are escaped by a backslash.
+
+"{" and "}" - braces.  Used to enclose the body of a chuck.  These never
+            appear anywhere else in a .an8 file (except within a string)
+            and are used as the basic parsing tokens.
+
+"+" and "-" - plus and minus.  Used in signed numeric values.
+
+"(", ")", ",", etc. - delimiters.  Various special characters are used
+            as delimiters through out.
+
+Chunk Format:
+-------------
+
+The basic format of a chunk is an identifier, followed by an open brace,
+the body of the chunk, and a closing brace:
+
+    <$ident> "{" <body> "}"
+
+The format of the body depends on which chunk it is in.  It may contain
+a fixed amount of data, a variable amount, more chunks, or be empty.  
+Examples of a chunk are:
+
+    size { 12 }
+    color { 0.5, 0.75, 0.33333 }
+    closed {}
+    texture { "checks" blend { 1 } }
+
+
+File Layout:
+------------
+
+An .an8 file is one or more chunks.  Any specific chunk is optional,
+and the chunks aren't required to be in any specific order.  However
+it's advisable to include the <header> chunk, and to put it first, to
+help the Anim8or parser deal with any incompatibles that are introduced
+between different versions.  The order of the top level chunks is:
+
+<header>            - Contains version number and related data.
+<description>       - String with user's description of the file.
+<environment>       - Frame rate and ground grid settings.
+<texture>*          - Description of texture files used.
+<material>*         - Global materials.
+<object>*           - Objects.
+<figure>*           - Figures.
+<sequence>*         - Sequences.
+<scene>*            - Scenes.
+
+In the syntax descriptions below, items with an asterisk "*" after them
+may be appear any number of times, including none.  Those with a plus
+"+" must appear once but can be repeated.  Tokens within square brackets
+"[" and "]" are optional.  Finally things within angle brackets "<" and
+">" are described by other syntax rules.
+
+
+Headers:
+========
+
+<header> ::= header { <version> <build> }
+
+<version> ::= version { <$string> }
+
+    The version string has the form <major> "." <minor> such as "0.85".
+    It can have additional information at the end as well such as
+    "0.85beta"
+
+<build> ::= build { <$string> }
+
+    The build string is used to identify the build number of the Anim8or
+    executable that created the .an8 file.
+
+Description:
+============
+
+<description> ::= description { <$string>* }
+
+    Normally description strings represent a single line of text and
+    are terminated with a <cr> <lf>:
+
+    "This is my alien model.\0d\0a"
+
+    Anim8or truncates descriptions to 4096 characters when reading them.
+
+Environment:
+============
+
+<environment> ::=  environment { <grid> <framerate> <limitplayback> }
+
+<grid> ::= grid { <int-const> <float-const> <float-const> <float-const> }
+
+    Specifies the modeling grid's behavior. If the first int is non-zero
+    then auto-grid is enabled and the grid size is automatically
+    determined by the view.  If it's zero then the three following
+    values set the modeling grid spacing, the Scene editor's grid
+    spacing, and the ground floor's grid size.  An of the later values
+    may be omitted and a default value will be used.
+
+<framerate> ::= framerate { <int-const> }
+
+    Sets the Scene and Sequence playback frame rate.  Ignored unless
+    the <limitplayback> chunk also appears.
+
+<limitplayback> ::= limitplayback { }
+
+    Limits the playback frame rate to the value in <framerate>, or to
+    a default value if no <framerate> chunk is present.
+    
+Texture:
+========
+
+<texture> ::= texture { <name> <invert> <cubemap> <file>+6 }
+
+    Define a texture name and bind it to an image file or files.  The
+    string <name> is the name used within Anim8or for this texture.
+    <invert> is an optional empty chunk.  If present then the image(s)
+    for this texture are inverted top to bottem before they are used.
+    <cubemap> is an optional empty chunk.  It indicates that this
+    texture is a cube map.  The <file> chunks contain a single string
+    for the name of the files that hold the texture image.  Only one
+    <file> chunk is used for normal textures and six <file> chunks are
+    used for cube map textures.
+
+Material:
+==========
+
+<material> ::= material { <name> <surface> <backsurface> }
+
+    The name of the material is given by <name> and the front and back
+    surfaces are described by the other chunks.  Single sided materials
+    don't have the <backsurface> chunk while two sided materials do.
+
+<surface> ::= surface { <ambiant> <diffuse> <specular> <emissive> ...
+                 ... <alpha> <brilliance> <phongsize> <map>* ...
+                 ... <lockambdiff> }
+
+    <ambiant>, <diffuse>, <specular> and <emissive> chunks describe the
+    respective colors and constant weights, and if there is a corresponding
+    texture what it is.  Yes, I know <ambiant> is misspelled.
+
+    <alpha> is a int-const chunk that sets the overall transparency of
+    the material.  255 is opaque and 0 is completely transparent.  Values
+    are clamped to this range.
+
+    <brilliance> is a float chunk that sets the brilliance factor.
+
+    <phongsize> is a float chunk that sets the phong roughness factor.
+
+    <map>* is one of multiple chunks that describe a texture map used for
+    things other than the four colors: ambient, diffuse, specular, and
+    emissive.  Currently supported uses are for transparency, bump map,
+    and environment map.
+
+    <lockambdiff> is an empty chunk that, if present, uses the diffuse
+    values for both the diffuse and ambient color properties.
+
+<backsurface> ::= backsurface {  ... same values as surface chunk ... }
+
+<ambiant> ::= ambiant { <rgb> <factor> <texturename> <textureparams> }
+
+    <rgb> is the basc color.
+    <factor> is a float chunk with the ambient weighting factor.
+    <texturename> is a string containing the name of the texture used
+    in the diffuse color.  This is not the file name but the internal
+    name.
+    <textureparams> describe how the texture is blended with the base
+    color.
+
+<diffuse> ::= diffuse { ---- same as <ambiant> ---- }
+
+<specular> ::= diffuse { ---- same as <ambiant> ---- }
+
+<emissive> ::= diffuse { ---- same as <ambiant> ---- }
+
+<rgb> ::= rgb { <$int> <$int> <$int> }
+
+    Three integer values representing the red, green and blue components
+    of a color.  They are clamped to 0 to 255, then scaled so to the
+    range 0.0 to 1.0 representing the darkest and brightest values.
+
+<textureparams> ::=  textureparams { <blendmode> <alhpamode> <percent> }
+
+    <blendmode> and <alphamode> specifies how that a texture will be
+    combined with the base color.
+    <percent> holds a single signed integer pecentage that is used to
+    blend the overall strength of the texture.  If it is 100 then the
+    combined result is used as the final color.  If it is 50 percent
+    then the combined color is averaged with the base color.  For
+    bumpmaps <percent> is the strength of the bumps and can go from
+    -100 to 100 perxent.
+
+<blendmode> ::= blendmode { [ decal darken lighten ] }
+
+    The blendmode chunk hold a single identifier from the list above.
+    darken means that the texture's color is multiplied by the base
+    color, decal means that the texture color replaces the base color,
+    and lighten adds the texture color.
+    
+<alphamode> ::= { [ none layer final ] }
+
+    The alphamode chuck also holds a single identifier.  None means that
+    the alpha component is ignored, layer blends the texture color with
+    the base color proportional to the value of the alpha component, and
+    final uses the texture's alpha component as the transparency value
+    for the final material color.  Note: alphamode only applies to the
+    diffuse color and is overridden by the transparency texture if it is
+    present.
+
+<map> ::= map { <kind> <texturename> <textureparams> }
+
+    The <map> chunk defines a texture image usage that is used for things
+    other than a simple color, such as in the ambient, diffuse, specular, or
+    emissive attributes.  The <kind> chunk says how it will be used.  The
+    <texturename> chunk names which texture it is, and the <textureparams>
+    specify the strength, etc.
+
+<kind> ::= kind { <$string> }
+
+    The <$string> parameter can be "transparency", "bumpmap" or
+    "environment", or it can be one of the four color textures "ambiant",
+    "diffuse", "specular", and "emissive".  Other values are ignored.
+    If a color texture is specified in both a color component such as
+    the <diffuse> chunk and in a <map> component the last one in the file
+    will be used.
+
+
+Object:
+========
+
+<object> ::= object { <name> <material>* <component>* }
+
+    The object's name is given by <name>.  <material> chunks in an
+    <object> chunk are local to that object and cannot be used in other
+    objects.  There can be any number of <material> and <component>
+    chunks in any order.  Normally the <material> chunks are output first
+    by Anim8or.
+
+<component> ::= [ <mesh> <sphere> <cylinder> <cube> <subdivision> ...
+                  ... <path> <textcom> <modifier> <image> ...
+                  ... <namedobject> <group> ]
+
+    A <component> is any one of the listed chunk types.  All <component>
+    types of chunks have a <name> string as the first value.  They also
+    may have both a <base> and a <pivot> chunk.
+    <namedobject> components can only appear inside of a <bone> chunk
+    as part of a <figure>.
+
+<base> ::= base { [ <origin> ] [ <orientation> ] }
+
+    A <base> chunk can have either an <origin>, an <orientation>, or
+    both.  This chunk gives the location and orientation of the component
+    relative to it's parent.  If the component is in a group then the
+    group is it's parent, otherwise it is the Object.
+
+<pivot> ::= pivot { [ <origin> ] [ <orientation> ] }
+
+    The <pivot> chunk specifies the location and orientation of the
+    pivot, the coordinate system used when you interactively scale and
+    rotate a component in the Object editor.
+
+<origin> ::= origin { <point> }
+
+    This chunk represents the location of the component.  If not present
+    then the component is located at (0, 0, 0).
+
+<orientation> ::= orientation { <quaternion> }
+
+    This chunk holds the orientation of the component as a quaternion.
+    If not present the it is unrotated, with the X coordinate pointing
+    to the right, the Y pointing up, and the Z pointing out of the screen
+    in a front view of an object.
+
+    For a description of the wonders of quaternions, see a good graphics
+    text, or the original paper by Ken Shoemaker.
+
+<mesh> ::= mesh { <name> <base> <pivot> <material> <smoothangle> ...
+                  ... <materiallist> <points> <normals> <edges> ...
+                  ... <texcoords> <faces>
+
+    <material> is the material used for new faces when they are added
+    to a mesh.  Even though a <material> chunk may contain a full 
+    material description, only the name component is used here.  The
+    material should be defined elsewhere, either in the global materials
+    of the Object's local materials.
+
+<smoothangle> := smoothangle { <float-const> }
+
+    This is the threshold angle in degrees that determines if an edge
+    is as a crease or is smooth.  Angles larger than the threshold are
+    shown as creases or corners; those equal or smaller are shown as
+    smooth.  The default value is 45 degrees.
+
+<materiallist> ::= materiallist { <materialname>* }
+
+    This is a list of material in a Mesh.  They are numbered from 0.
+    Material 0 is the default material.
+
+<materialname> ::= materialname { <$string> }
+
+    The value of <$string> is a material name.  It should be defined either
+    as a global material or as a material local to this Object.
+
+<points> ::= { <point>* }
+
+    These points are the basic vertices used to form the Mesh.  They
+    are numbered from 0.
+
+<normals> ::= { <point>* }
+
+     The normals are stored as unit length vectors.  This chunk is not
+     usually present and is ignored by Anim8or.  It will be output if
+     the Options->Debug->OutputNormals flag has been set for use by
+     other applications.
+
+<edges> ::= { <edge>* }
+
+     A list of edges.  Edges are not normally output by Anim8or as this
+     information is already present in the <facedata> chunk.  When an
+     edge either 1) isn't used in any face, or 2) has some special
+     properties set by the user, it will be listed here.  Optionally,
+     all edges can be output with the Options->Debug->OutputEdges flag.
+
+<edge> ::=  ( <$int> <$int> [ <int-const> ] )
+
+     The first two values in an edge are indices into the points
+     array for the ends of the edge.  The index of the first point
+     is always less than that of the second.  The third value, if
+     present, is the user set sharpness value.  If this Mesh is
+     subdivided then this edge will not be smoothed with the adjacent
+     edges for this number of times, creating a relative sharp corner
+     in the surface.  If the value is -1 then it is always shown as
+     Creased despite the actual angle is makes.
+
+<texcoords> ::= texcoords { <texcoord>* }
+
+     The UV values used for texture coordinates.  These are indexed
+     starting at zero.
+
+<texcoor> ::= ( <float-const> <float-const> )
+
+     The values represent the U and V texture coordinates.
+
+<faces> ::= faces { <facedata>* }
+
+    One set of <facedata> data is listed for each face.
+
+<facedata> ::= NUMPOINTS FLAGS MATNO FLATNORMAL ...
+                    ... ( (POINTDATA-1) (POINTDATA-2) ... (POINTDATA-N) )
+
+    NUMPOINTS is an <int-const> giving the number of sides in this face.
+    It must be at least 3.  Each face can have a different number of sides.
+
+    FLAGS is an <int-const> with each bit as a flag describing what
+    kinds of data this face has, and other properties of the face:
+      1 - SF_SHOW_BACK - Don't backface cull this face.
+      2 - SF_HAS_NORMALS - This face has normal data in this file.
+      4 - SF_HAS_TEXTURE - This face has texture coordinates.
+
+    MATNO is an <int-const> for which material to use on this face.  It is
+    an index into the materials listed in the <materiallist> chuck for this
+    Mesh.
+
+    FLATNORMALNO - The index of the faces normal in the normal array for
+    this Mesh.  This value is normally set to -1 indicating that there is
+    no face normal stored in the file.
+
+    POINTDATA - This is one or more <int-const>s, depending on the value
+    of FLAGS.  The first value, which is always present, is an index into
+    the <points> array for the location of the vertex.  If the
+    SF_HAS_NORMALS bit is on then it is followed by the index on the
+    point's normal in the <normals> array.  Note: this normal data is not
+    used by Anim8or.  It can optionally be exported, however, to help
+    other programs use Anim8or data more easily.  Finally if the
+    SF_HAS_TEXTURE bit is set then a texture coordinate is present
+    as the last value.  For example:
+
+        faces {
+            3 5 0 -1 ( (2 6) (0 5) (1 7) )
+            3 5 2 -1 ( (3 8) (0 5) (2 3) )
+            4 5 2 -1 ( (4 9) (5 10) (1 7) (2 6) )
+        }
+
+    shows a Mesh with 3 faces.  The first two have 3 sides and the third
+    one has 4.  They all have texture coordinates (bit 4 is set in the
+    flags field) and no face normals (the face normal value is -1).
+    The first face uses material number 0 and the other two use material
+    number 2.
+    
+<sphere> ::= sphere { <name> <base> <pivot> <material> ...
+                      ... <longlat> <geodesic> }
+
+    A <sphere> has either a <longlat> or a <geodesic> chunk, but not both.
+
+<longlat> ::= longlat { <$int> <$int> }
+
+    The two integers are the number of divisions used to make the Sphere
+    in the vertical and horizontal directions.
+
+<geodesic> ::= geodesic { <$int> }
+
+    A geodesic sphere is built from a octahedron whose faces are divided
+    into smaller triangles.  Each original edge is divide into <$int>
+    edges and the faces are split accordingly into smaller triangles.
+    The vertices are then projected onto a Shpere.
+
+<cylinder> ::= cylinder { <name> <base> <pivot> <material> <length> ...
+                      ... <diameter> <topdiameter> <longlat> ...
+                      ... [ <capstart> ] [ <capend> ] }
+
+<length> ::= length { <$float> }
+
+    This is the length of the cylinder,
+
+<diameter> ::= diameter { <$float> }
+
+    This is the diameter of the start of the cylinder.  It is also the
+    diameter of the end if the <topdiameter> chunk is not present.
+    If one of thee values is 0 then that end of the cylinder is
+    collapsed into a single point resulting is a Cone.
+
+<topdiameter> ::= topdiameter { <$float> }
+
+    The diameter of the end of the cylinder.
+
+<capstart> ::= capstart { }
+<capend> ::= capend { }
+
+    Cap the start and/or end of the cylinder if these chunks are present.
+
+<cube> ::= cube { <name> <base> <pivot> <material> <scale> <divisions> }
+
+<scale> ::= { <$float> <$float> <$float> }
+
+    The dimensions of the cube in the X, Y and Z directions.
+
+<divisions> ::= { <$int> <$int> <$int> }
+
+    The number of divisions along the X, Y and Z axis.
+
+<subdivision> ::= subdivision { <name> <base> <pivot> <material> ...
+                  ... <smoothangle> <working> <divisions> ...
+                  ... <materiallist> <points> <normals> <edges> ...
+                  ... <texcoords> <faces>
+
+    A <subdivision> chunk is similar to a <mesh> chunk but has two
+    additional sub-chunks that control how many times it will be
+    subdivided.
+
+<working> ::= working { <$int> }
+
+    The number of times a that this component will be subdivided in the
+    working views.
+
+<divisions> ::= divisions { <$int> }
+
+    The number of times a that this component will be subdivided in the
+    rendered views.  This value is currently not used by Anim8or.
+
+<path> ::= path { <name> <base> <pivot> [ <extendable> ] <bezier>* }
+
+    A <path> is built from one or more Bezier splines.  Multiple splines
+    can be used to cut holes or to define separate, unconnected regions.
+
+<bezier> ::= bezier { [ <closed> ] <knot>* }
+
+<closed> ::= closed { }
+
+    If this chunk is present the first and last knots in the spline
+    are connected to form a closed loop.  Otherwise they are not.
+
+<knot> ::= knot { <point> <point> <point> [ <$int> ] [ <corner> ] }
+
+    The first <point> is the location of the knot.  The next two are
+    the forward and reverse direction vectors.  If present the <$int>
+    value is the number of segments in the segment that begins with
+    this knot.  If not then the number is automatically determined
+    when it is used.
+
+<corner> ::= corner { }
+
+    If this is present the knot is a corner knot and can have a
+    discontinuous first derivative.  If it is not present then the
+    values of the forward and reverse direction vectors should be
+    the negation of each other.
+
+<textcom> ::= textcom { <name> <base> <pivot> <string> <typeface> ...
+                        <size> [ <bold> ] [ <italic> ] }
+
+    A <texcom> is a True-Type string represented by one or more
+    splines.
+
+<string> ::= string { L<$string> }
+
+    This is a Unicode string.  Values outside of the 7 bit printable
+    ASCII character set are escaped by a backslash "\" and are 
+    written as either 3 or 6 octal digits representing the value of
+    the Unicode character.  Six octal digits are used if either the
+    value is greater than decimal 255 or the following letter is
+    a digit.  When reading these strings in the digits following a
+    back slash are read and converted into an octal value until
+    either the next character is not an octal digits or 6 digits
+    have been read.  For example, the Euro currency symbol could
+    be represented by:
+
+        L"\020254"
+
+    since it has a hexadecimal value of 0x20ac which is the octal
+    value of 020254.
+
+    Note: Unicode symbols are not supported in Win95, Win98, WinSE or
+    WinME.
+
+
+<modifier> ::= modifier { <name> <base> <pivot> <length> <diameter> ...
+                  ... <segments> <method> [ <component> ] }
+
+    A <modifier> chunk defines the size, location and kind of a
+    modifier and any <component> that it is bound to.
+
+<segments> ::= segments { <$int> }
+
+    The number of vertical segments that the modifier is divided into.
+
+<method> ::= method { <$string> <paremeter>* }
+
+    The kind of modifier.  <$string> names the modifier function and
+    the <parameters> define how it behaves.  For example a taper
+    modifier with a strength of 0.5 would look like:
+
+        method { modifier "taper"
+            parameter { "taper" 0.5 }
+        }
+
+    since it has a single parameter.
+
+<parameter> ::= parameter { <$string> <$float> }
+
+    A named parameter to a modifier.   <$string> is the name of the
+    parameter and <$float> is its value.
+
+<image> ::= image { <name> <$string> <base> <pivot> <size> }
+
+    A reference image.  The <$string> value is the name of the file
+    with the image, or an empty string if it is undefined.
+
+<size> ::= size { <$int> <$int> }
+
+    The int values are the size of the image in x and y dimensions.
+
+<namedobject> ::= namedobject { <$string> <name> <base> <pivot> ...
+                        ... <material> <weightedby>* }
+
+    A <namedobject> is a reference to an <object> from within another
+    part of Anim8or, such as a <figure>.  <material> is the default
+    material for this object but is currently ignored by Anim8or.
+    <namedobject>s can only appear inside a <bone> definition.
+
+<weightedby> ::= weightedby { <$string> }
+
+    This object's shape is determined partially by the bone <$string>'s
+    position in this figure.
+
+    
+<group> ::= group { <name> <base> <pivot> <component>* }
+
+    A <group> is a collection of zero of more <components>.
+
+
+Figure:
+=======
+
+<figure> ::= figure { <$string> <material>* <bone> }
+
+    A figure.  <$string> is the name of the figure and <bone> is the
+    root bone, which contains all other bones.  Any defined materials
+    are local to this figure.
+
+<bone> ::= bone { <$string> <length> [ <diameter> ] [ <orientation> ] ...
+                  ... [ <locked> ] <dof>* [ <influence> ] ...
+                  ... <component>* <bone>* }
+
+    <length> is the length of the bone.
+    <diameter> is the relative diameter of the bone when it is shown
+    in the working views.
+
+<locked> ::= locked { }
+
+    If this chunk is present then the bone joint cannot be edited.
+
+<dof> ::= dof { <$string> <float-const> <float-const> <float-const> ...
+                ... [ <locked> ] [ <unlimited> ] }
+
+    This chunk defines a degree of freedom for this done.  There can
+    be up to 3 instances of this chunk is a bone.  The value of <$string>
+    is the axis and must be "X", "Y", or "Z".  The three <float-const>s
+    are the minimum, default, and maximum angles that this angle may
+    take on.  If the <locked> chunk is present then this axis of
+    rotation cannot be edited.  If the <unlimited> chunk is present
+    then there are no limits to this axis's rotation angle.
+
+<unlimited> ::= unlimited { }
+
+<influence> ::= influence { <float-const> <float-const> <float-const> ...
+                            ... <float-const> <float-const> <float-const> }
+
+    If this chunk is present then the bone has a defined influence
+    region and may be used in skinning.  The size floating point values
+    are:
+
+        center0 - The location along the bone of the center of the lower
+            end of the influence volume.
+        inRadius0 - The radius of the inner layer at center0.
+        outRadius0 - The radius of the outer layer at center0.
+        center1 - The location along the bone of the center of the uppper
+            end of the influence volume.
+        inRadius1 - The radius of the inner layer at center1.
+        outRadius1 - The radius of the outer layer at center1.
+
+    These six values defines two hierarchical "capsules", or a cylinders
+    with hemispherical caps on the ends.  When used in a skinning operation
+    the relative weight of this bone on a point depends on where the point
+    lies inside these capsules.  If it is inside the inner capsule the
+    relative weight is 1.0.  If it is inside the outer capsule but not
+    the inner one then the relative weight varies linearly between 0.0
+    at the outer capsule wall to 1.0 at the inner capsule wall.  Outside
+    the outer capsule the weight is 0.0.
+
+    The final weight on a point is found by dividing the relative weight
+    by the sum of all the relative weights for all bones.  If this sum is
+    0.0 then a default weight of 1.0 is given to the parent bone of the
+    point.
+
+Sequence:
+=========
+
+<sequence> ::= sequence { <$string> [ <figure-name> ] <frames> ...
+                          ... <jointangle>* }
+
+    The name of the sequence is given by <$string>.
+
+<figure-name> ::= figure { <$string> }
+
+    The name of the figure that this sequence applies to is defined by
+    <$string>.
+
+<frames> ::= frames { <$int> }
+
+    This chunk is the length of the sequence in frames.
+
+<jointangle> ::= jointangle { <$string> <$string> <floattrack> }
+
+    The two strings give the names of the bone that it applies to,
+    and the axis.  The ais must be "X", "Y", or "Z".
+
+Tracks:
+-------
+
+<floattrack> ::= track { <floatkey>+ }
+
+<floatkey> ::= floatkey { <$int> <$float> <$string> }
+
+    <$int> is the frame number for this key.
+    <$float> is the value.
+    <$string> is a string used to modify the behavior of this knot.
+    It is currently ignored.
+
+<pointtrack> ::= track { <pointkey>+ }
+
+<pointkey> ::= pointkey { <$int> <point> <point> <point> <$string> }
+
+    <$int> is the frame number for this key.
+    The first <point> is the value, the second <point> is the forward
+    direction vector and this know, and the third <point> is the
+    reverse direection vector.
+    <$string> is a string used to modify the behavior of this knot.
+    It is currently ignored.
+
+<qtrack> ::= track { <qkey>+ }
+
+<qkey> ::= qkey { <$int> <quaternion> <$string> }
+
+    <$int> is the frame number for this key.
+    <quaternion> is the value.
+    <$string> is a string used to modify the behavior of this knot.
+    It is currently ignored.
+
+<booleantrack> ::= track { <booleankey>+ }
+
+<booleankey> ::= booleankey { <$int> <$int> <$string> }
+
+    The first <$int> is the frame number for this key.
+    The second <$int> is the value.  It must be 0 or 1.  0 means False
+    and 1 means True.
+    <$string> is a string used to modify the behavior of this knot.
+    It is currently ignored.
+
+Scene:
+======
+
+<scene> ::= scene { <$string> <frames> <groundgrid> <shadowbias> ..
+                    ... [ <background> ] [ <image> ] [ <fog> ] ...
+                    ... [ <znear> <zfar> ] <element>* }
+
+    The name of the scene is in  <$string>.
+
+<frames> ::= frames { <$int> }
+
+    The number of frames.  Must be greater than zero.
+
+<groundgrid> ::= groundgrid { <$int> }
+
+    If the value of <$int> is one the ground grid is drawn.  If it is
+    zero then it isn't.
+
+<shadowbias> ::= shadowbias { <$float> }
+
+    The value used for shadow bias when drawing shadows.  The nominal
+    value is 0.001.
+
+<background> ::= background { <$int> <$int> <$int> }
+
+    The color used for the background.  The three values are the red, green,
+    and blue color values.  255 represents full brightness and 0 represents
+    black.  If not present the default color of 102, 102, 153 is used.
+
+<image> ::= image { <$string> [ <panorama> ] }
+
+    The name of a file used for the background image.  If the panorama
+    chunk is present then it is a panoroma, otherwise it is a fixed
+    background.
+
+<panorama> ::= panorama { <float-const> <float-const> <float-const> ...
+                          ... <float-const> }
+
+    The four values are the left and right longitude angles and the bottom
+    and top latitude angles of the image.  Looking into the screen in the
+    front view is directly at <0, 0>.  <-90, 0> is to the left, <+90, 0)
+    the right.
+
+<fog> ::= fog { <color> <fogstart> <fogend> [ <fogpercent> ] [ <radial> ] }
+
+    The <color> chunk is the color of the fog in 3 ints, from 0 to 255.
+    <fogstart> and <fogend> are float chunks giving the starting and
+    ending distance from the camera of the fog transition zone.
+    <fogpercent> is an int chunk for the maximum fog level, if it is
+    less that 100.
+    <radial> is an empty chunk.  If present then the fog distance is
+    computed as the radial distance from the camera, otherwise it is
+    the distance from the z = 0 plane.
+
+<znear> ::= znear { <$float-const>
+<zfar> ::= zfar { <$float-const>
+
+    If present, these set the distance of the near and far clip planes.
+
+<element> ::= <camera> | <figureelement> | <objectelement> | <light> | <null>
+
+    These form the element of a scene.  They share several common
+    subchunks described here:
+
+    <$string> - The first thing is the name of the element.
+    <loc> - A <point> for the element's location.
+    <orientation> - A <quaternion> chunk for the orientation, normally
+        this is relative to it's parent's orientation.
+    [ <roll> ] - An int chunk with a value of 1 if the element's orientation
+        can "roll" off the vertical, and 0 if it can't.
+    [ <facespath> | <facestarget> | <orienttarget> ] - One of these three
+        optional chunks may be present.  They control whether the element's
+        orientation is relative to 1) the direction of it's path of motion,
+        2) the direction to another element, or 3) the same orientation as
+        another element.
+    [ <boundtarget> ] - The name of the other element that this one is
+        oriented to, if it has the facestarget or orientedtarget chunk.
+    [ <scale> ] - A scale factor applied to the object before rendering.
+    <locked> - An int chunk with the value of 1 if this element is "locked"
+        from being edited, and a value of 0 otherwise.
+    <controller>* - Zero or more <controller> chunks.
+    <element>*  - Zero or more child elements, whose movement is relative
+        to this element's coordinate system.
+
+<camera> ::= camera { <$string> <loc> <orientation> [ <roll> ] ...
+                      ... [ <facespath> | <facestarget> | <orienttarget> ] ...
+                      ... [ <boundtarget> ] <fov> [ <scale> ] ...
+                      ... <locked> <controller>* <element>* }
+
+<fov> ::= fov { <$float> }
+
+    The field of view in degrees of the camera's view from left to right. 
+
+<light> ::= light { <$string> <loc> <orientation> [ <roll> ]
+                      ... [ <facespath> | <facestarget> | <orienttarget> ] ...
+                      ... [ <boundtarget> ] [ <scale> ]  <color> ...
+                      ... [ <infinite> | <local> | <spotlight> ] ...
+                      ... [ <castshadow> ] [ <percentshadow> ] ...
+                      ... [ raytraceshadow> ] [ <soft> ] ...
+                      ... <locked> <controller>* <element>* }
+
+<color> ::= color { <point> }
+
+    The three values in <point> represent the red, green and blue components
+    of the light's color.  A value of 1.0 is maximum and 0.0 is minimum.
+
+<infinite> ::= infinite { }
+<local> ::= local { }
+<spotlight> ::= spotlight { }
+
+    One of these three empty chunks must be present.  They define the
+    kind of light.
+
+<inradius> ::= inradius { <$float> }
+<outradius> ::= outradius { <$float> }
+
+    Spotlights and local lights can have a different intensity depending
+    on the distance from an object.  By default the intensity is the
+    same.  If these chunks are present then the intensity drops off
+    linearly from full intensity at a distance of <inradius> to zero
+    at a distance of <outradius>.
+
+<inangle> ::= inangle { <$float> }
+<outangle> ::= outangle { <$float> }
+
+    Spotlights also have a cone of influence.  Within an angle of <inangle>
+    to the direction of the light the intensity is full value.  Between
+    <inangle> and <outangle> it drops off linearly to zero.  Outside this
+    range it is zero.
+
+<castshadow> ::= castshadow { }
+
+    If present this light casts a shadow.
+
+<raytraceshadow> ::= raytraceshadow { }
+
+    This chunk enables ray tracing of shadows for this light.
+
+<soft> ::= soft { }
+
+    If <soft> is present and the light casts a ray traced shadow the
+    the shadow is rendered with soft edges.
+
+<softsize> ::= softsize { <$float>  }
+
+    The size of the soft shadow.  For infinite lights this is the apparent
+    width of the light source in degrees.  For spotlights and local lights
+    it represents the apparent diameter of the light as viewed by an
+    illuminated surface.
+
+<minsamples> ::= minsamples { <$int> }
+<maxsamples> ::= maxsamples { <$int> }
+
+    Set the minimum and maximum number of samples used to calculate a
+    soft shadow.  An adaptive algorithm is used to speed up rendering
+    when not in a "soft" region of the shadow.
+
+<montecarlo> ::= montecarlo { }
+
+    Use true Monte Carlo sampling instead of pseudo-Monte Carlo sampling.
+    This results in a grainer look in the shadows transition region.
+
+<objectelement> ::= objectelement { <$string> <$string> <loc> ...
+                      ... <orientation> [ <roll> ]
+                      ... [ <facespath> | <facestarget> | <orienttarget> ] ...
+                      ... [ <boundtarget> ] [ <scale> ] [ <visibility> ] ...
+                      ... [ <castshadow> ] [ <receiveshadow> ] ...
+                      ... <locked> <controller>* <element>* }
+
+    Objects that are in a scene are defined by an <objectelement> chunk.
+    The first <$string> is the name of this element and the second is
+    the name of the object that it references.
+
+<visibility> ::= visibility { <$int> }
+
+    This chunk has a value of 1 of the element is visible, and a value of
+    zero if it is hidden.  The default value is 1.
+
+<castshadow> ::= castshadow { }
+
+    If present this object casts a shadow.
+
+<receiveshadow> ::= receiveshadow { }
+
+    If present this object shows shadows on its surface from lights that
+    cast them.
+
+<figureelement> ::= figureelement { <$string> <$string> <loc> ...
+                      ... <orientation> [ <roll> ]
+                      ... [ <facespath> | <facestarget> | <orienttarget> ] ...
+                      ... [ <boundtarget> ] [ <scale> ] [ <visibility> ] ...
+                      ... [ <castshadow> ] [ <receiveshadow> ] ...
+                      ... <locked> <namedsequence>* <controller>* <element>* }
+
+    Figures that are in a scene are defined by a <figureelement> chunk.
+    The first <$string> is the name of this element and the second is
+    the name of the figure that it references.
+
+<namedsequence> ::= namedsequence { <$string> <$int> }
+
+    This chunk specifies the name and starting frame of a sequence that is
+    applied to this figure.
+
+<null> ::= null { <$string> <loc> <orientation> [ <roll> ]
+                  ... [ <facespath> | <facestarget> | <orienttarget> ] ...
+                  ... [ <boundtarget> ] [ <scale> ] ...
+                  ... <locked> <controller>* <element>* }
+
+    A <null> chunk, also referred to as a "target" element in Anim8or,
+    defines a new coordinate system.  They can contain child elements
+    and their location and orientation is fully animatable.  They do
+    not render in camera views.
+
+Misc. Items:
+------------
+
+<int-const> ::= [ + - ] <$int>
+
+<float-const> ::= [ + - ] <$float>
+              ::= <int-const>
+
+<point> ::= ( <float-const> <float-const> <float-const> )
+
+    A <point> is three possibly signed floating point or integer numbers
+    enclosed in parenthesis.  These normally represent a point in space
+    or a direction vector but can also represent a color or any value
+    made from three floating point values.  There are no comma separators.
+
+<quaternion> ::= ( <float-const> <float-const> <float-const> <float-const> )
+
+    A <quaternion> is four possibly signed floating point or integer
+    constants enclosed in parenthesis.  There are no comma separators.
+    Quaternions represent rotations or orientations.  They should be
+    normalized (so that the sum of the squares of the four values is
+    equal to 1.0) to insure correct behavior in Anim8or.
+
+<name> ::= name { <$string> }
+
+    A <name> is chunk containing a string.  Its value is used as a name
+    within a particular chunk.  There is normally no limit to what the
+    string can be.
+
+----- End of File -----
+

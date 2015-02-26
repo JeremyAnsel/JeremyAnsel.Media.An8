@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9283812E-4AFD-4F85-8A64-C194F4D21E5E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JeremyAnsel.Media.An8</RootNamespace>
+    <AssemblyName>JeremyAnsel.Media.An8</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>f675782d</NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\JeremyAnsel.Media.An8.XML</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\JeremyAnsel.Media.An8.XML</DocumentationFile>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Properties\sgKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="An8AlphaMode.cs" />
+    <Compile Include="An8Bezier.cs" />
+    <Compile Include="An8BlendMode.cs" />
+    <Compile Include="An8Bone.cs" />
+    <Compile Include="An8Chunk.cs" />
+    <Compile Include="An8ChunkTokens.cs" />
+    <Compile Include="An8Component.cs" />
+    <Compile Include="An8Cube.cs" />
+    <Compile Include="An8Cylinder.cs" />
+    <Compile Include="An8DegreeOfFreedom.cs" />
+    <Compile Include="An8Edge.cs" />
+    <Compile Include="An8Environment.cs" />
+    <Compile Include="An8Face.cs" />
+    <Compile Include="An8Figure.cs" />
+    <Compile Include="An8File.cs" />
+    <Compile Include="An8Group.cs" />
+    <Compile Include="An8Header.cs" />
+    <Compile Include="An8Image.cs" />
+    <Compile Include="An8Influence.cs" />
+    <Compile Include="An8Knot.cs" />
+    <Compile Include="An8LongLat.cs" />
+    <Compile Include="An8Map.cs" />
+    <Compile Include="An8Material.cs" />
+    <Compile Include="An8MaterialColor.cs" />
+    <Compile Include="An8Mesh.cs" />
+    <Compile Include="An8Method.cs" />
+    <Compile Include="An8Modifier.cs" />
+    <Compile Include="An8NamedObject.cs" />
+    <Compile Include="An8Object.cs" />
+    <Compile Include="An8Path.cs" />
+    <Compile Include="An8Point.cs" />
+    <Compile Include="An8Quaternion.cs" />
+    <Compile Include="An8Sphere.cs" />
+    <Compile Include="An8Subdivision.cs" />
+    <Compile Include="An8Surface.cs" />
+    <Compile Include="An8TexCoord.cs" />
+    <Compile Include="An8TextCom.cs" />
+    <Compile Include="An8Texture.cs" />
+    <Compile Include="An8TextureParams.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tokenizer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Properties\sgKey.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets" Condition="Exists('..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ce projet fait référence à des packages NuGet qui sont manquants sur cet ordinateur. Activez l'option de restauration des packages NuGet pour les télécharger. Pour plus d'informations, consultez http://go.microsoft.com/fwlink/?LinkID=322105. Le fichier manquant est le suivant : {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
