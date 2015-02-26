@@ -14,6 +14,7 @@
     <tags>Media 3D Model An8</tags>
   </metadata>
   <files>
+    <file src="..\..\LICENSE.txt" target="license.txt" />
     <file src="bin\$configuration$\$id$.pdb" target="lib\net40\" />
   </files>
 </package>
