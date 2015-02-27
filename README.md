@@ -9,7 +9,7 @@ JeremyAnsel.Media.An8 is a .Net library to handle Anim8or .an8 files.
 
 Description     | Value
 ----------------|----------------
-License         | The MIT License (MIT)
+License         | [The MIT License (MIT)](https://github.com/JeremyAnsel/JeremyAnsel.Media.An8/blob/master/LICENSE.txt)
 Web site        | http://jeremyansel.github.io/JeremyAnsel.Media.An8
 Documentation   | http://jeremyansel.github.io/JeremyAnsel.Media.An8/doc
 Source code     | https://github.com/JeremyAnsel/JeremyAnsel.Media.An8
