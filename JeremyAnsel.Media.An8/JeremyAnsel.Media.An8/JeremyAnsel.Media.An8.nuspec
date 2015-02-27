@@ -6,7 +6,7 @@
     <title>$title$</title>
     <authors>$author$</authors>
     <owners>$author$</owners>
-    <licenseUrl>https://raw.githubusercontent.com/JeremyAnsel/JeremyAnsel.Media.An8/master/LICENSE.txt</licenseUrl>
+    <licenseUrl>https://github.com/JeremyAnsel/JeremyAnsel.Media.An8/blob/master/LICENSE.txt</licenseUrl>
     <projectUrl>https://github.com/JeremyAnsel/JeremyAnsel.Media.An8</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A .Net library to handle Anim8or .an8 files.</description>
