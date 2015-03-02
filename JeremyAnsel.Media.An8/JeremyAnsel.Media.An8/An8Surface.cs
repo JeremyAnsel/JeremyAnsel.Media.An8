@@ -23,7 +23,7 @@ namespace JeremyAnsel.Media.An8
         }
 
         /// <summary>
-        /// Gets or sets the $ambiant$ material color.
+        /// Gets or sets the ambiant material color.
         /// </summary>
         public An8MaterialColor Ambiant { get; set; }
 
@@ -53,7 +53,7 @@ namespace JeremyAnsel.Media.An8
         public float Brilliance { get; set; }
 
         /// <summary>
-        /// Gets or sets the $phong$ roughness factor.
+        /// Gets or sets the phong roughness factor.
         /// </summary>
         public float PhongRoughness { get; set; }
 
@@ -63,7 +63,7 @@ namespace JeremyAnsel.Media.An8
         public IList<An8Map> Maps { get; private set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether diffuse is used for both diffuse and $ambiant$.
+        /// Gets or sets a value indicating whether diffuse is used for both diffuse and ambiant.
         /// </summary>
         public bool IsAmbiantDiffuseLocked { get; set; }
 

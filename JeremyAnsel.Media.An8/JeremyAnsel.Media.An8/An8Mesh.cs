@@ -50,7 +50,7 @@ namespace JeremyAnsel.Media.An8
         public IList<An8Point> Points { get; private set; }
 
         /// <summary>
-        /// Gets the $normals$.
+        /// Gets the normals.
         /// </summary>
         public IList<An8Point> Normals { get; private set; }
 

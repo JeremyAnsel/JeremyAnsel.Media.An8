@@ -16,7 +16,7 @@ namespace JeremyAnsel.Media.An8
     using System.Text;
 
     /// <summary>
-    /// The $tokenizer$.
+    /// The tokenizer.
     /// </summary>
     internal static class Tokenizer
     {

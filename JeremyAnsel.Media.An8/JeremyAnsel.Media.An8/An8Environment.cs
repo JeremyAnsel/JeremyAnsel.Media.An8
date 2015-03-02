@@ -35,12 +35,12 @@ namespace JeremyAnsel.Media.An8
         public float GroundFloorGridSize { get; set; }
 
         /// <summary>
-        /// Gets or sets the $framerate$.
+        /// Gets or sets the framerate.
         /// </summary>
         public int Framerate { get; set; }
 
         /// <summary>
-        /// Gets or sets a value indicating whether the playback $framerate$ is limited.
+        /// Gets or sets a value indicating whether the playback framerate is limited.
         /// </summary>
         public bool IsPlaybackFramerateLimited { get; set; }
 

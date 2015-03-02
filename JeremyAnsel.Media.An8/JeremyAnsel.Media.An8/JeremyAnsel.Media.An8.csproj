@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -23,7 +23,7 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\JeremyAnsel.Media.An8.XML</DocumentationFile>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -34,7 +34,9 @@
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\JeremyAnsel.Media.An8.XML</DocumentationFile>
     <RunCodeAnalysis>true</RunCodeAnalysis>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSet>..\AllRulesAsErrors.ruleset</CodeAnalysisRuleSet>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <StyleCopTreatErrorsAsWarnings>false</StyleCopTreatErrorsAsWarnings>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -92,6 +94,11 @@
     <None Include="packages.config" />
     <None Include="Properties\sgKey.snk" />
   </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="..\CustomDictionary.xml">
+      <Link>CustomDictionary.xml</Link>
+    </CodeAnalysisDictionary>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets" Condition="Exists('..\packages\StyleCop.MSBuild.4.7.49.1\build\StyleCop.MSBuild.Targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -106,7 +113,6 @@
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">
-    <Exec Condition=" false and ('$(CI)' == 'True') "
-          Command="..\packages\SourceLink.0.5.0-ci1411242108\tools\SourceLink.exe index -v -r &quot;..\..&quot; -p &quot;$(ProjectFileName)&quot; -pp Configuration &quot;$(Configuration)&quot; -u &quot;https://raw.githubusercontent.com/JeremyAnsel/JeremyAnsel.Media.An8/{0}/%var2%&quot; -nf &quot;Properties\AssemblyInfo.cs&quot;" />
+    <Exec Condition=" false and ('$(CI)' == 'True') " Command="..\packages\SourceLink.0.5.0-ci1411242108\tools\SourceLink.exe index -v -r &quot;..\..&quot; -p &quot;$(ProjectFileName)&quot; -pp Configuration &quot;$(Configuration)&quot; -u &quot;https://raw.githubusercontent.com/JeremyAnsel/JeremyAnsel.Media.An8/{0}/%var2%&quot; -nf &quot;Properties\AssemblyInfo.cs&quot;" />
   </Target>
 </Project>

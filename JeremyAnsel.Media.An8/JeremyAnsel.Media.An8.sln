@@ -15,6 +15,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3AA5FA
 		.nuget\packages.config = .nuget\packages.config
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{15C88430-F023-47F7-9737-59DB4589BE42}"
+	ProjectSection(SolutionItems) = preProject
+		AllRulesAsErrors.ruleset = AllRulesAsErrors.ruleset
+		CustomDictionary.xml = CustomDictionary.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,10 +31,11 @@ Global
 		{9283812E-4AFD-4F85-8A64-C194F4D21E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9283812E-4AFD-4F85-8A64-C194F4D21E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9283812E-4AFD-4F85-8A64-C194F4D21E5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9283812E-4AFD-4F85-8A64-C194F4D21E5E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{0C3A2CD2-B182-476C-A8C4-6C502715B856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0C3A2CD2-B182-476C-A8C4-6C502715B856}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0C3A2CD2-B182-476C-A8C4-6C502715B856}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0C3A2CD2-B182-476C-A8C4-6C502715B856}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C3A2CD2-B182-476C-A8C4-6C502715B856}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
