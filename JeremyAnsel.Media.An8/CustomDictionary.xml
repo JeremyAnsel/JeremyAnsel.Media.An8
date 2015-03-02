@@ -4,16 +4,22 @@
     <Unrecognized>
     </Unrecognized>
     <Recognized>
+      <Word>ansel</Word>
       <Word>ambiant</Word>
+      <Word>coord</Word>
+      <Word>coords</Word>
       <Word>framerate</Word>
+      <Word>jeremy</Word>
+      <Word>long</Word>
+      <Word>lat</Word>
       <Word>normals</Word>
+      <Word>params</Word>
       <Word>phong</Word>
       <Word>tokenizer</Word>
     </Recognized>
     <Deprecated>
     </Deprecated>
     <Compound>
-      <Term CompoundAlternate="JeremyAnsel">jeremyansel</Term>
     </Compound>
     <DiscreteExceptions>
     </DiscreteExceptions>
