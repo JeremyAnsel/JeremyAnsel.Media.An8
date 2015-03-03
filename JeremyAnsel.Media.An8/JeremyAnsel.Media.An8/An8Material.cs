@@ -84,12 +84,6 @@ namespace JeremyAnsel.Media.An8
                 tokens.AddRange(this.FrontSurface.BuildTokens());
             }
 
-            if (this.FrontSurface != null)
-            {
-                Tokenizer.BuildNewLine(tokens);
-                tokens.AddRange(this.FrontSurface.BuildTokens());
-            }
-
             if (this.BackSurface != null)
             {
                 var surfaceTokens = this.BackSurface.BuildTokens();

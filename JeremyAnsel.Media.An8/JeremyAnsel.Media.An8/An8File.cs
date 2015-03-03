@@ -21,8 +21,22 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         public An8File()
         {
-            this.Header = new An8Header();
-            this.Environment = new An8Environment();
+            this.Header = new An8Header
+            {
+                Version = "0.85beta",
+                Build = "2003.09.21"
+            };
+
+            this.Environment = new An8Environment
+            {
+                Framerate = 30,
+                IsPlaybackFramerateLimited = true,
+                IsAutoGridEnabled = true,
+                ModelingGridSpacing = 10,
+                SceneEditorGridSpacing = 50,
+                GroundFloorGridSize = 50
+            };
+
             this.Textures = new List<An8Texture>();
             this.Materials = new List<An8Material>();
             this.Objects = new List<An8Object>();
@@ -87,7 +101,7 @@ namespace JeremyAnsel.Media.An8
         {
             string text = this.GenerateText();
 
-            File.WriteAllText(fileName, text, Encoding.UTF8);
+            File.WriteAllText(fileName, text, Encoding.ASCII);
         }
 
         /// <summary>

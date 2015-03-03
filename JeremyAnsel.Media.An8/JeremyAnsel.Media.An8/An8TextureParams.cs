@@ -15,6 +15,14 @@ namespace JeremyAnsel.Media.An8
     public sealed class An8TextureParams : An8Chunk
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="An8TextureParams"/> class.
+        /// </summary>
+        public An8TextureParams()
+        {
+            this.Percent = 100;
+        }
+
+        /// <summary>
         /// Gets or sets the blend mode.
         /// </summary>
         public An8BlendMode BlendMode { get; set; }

@@ -15,6 +15,17 @@ namespace JeremyAnsel.Media.An8
     public sealed class An8MaterialColor : An8Chunk
     {
         /// <summary>
+        /// Initializes a new instance of the <see cref="An8MaterialColor"/> class.
+        /// </summary>
+        public An8MaterialColor()
+        {
+            this.Red = 255;
+            this.Green = 255;
+            this.Blue = 255;
+            this.WeightingFactor = 1;
+        }
+
+        /// <summary>
         /// Gets or sets the red component.
         /// </summary>
         public byte Red { get; set; }

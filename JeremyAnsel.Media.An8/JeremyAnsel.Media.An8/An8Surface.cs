@@ -20,6 +20,7 @@ namespace JeremyAnsel.Media.An8
         public An8Surface()
         {
             this.Maps = new List<An8Map>();
+            this.Alpha = 255;
         }
 
         /// <summary>
