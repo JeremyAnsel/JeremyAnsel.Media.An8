@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder" version="2014.11.22.0" projectFile="C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\Documentation.shfbproj" started="3/23/2015 7:16:07 PM">
+<shfbBuild product="Sandcastle Help File Builder" version="2014.11.22.0" projectFile="C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\Documentation.shfbproj" started="3/25/2015 2:15:01 AM">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\packages\EWSoftware.SHFB.2014.11.22.0\Tools\&#39;
@@ -29,16 +29,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00.1430
+</plugIn>    Last step completed in 00:00:00.3872
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00.0312
+    Last step completed in 00:00:00.0000
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\MSBuild\12.0\bin\MSBuild.exe]
-Build started 3/23/2015 7:16:14 PM.
+Build started 3/25/2015 2:15:06 AM.
 Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Release\&quot;.
@@ -57,13 +57,13 @@ Done Building Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.
 
 Build succeeded.
 
-Time Elapsed 00:00:02.36
-    Last step completed in 00:00:02.7285
+Time Elapsed 00:00:01.75
+    Last step completed in 00:00:01.9714
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\MSBuild\12.0\bin\MSBuild.exe]
-Build started 3/23/2015 7:16:16 PM.
+Build started 3/25/2015 2:15:08 AM.
 Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2014.11.22.0)
@@ -83,12 +83,12 @@ Done Building Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.
 
 Build succeeded.
 
-Time Elapsed 00:00:03.05
-    Last step completed in 00:00:03.2239
+Time Elapsed 00:00:02.40
+    Last step completed in 00:00:02.5832
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00.1719
+    Last step completed in 00:00:00.1388
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -103,28 +103,28 @@ Generating conceptual topic files
     C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\Content\VersionHistory\VersionHistory.aml -&gt; C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\ddueXml\VersionHistory.xml
     Parsing topic file &#39;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\Content\VersionHistory\v1.0.aml&#39;
     C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\Content\VersionHistory\v1.0.aml -&gt; C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\ddueXml\VersionHistory-v1_0.xml
-    Last step completed in 00:00:00.1589
+    Last step completed in 00:00:00.1406
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     ConceptualManifest.xml
-    Last step completed in 00:00:00.0442
+    Last step completed in 00:00:00.0954
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
 C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\icons\Help.png -&gt; C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\Output\Website\icons\Help.png
-    Last step completed in 00:00:00.0188
+    Last step completed in 00:00:00.0309
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00.0124
+    Last step completed in 00:00:00.0171
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\MSBuild\12.0\bin\MSBuild.exe]
-Build started 3/23/2015 7:16:20 PM.
+Build started 3/25/2015 2:15:11 AM.
 Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2014.11.22.0)
@@ -135,27 +135,27 @@ Done Building Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.
 
 Build succeeded.
 
-Time Elapsed 00:00:00.32
+Time Elapsed 00:00:00.35
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00.4846
+    Last step completed in 00:00:00.4958
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
     conceptual.config
-    Last step completed in 00:00:01.6378
+    Last step completed in 00:00:01.2230
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\sandcastle.config
 C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\conceptual.config
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00.1098
+    Last step completed in 00:00:00.1120
 </buildStep>
 <buildStep step="BuildConceptualTopics">
 Building conceptual help topics...
 [C:\Program Files (x86)\MSBuild\12.0\bin\MSBuild.exe]
-Build started 3/23/2015 7:16:22 PM.
+Build started 3/25/2015 2:15:13 AM.
 Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\BuildConceptualTopics.proj&quot; on node 1 (default targets).
 BuildConceptualTopics:
   BuildAssembler (v2014.11.22.0)
@@ -170,13 +170,13 @@ Done Building Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.
 
 Build succeeded.
 
-Time Elapsed 00:00:18.65
-    Last step completed in 00:00:18.9036
+Time Elapsed 00:00:17.46
+    Last step completed in 00:00:17.7101
 </buildStep>
 <buildStep step="BuildReferenceTopics">
 Building reference help topics...
 [C:\Program Files (x86)\MSBuild\12.0\bin\MSBuild.exe]
-Build started 3/23/2015 7:16:41 PM.
+Build started 3/25/2015 2:15:30 AM.
 Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\BuildReferenceTopics.proj&quot; on node 1 (default targets).
 BuildReferenceTopics:
   BuildAssembler (v2014.11.22.0)
@@ -193,8 +193,8 @@ Done Building Project &quot;C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.
 
 Build succeeded.
 
-Time Elapsed 00:00:51.92
-    Last step completed in 00:00:52.1309
+Time Elapsed 00:00:46.17
+    Last step completed in 00:00:46.4058
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
@@ -216,7 +216,7 @@ Processed 316 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\WebKI.xml
 Saving website table of contents to C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\WebTOC.xml
-    Last step completed in 00:00:03.0456
+    Last step completed in 00:00:01.7444
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -296,7 +296,7 @@ C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\packages\EWSoftware.SHFB
 C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\packages\EWSoftware.SHFB.2014.11.22.0\Tools\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\Output\Website\icons\TocOpen.gif
 C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\packages\EWSoftware.SHFB.2014.11.22.0\Tools\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\Output\Website\scripts\branding-Website.js
 C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\packages\EWSoftware.SHFB.2014.11.22.0\Tools\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\Documentation\build\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:02.6214
+    Last step completed in 00:00:01.9101
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -307,7 +307,7 @@ Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:03.6941
+</plugIn>    Last step completed in 00:00:02.7640
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -317,15 +317,15 @@ Copied 200 files
 Copied 300 files
 Copied 400 files
 Copied 493 files for the website content
-    Last step completed in 00:00:03.2457
+    Last step completed in 00:00:02.9895
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00.8868
+    Last step completed in 00:00:01.3112
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 3/23/2015 7:17:46 PM.  Total time: 00:01:39.5944
+Build completed successfully at 3/25/2015 2:16:28 AM.  Total time: 00:01:26.8784
 
 </buildStep>
 </shfbBuild>
