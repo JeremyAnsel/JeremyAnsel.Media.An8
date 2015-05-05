@@ -98,7 +98,9 @@ other {}
 }
 ";
 
-            Assert.Equal(expected, text);
+            Assert.Equal(
+                expected.Replace("\r\n", "\n"),
+                text.Replace("\r\n", "\n"));
         }
 
         /// <summary>
@@ -116,7 +118,9 @@ other {}
 }
 ";
 
-            Assert.Equal(expected, text);
+            Assert.Equal(
+                expected.Replace("\r\n", "\n"),
+                text.Replace("\r\n", "\n"));
         }
     }
 }
