@@ -11,7 +11,8 @@ Description     | Value
 ----------------|----------------
 License         | [The MIT License (MIT)](https://github.com/JeremyAnsel/JeremyAnsel.Media.An8/blob/master/LICENSE.txt)
 Web site        | http://jeremyansel.github.io/JeremyAnsel.Media.An8
-Documentation   | http://jeremyansel.github.io/JeremyAnsel.Media.An8/doc
+Documentation   | http://jeremyansel.github.io/JeremyAnsel.Media.An8/doc/
+Code coverage   | https://jeremyansel.github.io/JeremyAnsel.Media.An8/coverage/
 Source code     | https://github.com/JeremyAnsel/JeremyAnsel.Media.An8
 Nuget           | https://www.nuget.org/packages/JeremyAnsel.Media.An8
 Build           | https://ci.appveyor.com/project/JeremyAnsel/jeremyansel-media-an8/branch/master
