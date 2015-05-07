@@ -82,7 +82,7 @@ namespace JeremyAnsel.Media.An8
         {
             var tokens = new List<string>();
 
-            Tokenizer.BuildOpenChunk(tokens, "bone");
+            Tokenizer.BuildOpenChunk(tokens, "figure");
             Tokenizer.BuildString(tokens, this.Name);
             Tokenizer.BuildIndent(tokens);
 

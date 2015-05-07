@@ -34,12 +34,8 @@ namespace JeremyAnsel.Media.An8
         {
             var longlat = new An8LongLat();
 
-            Tokenizer.ReadOpenData(tokens, ref index);
-
             longlat.VerticalDivisions = Tokenizer.ReadInt(tokens, ref index);
             longlat.HorizontalDivisions = Tokenizer.ReadInt(tokens, ref index);
-
-            Tokenizer.ReadCloseData(tokens, ref index);
 
             return longlat;
         }

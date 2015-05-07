@@ -1,4 +1,4 @@
-﻿// <copyright file="An8HeaderTests.cs" company="Jérémy Ansel">
+﻿// <copyright file="An8GroupTests.cs" company="Jérémy Ansel">
 // Copyright (c) 2015 Jérémy Ansel
 // </copyright>
 // <license>
@@ -10,20 +10,19 @@ namespace JeremyAnsel.Media.An8.Tests
     using Xunit;
 
     /// <summary>
-    /// Tests for <see cref="An8Header"/>.
+    /// Tests for <see cref="An8Group"/>.
     /// </summary>
-    public class An8HeaderTests
+    public class An8GroupTests
     {
         /// <summary>
         /// Tests the constructor.
         /// </summary>
         [Fact]
-        public void NewHeader()
+        public void NewGroup()
         {
-            var header = new An8Header();
+            var group = new An8Group();
 
-            Assert.Null(header.Version);
-            Assert.Null(header.Build);
+            Assert.NotNull(group.Components);
         }
 
         /// <summary>
@@ -32,9 +31,9 @@ namespace JeremyAnsel.Media.An8.Tests
         [Fact]
         public void ParseEmpty()
         {
-            var header = new An8Header();
+            var group = new An8Group();
 
-            header.Parse(
+            group.Parse(
 @"
 ");
         }
@@ -45,9 +44,9 @@ namespace JeremyAnsel.Media.An8.Tests
         [Fact]
         public void ParseOther()
         {
-            var header = new An8Header();
+            var group = new An8Group();
 
-            header.Parse(
+            group.Parse(
 @"
 other { }
 ");
@@ -57,18 +56,16 @@ other { }
         /// Tests parsing.
         /// </summary>
         [Fact]
-        public void Parse()
+        public void ParseComponent()
         {
-            var header = new An8Header();
+            var group = new An8Group();
 
-            header.Parse(
+            group.Parse(
 @"
-version { ""v1"" }
-build { ""b1"" }
+group { }
 ");
 
-            Assert.Equal("v1", header.Version);
-            Assert.Equal("b1", header.Build);
+            Assert.Equal(1, group.Components.Count);
         }
 
         /// <summary>
@@ -77,12 +74,13 @@ build { ""b1"" }
         [Fact]
         public void GenerateTextEmpty()
         {
-            var header = new An8Header();
+            var group = new An8Group();
 
-            var text = header.GenerateText();
+            var text = group.GenerateText();
 
             string expected =
-@"header {
+@"group {
+  name { """" }
 }
 ";
 
@@ -95,20 +93,19 @@ build { ""b1"" }
         /// Tests text generating.
         /// </summary>
         [Fact]
-        public void GenerateText()
+        public void GenerateTextComponent()
         {
-            var header = new An8Header
-            {
-                Version = "v1",
-                Build = "b1"
-            };
+            var group = new An8Group();
+            group.Components.Add(new An8Group());
 
-            var text = header.GenerateText();
+            var text = group.GenerateText();
 
             string expected =
-@"header {
-  version { ""v1"" }
-  build { ""b1"" }
+@"group {
+  name { """" }
+  group {
+    name { """" }
+  }
 }
 ";
 

@@ -48,7 +48,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="An8BezierTests.cs" />
+    <Compile Include="An8BoneTests.cs" />
+    <Compile Include="An8CubeTests.cs" />
+    <Compile Include="An8CylinderTests.cs" />
+    <Compile Include="An8DegreeOfFreedomTests.cs" />
+    <Compile Include="An8EnvironmentTests.cs" />
+    <Compile Include="An8FigureTests.cs" />
     <Compile Include="An8FileTests.cs" />
+    <Compile Include="An8GroupTests.cs" />
     <Compile Include="An8HeaderTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -60,9 +60,14 @@ namespace JeremyAnsel.Media.An8
                 {
                     case "grid":
                         this.IsAutoGridEnabled = Tokenizer.ReadInt(chunk.Tokens, ref index) != 0;
-                        this.ModelingGridSpacing = Tokenizer.ReadFloat(chunk.Tokens, ref index);
-                        this.SceneEditorGridSpacing = Tokenizer.ReadFloat(chunk.Tokens, ref index);
-                        this.GroundFloorGridSize = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+
+                        if (!this.IsAutoGridEnabled || chunk.Tokens.Length >= 4)
+                        {
+                            this.ModelingGridSpacing = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                            this.SceneEditorGridSpacing = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                            this.GroundFloorGridSize = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                        }
+
                         break;
 
                     case "framerate":
