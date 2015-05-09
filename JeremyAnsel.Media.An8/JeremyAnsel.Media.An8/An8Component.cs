@@ -255,19 +255,19 @@ namespace JeremyAnsel.Media.An8
             Tokenizer.BuildOpenChunk(tokens, "pivot");
             Tokenizer.BuildIndent(tokens);
 
-            if (this.BaseOrigin != null)
+            if (this.PivotOrigin != null)
             {
                 Tokenizer.BuildNewLine(tokens);
                 Tokenizer.BuildOpenChunk(tokens, "origin");
-                tokens.AddRange(this.BaseOrigin.BuildTokens());
+                tokens.AddRange(this.PivotOrigin.BuildTokens());
                 Tokenizer.BuildCloseChunk(tokens);
             }
 
-            if (this.BaseOrientation != null)
+            if (this.PivotOrientation != null)
             {
                 Tokenizer.BuildNewLine(tokens);
                 Tokenizer.BuildOpenChunk(tokens, "orientation");
-                tokens.AddRange(this.BaseOrientation.BuildTokens());
+                tokens.AddRange(this.PivotOrientation.BuildTokens());
                 Tokenizer.BuildCloseChunk(tokens);
             }
 

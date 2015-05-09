@@ -47,6 +47,8 @@ namespace JeremyAnsel.Media.An8
             bool isInString = false;
 
             int currentIndex = 0;
+            var currentString = new StringBuilder();
+            bool isEscaping = false;
 
             for (int i = 0; i < text.Length; i++)
             {
@@ -54,18 +56,26 @@ namespace JeremyAnsel.Media.An8
 
                 if (isInString)
                 {
-                    if (c == '"' && (i == 0 || text[i - 1] != '\\'))
+                    if (isEscaping)
                     {
-                        if (i != currentIndex)
-                        {
-                            tokens.Add(text.Substring(currentIndex - 1, i - currentIndex + 1)
-                                .Replace("\\\\", "\\")
-                                .Replace("\\\"", "\""));
-                        }
+                        currentString.Append(c);
+                        isEscaping = false;
+                    }
+                    else if (c == '\\')
+                    {
+                        isEscaping = true;
+                    }
+                    else if (c == '"')
+                    {
+                        tokens.Add(currentString.ToString());
 
                         currentIndex = i + 1;
 
                         isInString = false;
+                    }
+                    else
+                    {
+                        currentString.Append(c);
                     }
                 }
                 else if (Delimiters.Contains(c))
@@ -80,6 +90,8 @@ namespace JeremyAnsel.Media.An8
                     if (c == '"')
                     {
                         isInString = true;
+                        currentString.Clear();
+                        currentString.Append('"');
                     }
                     else
                     {
@@ -101,9 +113,7 @@ namespace JeremyAnsel.Media.An8
             {
                 if (isInString)
                 {
-                    tokens.Add(text.Substring(currentIndex - 1, text.Length - currentIndex + 1)
-                        .Replace("\\\\", "\\")
-                        .Replace("\\\"", "\""));
+                    tokens.Add(currentString.ToString());
                 }
                 else
                 {

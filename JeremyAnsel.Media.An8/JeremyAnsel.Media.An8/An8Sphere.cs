@@ -74,7 +74,7 @@ namespace JeremyAnsel.Media.An8
         {
             var tokens = new List<string>();
 
-            Tokenizer.BuildOpenChunk(tokens, "cube");
+            Tokenizer.BuildOpenChunk(tokens, "sphere");
             Tokenizer.BuildIndent(tokens);
 
             tokens.AddRange(base.BuildTokens());

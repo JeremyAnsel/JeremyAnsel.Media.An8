@@ -47,9 +47,9 @@ namespace JeremyAnsel.Media.An8
             if (!Tokenizer.IsClosedData(tokens, ref index))
             {
                 edge.Sharpness = Tokenizer.ReadInt(tokens, ref index);
-            }
 
-            Tokenizer.ReadCloseData(tokens, ref index);
+                Tokenizer.ReadCloseData(tokens, ref index);
+            }
 
             return edge;
         }

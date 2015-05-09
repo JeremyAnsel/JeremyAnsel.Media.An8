@@ -59,12 +59,12 @@ namespace JeremyAnsel.Media.An8
                 switch (chunk.Ident)
                 {
                     case null:
-                        this.LowerEndCenter = Tokenizer.ReadInt(chunk.Tokens, ref index);
-                        this.LowerEndInnerRadius = Tokenizer.ReadInt(chunk.Tokens, ref index);
-                        this.LowerEndOuterRadius = Tokenizer.ReadInt(chunk.Tokens, ref index);
-                        this.UpperEndCenter = Tokenizer.ReadInt(chunk.Tokens, ref index);
-                        this.UpperEndInnerRadius = Tokenizer.ReadInt(chunk.Tokens, ref index);
-                        this.UpperEndOuterRadius = Tokenizer.ReadInt(chunk.Tokens, ref index);
+                        this.LowerEndCenter = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                        this.LowerEndInnerRadius = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                        this.LowerEndOuterRadius = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                        this.UpperEndCenter = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                        this.UpperEndInnerRadius = Tokenizer.ReadFloat(chunk.Tokens, ref index);
+                        this.UpperEndOuterRadius = Tokenizer.ReadFloat(chunk.Tokens, ref index);
                         break;
                 }
             }

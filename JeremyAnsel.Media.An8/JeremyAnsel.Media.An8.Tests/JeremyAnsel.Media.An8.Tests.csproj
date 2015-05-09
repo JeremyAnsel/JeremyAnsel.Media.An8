@@ -50,15 +50,36 @@
   <ItemGroup>
     <Compile Include="An8BezierTests.cs" />
     <Compile Include="An8BoneTests.cs" />
+    <Compile Include="An8ComponentTests.cs" />
     <Compile Include="An8CubeTests.cs" />
     <Compile Include="An8CylinderTests.cs" />
     <Compile Include="An8DegreeOfFreedomTests.cs" />
     <Compile Include="An8EnvironmentTests.cs" />
+    <Compile Include="An8FaceTests.cs" />
     <Compile Include="An8FigureTests.cs" />
     <Compile Include="An8FileTests.cs" />
     <Compile Include="An8GroupTests.cs" />
     <Compile Include="An8HeaderTests.cs" />
+    <Compile Include="An8ImageTests.cs" />
+    <Compile Include="An8InfluenceTests.cs" />
+    <Compile Include="An8KnotTests.cs" />
+    <Compile Include="An8MapTests.cs" />
+    <Compile Include="An8MaterialColorTests.cs" />
+    <Compile Include="An8MaterialTests.cs" />
+    <Compile Include="An8MeshTests.cs" />
+    <Compile Include="An8MethodTests.cs" />
+    <Compile Include="An8ModifierTests.cs" />
+    <Compile Include="An8NamedObjectTests.cs" />
+    <Compile Include="An8ObjectTests.cs" />
+    <Compile Include="An8PathTests.cs" />
+    <Compile Include="An8SphereTests.cs" />
+    <Compile Include="An8SubdivisionTests.cs" />
+    <Compile Include="An8SurfaceTests.cs" />
+    <Compile Include="An8TextComTests.cs" />
+    <Compile Include="An8TextureParamsTests.cs" />
+    <Compile Include="An8TextureTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TokenizerTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

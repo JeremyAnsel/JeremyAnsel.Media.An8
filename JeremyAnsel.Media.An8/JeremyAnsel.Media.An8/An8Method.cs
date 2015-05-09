@@ -7,6 +7,7 @@
 
 namespace JeremyAnsel.Media.An8
 {
+    using System;
     using System.Collections.Generic;
 
     /// <summary>
@@ -15,17 +16,39 @@ namespace JeremyAnsel.Media.An8
     public sealed class An8Method : An8Chunk
     {
         /// <summary>
+        /// The kind of the method.
+        /// </summary>
+        private string kind;
+
+        /// <summary>
         /// Initializes a new instance of the <see cref="An8Method"/> class.
         /// </summary>
         public An8Method()
         {
+            this.Kind = "modifier";
             this.Parameters = new SortedDictionary<string, float>();
         }
 
         /// <summary>
         /// Gets or sets the kind of the method.
         /// </summary>
-        public string Kind { get; set; }
+        public string Kind
+        {
+            get
+            {
+                return this.kind;
+            }
+
+            set
+            {
+                if (string.IsNullOrWhiteSpace(value))
+                {
+                    throw new ArgumentOutOfRangeException("value");
+                }
+
+                this.kind = value;
+            }
+        }
 
         /// <summary>
         /// Gets or sets the name.

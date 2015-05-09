@@ -84,10 +84,10 @@ other { }
 
             bone.Parse(
 @"
-length { 1.0 }
+length { 2.0 }
 ");
 
-            Assert.Equal(1.0f, bone.Length);
+            Assert.Equal(2.0f, bone.Length);
         }
 
         /// <summary>
@@ -100,11 +100,11 @@ length { 1.0 }
 
             bone.Parse(
 @"
-diameter { 1.0 }
+diameter { 2.0 }
 ");
 
             Assert.True(bone.Diameter.HasValue);
-            Assert.Equal(1.0f, bone.Diameter.Value);
+            Assert.Equal(2.0f, bone.Diameter.Value);
         }
 
         /// <summary>
@@ -117,14 +117,14 @@ diameter { 1.0 }
 
             bone.Parse(
 @"
-orientation { ( 1.0 2.0 3.0 4.0 ) }
+orientation { ( 2.0 3.0 4.0 5.0 ) }
 ");
 
             Assert.NotNull(bone.Orientation);
-            Assert.Equal(1.0f, bone.Orientation.X);
-            Assert.Equal(2.0f, bone.Orientation.Y);
-            Assert.Equal(3.0f, bone.Orientation.Z);
-            Assert.Equal(4.0f, bone.Orientation.W);
+            Assert.Equal(2.0f, bone.Orientation.X);
+            Assert.Equal(3.0f, bone.Orientation.Y);
+            Assert.Equal(4.0f, bone.Orientation.Z);
+            Assert.Equal(5.0f, bone.Orientation.W);
         }
 
         /// <summary>
@@ -257,13 +257,13 @@ group { }
         public void GenerateTextLength()
         {
             var bone = new An8Bone();
-            bone.Length = 1.0f;
+            bone.Length = 2.0f;
 
             var text = bone.GenerateText();
 
             string expected =
 @"bone { """"
-  length { 1.000000 }
+  length { 2.000000 }
 }
 ";
 
@@ -279,14 +279,14 @@ group { }
         public void GenerateTextDiameter()
         {
             var bone = new An8Bone();
-            bone.Diameter = 1.0f;
+            bone.Diameter = 2.0f;
 
             var text = bone.GenerateText();
 
             string expected =
 @"bone { """"
   length { 0.000000 }
-  diameter { 1.000000 }
+  diameter { 2.000000 }
 }
 ";
 
@@ -304,10 +304,10 @@ group { }
             var bone = new An8Bone();
             bone.Orientation = new An8Quaternion
             {
-                X = 1.0f,
-                Y = 2.0f,
-                Z = 3.0f,
-                W = 4.0f
+                X = 2.0f,
+                Y = 3.0f,
+                Z = 4.0f,
+                W = 5.0f
             };
 
             var text = bone.GenerateText();
@@ -315,7 +315,7 @@ group { }
             string expected =
 @"bone { """"
   length { 0.000000 }
-  orientation { ( 1.000000 2.000000 3.000000 4.000000 ) }
+  orientation { ( 2.000000 3.000000 4.000000 5.000000 ) }
 }
 ";
 
