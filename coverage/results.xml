@@ -2,7 +2,7 @@
 <CoverageSession xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Summary numSequencePoints="1723" visitedSequencePoints="1696" numBranchPoints="823" visitedBranchPoints="792" sequenceCoverage="98.43" branchCoverage="96.23" maxCyclomaticComplexity="24" minCyclomaticComplexity="0" visitedClasses="37" numClasses="37" visitedMethods="126" numMethods="131" />
   <Modules>
-    <Module hash="21-7F-05-14-76-04-FD-0A-D1-46-C8-19-79-07-96-AB-C7-BF-6C-35">
+    <Module hash="F4-A9-B3-B3-41-84-CE-C2-D1-84-24-4E-FC-42-7D-89-E9-47-69-4D">
       <Summary numSequencePoints="1723" visitedSequencePoints="1696" numBranchPoints="823" visitedBranchPoints="792" sequenceCoverage="98.43" branchCoverage="96.23" maxCyclomaticComplexity="24" minCyclomaticComplexity="0" visitedClasses="37" numClasses="37" visitedMethods="126" numMethods="131" />
       <FullName>C:\projects\jeremyansel-media-an8\JeremyAnsel.Media.An8\JeremyAnsel.Media.An8.Tests\bin\Release\JeremyAnsel.Media.An8.dll</FullName>
       <ModuleName>JeremyAnsel.Media.An8</ModuleName>
