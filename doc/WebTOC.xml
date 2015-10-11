@@ -2,24 +2,23 @@
 <HelpTOC>
 
   <HelpTOCNode Title="Welcome" Url="html/Welcome.htm" />
-  <HelpTOCNode Id="598df426-f1ef-435e-86d4-b24711003eeb" Title="Version History" Url="html/VersionHistory.htm">
+  <HelpTOCNode Id="a06d9d48-8ac4-48a3-b211-9990fa75090b" Title="Version History" Url="html/VersionHistory.htm">
     <HelpTOCNode Title="Version 1.0" Url="html/VersionHistory-v1_0.htm" />
   </HelpTOCNode>
-  <HelpTOCNode Id="de74f616-8f01-4270-8254-0801c245f2eb" Title="JeremyAnsel.Media.An8" Url="html/N_JeremyAnsel_Media_An8.htm">
+  <HelpTOCNode Id="fd99eb9a-d856-4892-b114-377fbd5ad5f2" Title="JeremyAnsel.Media.An8" Url="html/N_JeremyAnsel_Media_An8.htm">
     <HelpTOCNode Title="An8AlphaMode Enumeration" Url="html/T_JeremyAnsel_Media_An8_An8AlphaMode.htm" />
-    <HelpTOCNode Id="f4e560f7-3950-430d-83ac-57f90df7345f" Title="An8Bezier Class" Url="html/T_JeremyAnsel_Media_An8_An8Bezier.htm">
+    <HelpTOCNode Id="40732fbe-09b9-4720-8451-73f9e1ef796a" Title="An8Bezier Class" Url="html/T_JeremyAnsel_Media_An8_An8Bezier.htm">
       <HelpTOCNode Title="An8Bezier Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Bezier__ctor.htm" />
-      <HelpTOCNode Title="An8Bezier Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Bezier.htm" />
-      <HelpTOCNode Id="57e18420-a027-4d4c-ac38-8d68ba300845" Title="An8Bezier Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Bezier.htm">
+      <HelpTOCNode Id="5ebca126-a969-40b2-b277-600e11466b99" Title="An8Bezier Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Bezier.htm">
         <HelpTOCNode Title="IsClosed Property " Url="html/P_JeremyAnsel_Media_An8_An8Bezier_IsClosed.htm" />
         <HelpTOCNode Title="Knots Property " Url="html/P_JeremyAnsel_Media_An8_An8Bezier_Knots.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Bezier Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Bezier.htm" />
     </HelpTOCNode>
     <HelpTOCNode Title="An8BlendMode Enumeration" Url="html/T_JeremyAnsel_Media_An8_An8BlendMode.htm" />
-    <HelpTOCNode Id="fd82638c-2835-4db8-976e-352d36d1f2e4" Title="An8Bone Class" Url="html/T_JeremyAnsel_Media_An8_An8Bone.htm">
+    <HelpTOCNode Id="65863678-36df-4844-9c6b-3ab71d6de3e8" Title="An8Bone Class" Url="html/T_JeremyAnsel_Media_An8_An8Bone.htm">
       <HelpTOCNode Title="An8Bone Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Bone__ctor.htm" />
-      <HelpTOCNode Title="An8Bone Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Bone.htm" />
-      <HelpTOCNode Id="7c68cc05-16c1-4800-a711-43730a780273" Title="An8Bone Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Bone.htm">
+      <HelpTOCNode Id="fc04f448-5d45-4911-bb42-13495edfcb8f" Title="An8Bone Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Bone.htm">
         <HelpTOCNode Title="Bones Property " Url="html/P_JeremyAnsel_Media_An8_An8Bone_Bones.htm" />
         <HelpTOCNode Title="Components Property " Url="html/P_JeremyAnsel_Media_An8_An8Bone_Components.htm" />
         <HelpTOCNode Title="DegreesOfFreedom Property " Url="html/P_JeremyAnsel_Media_An8_An8Bone_DegreesOfFreedom.htm" />
@@ -30,29 +29,29 @@
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Bone_Name.htm" />
         <HelpTOCNode Title="Orientation Property " Url="html/P_JeremyAnsel_Media_An8_An8Bone_Orientation.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Bone Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Bone.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="25344187-d3e2-4f3d-a962-ac389a7f6d42" Title="An8Chunk Class" Url="html/T_JeremyAnsel_Media_An8_An8Chunk.htm">
+    <HelpTOCNode Id="cb72c444-bec6-4c43-9dec-b03c70dcca8a" Title="An8Chunk Class" Url="html/T_JeremyAnsel_Media_An8_An8Chunk.htm">
       <HelpTOCNode Title="An8Chunk Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Chunk__ctor.htm" />
-      <HelpTOCNode Id="8003e83c-e9b3-4590-a4e9-7ae9d6190468" Title="An8Chunk Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Chunk.htm">
+      <HelpTOCNode Id="585e3e6a-4734-4fed-be40-6a92841f46be" Title="An8Chunk Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Chunk.htm">
         <HelpTOCNode Title="GenerateText Method " Url="html/M_JeremyAnsel_Media_An8_An8Chunk_GenerateText.htm" />
         <HelpTOCNode Title="Parse Method " Url="html/M_JeremyAnsel_Media_An8_An8Chunk_Parse.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="69ec6b4c-60b4-4694-9e2c-85decc320be8" Title="An8Component Class" Url="html/T_JeremyAnsel_Media_An8_An8Component.htm">
+    <HelpTOCNode Id="022c53fa-295c-440b-9a87-91597121205f" Title="An8Component Class" Url="html/T_JeremyAnsel_Media_An8_An8Component.htm">
       <HelpTOCNode Title="An8Component Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Component__ctor.htm" />
-      <HelpTOCNode Title="An8Component Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Component.htm" />
-      <HelpTOCNode Id="c585830a-63a7-45c5-8417-1efea90826f9" Title="An8Component Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Component.htm">
+      <HelpTOCNode Id="803a3c3f-8c13-4396-84bb-b8de949c53b8" Title="An8Component Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Component.htm">
         <HelpTOCNode Title="BaseOrientation Property " Url="html/P_JeremyAnsel_Media_An8_An8Component_BaseOrientation.htm" />
         <HelpTOCNode Title="BaseOrigin Property " Url="html/P_JeremyAnsel_Media_An8_An8Component_BaseOrigin.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Component_Name.htm" />
         <HelpTOCNode Title="PivotOrientation Property " Url="html/P_JeremyAnsel_Media_An8_An8Component_PivotOrientation.htm" />
         <HelpTOCNode Title="PivotOrigin Property " Url="html/P_JeremyAnsel_Media_An8_An8Component_PivotOrigin.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Component Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Component.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="e4f8d29b-70d1-46eb-a5cf-88bc7679579e" Title="An8Cube Class" Url="html/T_JeremyAnsel_Media_An8_An8Cube.htm">
+    <HelpTOCNode Id="b0c1a1f0-0119-416f-a7c7-cb718816983c" Title="An8Cube Class" Url="html/T_JeremyAnsel_Media_An8_An8Cube.htm">
       <HelpTOCNode Title="An8Cube Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Cube__ctor.htm" />
-      <HelpTOCNode Title="An8Cube Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Cube.htm" />
-      <HelpTOCNode Id="33ab7e81-9e06-4dec-bdeb-2827fc2bedb6" Title="An8Cube Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Cube.htm">
+      <HelpTOCNode Id="75ffbfd1-21b3-407f-a62f-a0ae1877df7a" Title="An8Cube Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Cube.htm">
         <HelpTOCNode Title="DivisionsX Property " Url="html/P_JeremyAnsel_Media_An8_An8Cube_DivisionsX.htm" />
         <HelpTOCNode Title="DivisionsY Property " Url="html/P_JeremyAnsel_Media_An8_An8Cube_DivisionsY.htm" />
         <HelpTOCNode Title="DivisionsZ Property " Url="html/P_JeremyAnsel_Media_An8_An8Cube_DivisionsZ.htm" />
@@ -61,11 +60,11 @@
         <HelpTOCNode Title="ScaleY Property " Url="html/P_JeremyAnsel_Media_An8_An8Cube_ScaleY.htm" />
         <HelpTOCNode Title="ScaleZ Property " Url="html/P_JeremyAnsel_Media_An8_An8Cube_ScaleZ.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Cube Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Cube.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="7a8be5f2-ec4a-4656-a731-c660acc09d5d" Title="An8Cylinder Class" Url="html/T_JeremyAnsel_Media_An8_An8Cylinder.htm">
+    <HelpTOCNode Id="b210237a-035c-4d34-bf39-c55a1de04127" Title="An8Cylinder Class" Url="html/T_JeremyAnsel_Media_An8_An8Cylinder.htm">
       <HelpTOCNode Title="An8Cylinder Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Cylinder__ctor.htm" />
-      <HelpTOCNode Title="An8Cylinder Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Cylinder.htm" />
-      <HelpTOCNode Id="c22bff4e-b073-459c-88dc-0ff75adb2588" Title="An8Cylinder Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Cylinder.htm">
+      <HelpTOCNode Id="15ed8f29-c714-4228-9bb4-e45e72639ac5" Title="An8Cylinder Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Cylinder.htm">
         <HelpTOCNode Title="Diameter Property " Url="html/P_JeremyAnsel_Media_An8_An8Cylinder_Diameter.htm" />
         <HelpTOCNode Title="IsEndCapped Property " Url="html/P_JeremyAnsel_Media_An8_An8Cylinder_IsEndCapped.htm" />
         <HelpTOCNode Title="IsStartCapped Property " Url="html/P_JeremyAnsel_Media_An8_An8Cylinder_IsStartCapped.htm" />
@@ -74,11 +73,11 @@
         <HelpTOCNode Title="Material Property " Url="html/P_JeremyAnsel_Media_An8_An8Cylinder_Material.htm" />
         <HelpTOCNode Title="TopDiameter Property " Url="html/P_JeremyAnsel_Media_An8_An8Cylinder_TopDiameter.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Cylinder Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Cylinder.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="d93990fc-c34c-4ab4-8bd8-496f5f5f6855" Title="An8DegreeOfFreedom Class" Url="html/T_JeremyAnsel_Media_An8_An8DegreeOfFreedom.htm">
+    <HelpTOCNode Id="ebb629f9-b254-4a3f-8dbb-d93c3f975410" Title="An8DegreeOfFreedom Class" Url="html/T_JeremyAnsel_Media_An8_An8DegreeOfFreedom.htm">
       <HelpTOCNode Title="An8DegreeOfFreedom Constructor " Url="html/M_JeremyAnsel_Media_An8_An8DegreeOfFreedom__ctor.htm" />
-      <HelpTOCNode Title="An8DegreeOfFreedom Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8DegreeOfFreedom.htm" />
-      <HelpTOCNode Id="b77a0c84-7bab-45b4-950b-319001372400" Title="An8DegreeOfFreedom Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8DegreeOfFreedom.htm">
+      <HelpTOCNode Id="4aa06662-ca1a-4ffa-837d-b9c9b0fb405a" Title="An8DegreeOfFreedom Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8DegreeOfFreedom.htm">
         <HelpTOCNode Title="Axis Property " Url="html/P_JeremyAnsel_Media_An8_An8DegreeOfFreedom_Axis.htm" />
         <HelpTOCNode Title="DefaultAngle Property " Url="html/P_JeremyAnsel_Media_An8_An8DegreeOfFreedom_DefaultAngle.htm" />
         <HelpTOCNode Title="IsLocked Property " Url="html/P_JeremyAnsel_Media_An8_An8DegreeOfFreedom_IsLocked.htm" />
@@ -86,20 +85,20 @@
         <HelpTOCNode Title="MaximumAngle Property " Url="html/P_JeremyAnsel_Media_An8_An8DegreeOfFreedom_MaximumAngle.htm" />
         <HelpTOCNode Title="MinimumAngle Property " Url="html/P_JeremyAnsel_Media_An8_An8DegreeOfFreedom_MinimumAngle.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8DegreeOfFreedom Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8DegreeOfFreedom.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="471827ca-882d-4d7d-a8eb-5b5a4a3b6cf3" Title="An8Edge Class" Url="html/T_JeremyAnsel_Media_An8_An8Edge.htm">
+    <HelpTOCNode Id="cdbf742d-39db-4903-a9c0-95416fde43a5" Title="An8Edge Class" Url="html/T_JeremyAnsel_Media_An8_An8Edge.htm">
       <HelpTOCNode Title="An8Edge Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Edge__ctor.htm" />
-      <HelpTOCNode Title="An8Edge Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Edge.htm" />
-      <HelpTOCNode Id="caa7cd71-91d7-4986-8836-ebdff3a21b4c" Title="An8Edge Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Edge.htm">
+      <HelpTOCNode Id="3e023600-6fee-4baa-b1f3-1671f67eb129" Title="An8Edge Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Edge.htm">
         <HelpTOCNode Title="Index1 Property " Url="html/P_JeremyAnsel_Media_An8_An8Edge_Index1.htm" />
         <HelpTOCNode Title="Index2 Property " Url="html/P_JeremyAnsel_Media_An8_An8Edge_Index2.htm" />
         <HelpTOCNode Title="Sharpness Property " Url="html/P_JeremyAnsel_Media_An8_An8Edge_Sharpness.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Edge Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Edge.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="d1164e3d-db39-4092-8f95-49a25986ed28" Title="An8Environment Class" Url="html/T_JeremyAnsel_Media_An8_An8Environment.htm">
+    <HelpTOCNode Id="8697ae0e-9040-4e48-b12c-c27b69a1fd3d" Title="An8Environment Class" Url="html/T_JeremyAnsel_Media_An8_An8Environment.htm">
       <HelpTOCNode Title="An8Environment Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Environment__ctor.htm" />
-      <HelpTOCNode Title="An8Environment Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Environment.htm" />
-      <HelpTOCNode Id="55e6e8e8-f21a-418e-8115-d04df2f11232" Title="An8Environment Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Environment.htm">
+      <HelpTOCNode Id="f44ca3e8-4ffa-4c85-98b5-d2a37bdf6428" Title="An8Environment Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Environment.htm">
         <HelpTOCNode Title="Framerate Property " Url="html/P_JeremyAnsel_Media_An8_An8Environment_Framerate.htm" />
         <HelpTOCNode Title="GroundFloorGridSize Property " Url="html/P_JeremyAnsel_Media_An8_An8Environment_GroundFloorGridSize.htm" />
         <HelpTOCNode Title="IsAutoGridEnabled Property " Url="html/P_JeremyAnsel_Media_An8_An8Environment_IsAutoGridEnabled.htm" />
@@ -107,11 +106,11 @@
         <HelpTOCNode Title="ModelingGridSpacing Property " Url="html/P_JeremyAnsel_Media_An8_An8Environment_ModelingGridSpacing.htm" />
         <HelpTOCNode Title="SceneEditorGridSpacing Property " Url="html/P_JeremyAnsel_Media_An8_An8Environment_SceneEditorGridSpacing.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Environment Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Environment.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="0dea7628-c842-40ec-a498-927efe708279" Title="An8Face Class" Url="html/T_JeremyAnsel_Media_An8_An8Face.htm">
+    <HelpTOCNode Id="96b951e1-a20c-419a-8f33-3c7f7a3cdfdc" Title="An8Face Class" Url="html/T_JeremyAnsel_Media_An8_An8Face.htm">
       <HelpTOCNode Title="An8Face Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Face__ctor.htm" />
-      <HelpTOCNode Title="An8Face Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Face.htm" />
-      <HelpTOCNode Id="b89d3881-af58-4296-ac01-bfd92a442250" Title="An8Face Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Face.htm">
+      <HelpTOCNode Id="e0229f39-f6f0-460f-a23f-8009386b81c1" Title="An8Face Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Face.htm">
         <HelpTOCNode Title="FlatNormalIndex Property " Url="html/P_JeremyAnsel_Media_An8_An8Face_FlatNormalIndex.htm" />
         <HelpTOCNode Title="HasNormalIndexes Property " Url="html/P_JeremyAnsel_Media_An8_An8Face_HasNormalIndexes.htm" />
         <HelpTOCNode Title="HasTexCoordIndexes Property " Url="html/P_JeremyAnsel_Media_An8_An8Face_HasTexCoordIndexes.htm" />
@@ -121,25 +120,20 @@
         <HelpTOCNode Title="PointIndexes Property " Url="html/P_JeremyAnsel_Media_An8_An8Face_PointIndexes.htm" />
         <HelpTOCNode Title="TexCoordIndexes Property " Url="html/P_JeremyAnsel_Media_An8_An8Face_TexCoordIndexes.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Face Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Face.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="251ac207-1e09-4445-9042-074db5a2dd20" Title="An8Figure Class" Url="html/T_JeremyAnsel_Media_An8_An8Figure.htm">
+    <HelpTOCNode Id="505f9625-5261-4f04-8c1a-154cb824ffcc" Title="An8Figure Class" Url="html/T_JeremyAnsel_Media_An8_An8Figure.htm">
       <HelpTOCNode Title="An8Figure Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Figure__ctor.htm" />
-      <HelpTOCNode Title="An8Figure Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Figure.htm" />
-      <HelpTOCNode Id="c152dc80-7f5e-4aa4-8359-88bad9998a4a" Title="An8Figure Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Figure.htm">
+      <HelpTOCNode Id="bdd5e4de-79b2-4598-b469-8184ec9e57e6" Title="An8Figure Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Figure.htm">
         <HelpTOCNode Title="Materials Property " Url="html/P_JeremyAnsel_Media_An8_An8Figure_Materials.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Figure_Name.htm" />
         <HelpTOCNode Title="RootBone Property " Url="html/P_JeremyAnsel_Media_An8_An8Figure_RootBone.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Figure Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Figure.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="02414afd-6890-490f-b497-45df5fe40712" Title="An8File Class" Url="html/T_JeremyAnsel_Media_An8_An8File.htm">
+    <HelpTOCNode Id="1dabd6f1-90b6-464c-aa9b-09cbe64cd216" Title="An8File Class" Url="html/T_JeremyAnsel_Media_An8_An8File.htm">
       <HelpTOCNode Title="An8File Constructor " Url="html/M_JeremyAnsel_Media_An8_An8File__ctor.htm" />
-      <HelpTOCNode Id="acb08f3d-80cb-4802-b68e-41aa71d4cf6a" Title="An8File Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8File.htm">
-        <HelpTOCNode Title="FromFile Method " Url="html/M_JeremyAnsel_Media_An8_An8File_FromFile.htm" />
-        <HelpTOCNode Title="GenerateText Method " Url="html/M_JeremyAnsel_Media_An8_An8File_GenerateText.htm" />
-        <HelpTOCNode Title="Parse Method " Url="html/M_JeremyAnsel_Media_An8_An8File_Parse.htm" />
-        <HelpTOCNode Title="Save Method " Url="html/M_JeremyAnsel_Media_An8_An8File_Save.htm" />
-      </HelpTOCNode>
-      <HelpTOCNode Id="0cab4e53-ad08-45a4-a615-37d4fb2a323c" Title="An8File Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8File.htm">
+      <HelpTOCNode Id="f1a5720b-e22b-474d-9927-f7f3324d2f29" Title="An8File Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8File.htm">
         <HelpTOCNode Title="Description Property " Url="html/P_JeremyAnsel_Media_An8_An8File_Description.htm" />
         <HelpTOCNode Title="Environment Property " Url="html/P_JeremyAnsel_Media_An8_An8File_Environment.htm" />
         <HelpTOCNode Title="Figures Property " Url="html/P_JeremyAnsel_Media_An8_An8File_Figures.htm" />
@@ -148,35 +142,40 @@
         <HelpTOCNode Title="Objects Property " Url="html/P_JeremyAnsel_Media_An8_An8File_Objects.htm" />
         <HelpTOCNode Title="Textures Property " Url="html/P_JeremyAnsel_Media_An8_An8File_Textures.htm" />
       </HelpTOCNode>
-    </HelpTOCNode>
-    <HelpTOCNode Id="ee1b5d83-f539-4ce0-80b2-a8bd30d81737" Title="An8Group Class" Url="html/T_JeremyAnsel_Media_An8_An8Group.htm">
-      <HelpTOCNode Title="An8Group Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Group__ctor.htm" />
-      <HelpTOCNode Title="An8Group Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Group.htm" />
-      <HelpTOCNode Id="483f26a1-f6fe-461b-a7af-01e2e28e0694" Title="An8Group Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Group.htm">
-        <HelpTOCNode Title="Components Property " Url="html/P_JeremyAnsel_Media_An8_An8Group_Components.htm" />
+      <HelpTOCNode Id="1324d040-e715-45aa-90ff-0b17e0484fab" Title="An8File Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8File.htm">
+        <HelpTOCNode Title="FromFile Method " Url="html/M_JeremyAnsel_Media_An8_An8File_FromFile.htm" />
+        <HelpTOCNode Title="GenerateText Method " Url="html/M_JeremyAnsel_Media_An8_An8File_GenerateText.htm" />
+        <HelpTOCNode Title="Parse Method " Url="html/M_JeremyAnsel_Media_An8_An8File_Parse.htm" />
+        <HelpTOCNode Title="Save Method " Url="html/M_JeremyAnsel_Media_An8_An8File_Save.htm" />
       </HelpTOCNode>
     </HelpTOCNode>
-    <HelpTOCNode Id="7ca1e88d-2cf6-4c08-96ae-7327d9c06347" Title="An8Header Class" Url="html/T_JeremyAnsel_Media_An8_An8Header.htm">
+    <HelpTOCNode Id="ce3fe832-ba80-4c62-adb3-2f3b94d911f7" Title="An8Group Class" Url="html/T_JeremyAnsel_Media_An8_An8Group.htm">
+      <HelpTOCNode Title="An8Group Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Group__ctor.htm" />
+      <HelpTOCNode Id="4221aed0-f753-4f2e-bffc-5897635d5a36" Title="An8Group Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Group.htm">
+        <HelpTOCNode Title="Components Property " Url="html/P_JeremyAnsel_Media_An8_An8Group_Components.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="An8Group Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Group.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="650d7357-04b6-4608-9852-b199a9692bf9" Title="An8Header Class" Url="html/T_JeremyAnsel_Media_An8_An8Header.htm">
       <HelpTOCNode Title="An8Header Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Header__ctor.htm" />
-      <HelpTOCNode Title="An8Header Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Header.htm" />
-      <HelpTOCNode Id="37f5b59b-caa9-4c7b-a1fb-46f37639a66d" Title="An8Header Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Header.htm">
+      <HelpTOCNode Id="4c791057-629a-4faf-848d-a01e60b3518b" Title="An8Header Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Header.htm">
         <HelpTOCNode Title="Build Property " Url="html/P_JeremyAnsel_Media_An8_An8Header_Build.htm" />
         <HelpTOCNode Title="Version Property " Url="html/P_JeremyAnsel_Media_An8_An8Header_Version.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Header Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Header.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="9cf4992d-0719-493e-aaec-385536be8b86" Title="An8Image Class" Url="html/T_JeremyAnsel_Media_An8_An8Image.htm">
+    <HelpTOCNode Id="b6fb77d7-0292-4a86-804c-0005ad70eed7" Title="An8Image Class" Url="html/T_JeremyAnsel_Media_An8_An8Image.htm">
       <HelpTOCNode Title="An8Image Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Image__ctor.htm" />
-      <HelpTOCNode Title="An8Image Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Image.htm" />
-      <HelpTOCNode Id="c15a506e-1df2-4438-b7a0-7065c4afa193" Title="An8Image Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Image.htm">
+      <HelpTOCNode Id="080ef610-0980-4f7c-9d7a-f10dfcb8f950" Title="An8Image Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Image.htm">
         <HelpTOCNode Title="FileName Property " Url="html/P_JeremyAnsel_Media_An8_An8Image_FileName.htm" />
         <HelpTOCNode Title="Height Property " Url="html/P_JeremyAnsel_Media_An8_An8Image_Height.htm" />
         <HelpTOCNode Title="Width Property " Url="html/P_JeremyAnsel_Media_An8_An8Image_Width.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Image Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Image.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="af9abd19-943c-4635-90e7-7cafba8816f3" Title="An8Influence Class" Url="html/T_JeremyAnsel_Media_An8_An8Influence.htm">
+    <HelpTOCNode Id="8b72db2d-b93b-4dfb-b140-57ad7c9d1076" Title="An8Influence Class" Url="html/T_JeremyAnsel_Media_An8_An8Influence.htm">
       <HelpTOCNode Title="An8Influence Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Influence__ctor.htm" />
-      <HelpTOCNode Title="An8Influence Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Influence.htm" />
-      <HelpTOCNode Id="0d4c3c97-6b6a-4740-8b41-43dfe344e304" Title="An8Influence Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Influence.htm">
+      <HelpTOCNode Id="043aa530-8669-44c8-8ea0-62322aef355b" Title="An8Influence Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Influence.htm">
         <HelpTOCNode Title="LowerEndCenter Property " Url="html/P_JeremyAnsel_Media_An8_An8Influence_LowerEndCenter.htm" />
         <HelpTOCNode Title="LowerEndInnerRadius Property " Url="html/P_JeremyAnsel_Media_An8_An8Influence_LowerEndInnerRadius.htm" />
         <HelpTOCNode Title="LowerEndOuterRadius Property " Url="html/P_JeremyAnsel_Media_An8_An8Influence_LowerEndOuterRadius.htm" />
@@ -184,48 +183,48 @@
         <HelpTOCNode Title="UpperEndInnerRadius Property " Url="html/P_JeremyAnsel_Media_An8_An8Influence_UpperEndInnerRadius.htm" />
         <HelpTOCNode Title="UpperEndOuterRadius Property " Url="html/P_JeremyAnsel_Media_An8_An8Influence_UpperEndOuterRadius.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Influence Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Influence.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="b3f5fc99-fd7a-47a2-b4dc-dff893fcd673" Title="An8Knot Class" Url="html/T_JeremyAnsel_Media_An8_An8Knot.htm">
+    <HelpTOCNode Id="678ae7df-d742-4530-ada5-144c754151a9" Title="An8Knot Class" Url="html/T_JeremyAnsel_Media_An8_An8Knot.htm">
       <HelpTOCNode Title="An8Knot Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Knot__ctor.htm" />
-      <HelpTOCNode Title="An8Knot Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Knot.htm" />
-      <HelpTOCNode Id="cccee180-9d92-4e03-8710-3a860f761252" Title="An8Knot Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Knot.htm">
+      <HelpTOCNode Id="0a03b1b2-662f-4c66-b1c5-86471b0f4d54" Title="An8Knot Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Knot.htm">
         <HelpTOCNode Title="ForwardDirection Property " Url="html/P_JeremyAnsel_Media_An8_An8Knot_ForwardDirection.htm" />
         <HelpTOCNode Title="IsCorner Property " Url="html/P_JeremyAnsel_Media_An8_An8Knot_IsCorner.htm" />
         <HelpTOCNode Title="Location Property " Url="html/P_JeremyAnsel_Media_An8_An8Knot_Location.htm" />
         <HelpTOCNode Title="ReverseDirection Property " Url="html/P_JeremyAnsel_Media_An8_An8Knot_ReverseDirection.htm" />
         <HelpTOCNode Title="SegmentsCount Property " Url="html/P_JeremyAnsel_Media_An8_An8Knot_SegmentsCount.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Knot Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Knot.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="0626583c-6533-4ec4-aed8-72fda6d5085e" Title="An8LongLat Class" Url="html/T_JeremyAnsel_Media_An8_An8LongLat.htm">
+    <HelpTOCNode Id="09ac206d-a9ec-4996-ba78-99d6c2e0caaf" Title="An8LongLat Class" Url="html/T_JeremyAnsel_Media_An8_An8LongLat.htm">
       <HelpTOCNode Title="An8LongLat Constructor " Url="html/M_JeremyAnsel_Media_An8_An8LongLat__ctor.htm" />
-      <HelpTOCNode Title="An8LongLat Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8LongLat.htm" />
-      <HelpTOCNode Id="f9cecbe7-fdc0-4422-8c74-9addc4380253" Title="An8LongLat Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8LongLat.htm">
+      <HelpTOCNode Id="45b47852-547f-4d36-b92a-99479526e6bb" Title="An8LongLat Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8LongLat.htm">
         <HelpTOCNode Title="HorizontalDivisions Property " Url="html/P_JeremyAnsel_Media_An8_An8LongLat_HorizontalDivisions.htm" />
         <HelpTOCNode Title="VerticalDivisions Property " Url="html/P_JeremyAnsel_Media_An8_An8LongLat_VerticalDivisions.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8LongLat Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8LongLat.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="d218598c-f73d-4121-918e-a04ea31f6d96" Title="An8Map Class" Url="html/T_JeremyAnsel_Media_An8_An8Map.htm">
+    <HelpTOCNode Id="0e4e98ed-2119-4565-9a6d-8a353e1d04d3" Title="An8Map Class" Url="html/T_JeremyAnsel_Media_An8_An8Map.htm">
       <HelpTOCNode Title="An8Map Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Map__ctor.htm" />
-      <HelpTOCNode Title="An8Map Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Map.htm" />
-      <HelpTOCNode Id="49cda31a-eacb-419b-9df6-397fbe2f0776" Title="An8Map Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Map.htm">
+      <HelpTOCNode Id="d088fd5b-4c37-43c2-a2c5-0dcffa4c44af" Title="An8Map Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Map.htm">
         <HelpTOCNode Title="Kind Property " Url="html/P_JeremyAnsel_Media_An8_An8Map_Kind.htm" />
         <HelpTOCNode Title="TextureName Property " Url="html/P_JeremyAnsel_Media_An8_An8Map_TextureName.htm" />
         <HelpTOCNode Title="TextureParams Property " Url="html/P_JeremyAnsel_Media_An8_An8Map_TextureParams.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Map Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Map.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="0afb2191-c727-4410-9d91-68b9695942ab" Title="An8Material Class" Url="html/T_JeremyAnsel_Media_An8_An8Material.htm">
+    <HelpTOCNode Id="7bc8e6f6-9e90-4055-8c96-3448ad5d9e0b" Title="An8Material Class" Url="html/T_JeremyAnsel_Media_An8_An8Material.htm">
       <HelpTOCNode Title="An8Material Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Material__ctor.htm" />
-      <HelpTOCNode Title="An8Material Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Material.htm" />
-      <HelpTOCNode Id="b4fea401-ee97-4f1b-91fe-30b07f86fc01" Title="An8Material Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Material.htm">
+      <HelpTOCNode Id="254a2b50-f1d0-48eb-98cc-30ddd25f5a67" Title="An8Material Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Material.htm">
         <HelpTOCNode Title="BackSurface Property " Url="html/P_JeremyAnsel_Media_An8_An8Material_BackSurface.htm" />
         <HelpTOCNode Title="FrontSurface Property " Url="html/P_JeremyAnsel_Media_An8_An8Material_FrontSurface.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Material_Name.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Material Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Material.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="f0221819-68f7-4a82-85be-e0f8e0de928b" Title="An8MaterialColor Class" Url="html/T_JeremyAnsel_Media_An8_An8MaterialColor.htm">
+    <HelpTOCNode Id="315c8744-e77f-4be9-97ae-0f180ffd9bcc" Title="An8MaterialColor Class" Url="html/T_JeremyAnsel_Media_An8_An8MaterialColor.htm">
       <HelpTOCNode Title="An8MaterialColor Constructor " Url="html/M_JeremyAnsel_Media_An8_An8MaterialColor__ctor.htm" />
-      <HelpTOCNode Title="An8MaterialColor Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8MaterialColor.htm" />
-      <HelpTOCNode Id="f87ba34a-669d-4f84-b606-b9f6b2708c46" Title="An8MaterialColor Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8MaterialColor.htm">
+      <HelpTOCNode Id="3a66ea4e-25bf-42a3-a122-54555a1667a5" Title="An8MaterialColor Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8MaterialColor.htm">
         <HelpTOCNode Title="Blue Property " Url="html/P_JeremyAnsel_Media_An8_An8MaterialColor_Blue.htm" />
         <HelpTOCNode Title="Green Property " Url="html/P_JeremyAnsel_Media_An8_An8MaterialColor_Green.htm" />
         <HelpTOCNode Title="Red Property " Url="html/P_JeremyAnsel_Media_An8_An8MaterialColor_Red.htm" />
@@ -233,11 +232,11 @@
         <HelpTOCNode Title="TextureParams Property " Url="html/P_JeremyAnsel_Media_An8_An8MaterialColor_TextureParams.htm" />
         <HelpTOCNode Title="WeightingFactor Property " Url="html/P_JeremyAnsel_Media_An8_An8MaterialColor_WeightingFactor.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8MaterialColor Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8MaterialColor.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="33923e61-3465-4ad1-a741-3f3273faac02" Title="An8Mesh Class" Url="html/T_JeremyAnsel_Media_An8_An8Mesh.htm">
+    <HelpTOCNode Id="9b772632-5eb7-4931-9c7a-6c04044c3baf" Title="An8Mesh Class" Url="html/T_JeremyAnsel_Media_An8_An8Mesh.htm">
       <HelpTOCNode Title="An8Mesh Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Mesh__ctor.htm" />
-      <HelpTOCNode Title="An8Mesh Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Mesh.htm" />
-      <HelpTOCNode Id="0b6f4b06-7de2-4fdf-9e00-6f4a5b4f2362" Title="An8Mesh Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Mesh.htm">
+      <HelpTOCNode Id="7f81a276-5f1d-4e49-88f3-d5084904570e" Title="An8Mesh Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Mesh.htm">
         <HelpTOCNode Title="Edges Property " Url="html/P_JeremyAnsel_Media_An8_An8Mesh_Edges.htm" />
         <HelpTOCNode Title="Faces Property " Url="html/P_JeremyAnsel_Media_An8_An8Mesh_Faces.htm" />
         <HelpTOCNode Title="Material Property " Url="html/P_JeremyAnsel_Media_An8_An8Mesh_Material.htm" />
@@ -247,85 +246,85 @@
         <HelpTOCNode Title="SmoothAngleThreshold Property " Url="html/P_JeremyAnsel_Media_An8_An8Mesh_SmoothAngleThreshold.htm" />
         <HelpTOCNode Title="TexCoords Property " Url="html/P_JeremyAnsel_Media_An8_An8Mesh_TexCoords.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Mesh Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Mesh.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="930af38e-1c7d-4091-b64e-ac56400b8cf2" Title="An8Method Class" Url="html/T_JeremyAnsel_Media_An8_An8Method.htm">
+    <HelpTOCNode Id="881eafb4-b525-466a-9068-c7df2e969a6c" Title="An8Method Class" Url="html/T_JeremyAnsel_Media_An8_An8Method.htm">
       <HelpTOCNode Title="An8Method Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Method__ctor.htm" />
-      <HelpTOCNode Title="An8Method Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Method.htm" />
-      <HelpTOCNode Id="22bc981c-7063-4089-ba4a-883c3d350fab" Title="An8Method Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Method.htm">
+      <HelpTOCNode Id="86264cf7-1a4d-46ce-8176-a30d8f28a8f9" Title="An8Method Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Method.htm">
         <HelpTOCNode Title="Kind Property " Url="html/P_JeremyAnsel_Media_An8_An8Method_Kind.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Method_Name.htm" />
         <HelpTOCNode Title="Parameters Property " Url="html/P_JeremyAnsel_Media_An8_An8Method_Parameters.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Method Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Method.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="5ca6752b-3146-46fc-a3c5-782f12841fd1" Title="An8Modifier Class" Url="html/T_JeremyAnsel_Media_An8_An8Modifier.htm">
+    <HelpTOCNode Id="2b366fb9-cf6b-4acc-8514-ef9369f5dcb4" Title="An8Modifier Class" Url="html/T_JeremyAnsel_Media_An8_An8Modifier.htm">
       <HelpTOCNode Title="An8Modifier Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Modifier__ctor.htm" />
-      <HelpTOCNode Title="An8Modifier Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Modifier.htm" />
-      <HelpTOCNode Id="34b10fc0-5e65-4dff-b60b-cfab8f92c17b" Title="An8Modifier Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Modifier.htm">
+      <HelpTOCNode Id="b153e825-3f44-4723-a48f-eeddbbf04768" Title="An8Modifier Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Modifier.htm">
         <HelpTOCNode Title="Component Property " Url="html/P_JeremyAnsel_Media_An8_An8Modifier_Component.htm" />
         <HelpTOCNode Title="Diameter Property " Url="html/P_JeremyAnsel_Media_An8_An8Modifier_Diameter.htm" />
         <HelpTOCNode Title="Length Property " Url="html/P_JeremyAnsel_Media_An8_An8Modifier_Length.htm" />
         <HelpTOCNode Title="Method Property " Url="html/P_JeremyAnsel_Media_An8_An8Modifier_Method.htm" />
         <HelpTOCNode Title="SegmentsCount Property " Url="html/P_JeremyAnsel_Media_An8_An8Modifier_SegmentsCount.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Modifier Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Modifier.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="082c56a7-378c-4454-a664-c434ad8d6c5a" Title="An8NamedObject Class" Url="html/T_JeremyAnsel_Media_An8_An8NamedObject.htm">
+    <HelpTOCNode Id="f68a4e13-211e-44f1-be9e-376394685bc2" Title="An8NamedObject Class" Url="html/T_JeremyAnsel_Media_An8_An8NamedObject.htm">
       <HelpTOCNode Title="An8NamedObject Constructor " Url="html/M_JeremyAnsel_Media_An8_An8NamedObject__ctor.htm" />
-      <HelpTOCNode Title="An8NamedObject Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8NamedObject.htm" />
-      <HelpTOCNode Id="ab2af564-312e-4451-b920-a5a9ce3c3509" Title="An8NamedObject Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8NamedObject.htm">
+      <HelpTOCNode Id="ec1ec49b-eedb-4b4a-aa92-032ca095c405" Title="An8NamedObject Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8NamedObject.htm">
         <HelpTOCNode Title="Material Property " Url="html/P_JeremyAnsel_Media_An8_An8NamedObject_Material.htm" />
         <HelpTOCNode Title="ObjectName Property " Url="html/P_JeremyAnsel_Media_An8_An8NamedObject_ObjectName.htm" />
         <HelpTOCNode Title="WeightedBy Property " Url="html/P_JeremyAnsel_Media_An8_An8NamedObject_WeightedBy.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8NamedObject Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8NamedObject.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="5a3df93c-dc86-40d1-8e71-88828cb8c596" Title="An8Object Class" Url="html/T_JeremyAnsel_Media_An8_An8Object.htm">
+    <HelpTOCNode Id="ed091efc-5b3a-4e09-b066-bfafa96e5273" Title="An8Object Class" Url="html/T_JeremyAnsel_Media_An8_An8Object.htm">
       <HelpTOCNode Title="An8Object Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Object__ctor.htm" />
-      <HelpTOCNode Title="An8Object Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Object.htm" />
-      <HelpTOCNode Id="66b0c1dd-4637-4cc5-823b-d1e70fba0317" Title="An8Object Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Object.htm">
+      <HelpTOCNode Id="df32390e-55c1-4abe-b736-f0a57b175680" Title="An8Object Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Object.htm">
         <HelpTOCNode Title="Components Property " Url="html/P_JeremyAnsel_Media_An8_An8Object_Components.htm" />
         <HelpTOCNode Title="Materials Property " Url="html/P_JeremyAnsel_Media_An8_An8Object_Materials.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Object_Name.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Object Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Object.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="6763402d-5b0f-4c64-95fd-61182e15180e" Title="An8Path Class" Url="html/T_JeremyAnsel_Media_An8_An8Path.htm">
+    <HelpTOCNode Id="d604b849-fac4-42ea-8a25-b95c4bb247b7" Title="An8Path Class" Url="html/T_JeremyAnsel_Media_An8_An8Path.htm">
       <HelpTOCNode Title="An8Path Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Path__ctor.htm" />
-      <HelpTOCNode Title="An8Path Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Path.htm" />
-      <HelpTOCNode Id="f4ebe0d9-aeb8-4404-9eba-b3d5de3e1b92" Title="An8Path Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Path.htm">
+      <HelpTOCNode Id="8299b795-576a-42f0-afc4-beafb0473deb" Title="An8Path Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Path.htm">
         <HelpTOCNode Title="IsExtendable Property " Url="html/P_JeremyAnsel_Media_An8_An8Path_IsExtendable.htm" />
         <HelpTOCNode Title="Splines Property " Url="html/P_JeremyAnsel_Media_An8_An8Path_Splines.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Path Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Path.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="d2030781-2787-40c5-951d-07a12a0f4e69" Title="An8Point Class" Url="html/T_JeremyAnsel_Media_An8_An8Point.htm">
+    <HelpTOCNode Id="e0b4054d-064f-407c-9493-7f935e68e36f" Title="An8Point Class" Url="html/T_JeremyAnsel_Media_An8_An8Point.htm">
       <HelpTOCNode Title="An8Point Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Point__ctor.htm" />
-      <HelpTOCNode Title="An8Point Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Point.htm" />
-      <HelpTOCNode Id="dc844ebc-8ef0-428f-a73f-6c01027e550c" Title="An8Point Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Point.htm">
+      <HelpTOCNode Id="5583032f-40a9-4970-8cb1-0338939b5cb4" Title="An8Point Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Point.htm">
         <HelpTOCNode Title="X Property " Url="html/P_JeremyAnsel_Media_An8_An8Point_X.htm" />
         <HelpTOCNode Title="Y Property " Url="html/P_JeremyAnsel_Media_An8_An8Point_Y.htm" />
         <HelpTOCNode Title="Z Property " Url="html/P_JeremyAnsel_Media_An8_An8Point_Z.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Point Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Point.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="b0a21559-6fce-4fb9-974f-b1c25b025cd7" Title="An8Quaternion Class" Url="html/T_JeremyAnsel_Media_An8_An8Quaternion.htm">
+    <HelpTOCNode Id="df13139b-4a4d-431d-ba8f-a6a10c5939c5" Title="An8Quaternion Class" Url="html/T_JeremyAnsel_Media_An8_An8Quaternion.htm">
       <HelpTOCNode Title="An8Quaternion Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Quaternion__ctor.htm" />
-      <HelpTOCNode Title="An8Quaternion Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Quaternion.htm" />
-      <HelpTOCNode Id="c98c910d-e653-48bc-822a-1570bef46919" Title="An8Quaternion Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Quaternion.htm">
+      <HelpTOCNode Id="ab9227cb-bfc2-4480-9188-41a17a905403" Title="An8Quaternion Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Quaternion.htm">
         <HelpTOCNode Title="W Property " Url="html/P_JeremyAnsel_Media_An8_An8Quaternion_W.htm" />
         <HelpTOCNode Title="X Property " Url="html/P_JeremyAnsel_Media_An8_An8Quaternion_X.htm" />
         <HelpTOCNode Title="Y Property " Url="html/P_JeremyAnsel_Media_An8_An8Quaternion_Y.htm" />
         <HelpTOCNode Title="Z Property " Url="html/P_JeremyAnsel_Media_An8_An8Quaternion_Z.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Quaternion Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Quaternion.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="2c10e1e4-45c8-4f17-bcf2-47df1a6519ff" Title="An8Sphere Class" Url="html/T_JeremyAnsel_Media_An8_An8Sphere.htm">
+    <HelpTOCNode Id="1eb9a5da-9abb-4cfe-acf2-d57d30922baf" Title="An8Sphere Class" Url="html/T_JeremyAnsel_Media_An8_An8Sphere.htm">
       <HelpTOCNode Title="An8Sphere Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Sphere__ctor.htm" />
-      <HelpTOCNode Title="An8Sphere Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Sphere.htm" />
-      <HelpTOCNode Id="cc48d045-3e48-4a2c-a23c-1b15c96051f3" Title="An8Sphere Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Sphere.htm">
+      <HelpTOCNode Id="f01cdad0-c014-4371-95c8-7b035976dae3" Title="An8Sphere Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Sphere.htm">
         <HelpTOCNode Title="Geodesic Property " Url="html/P_JeremyAnsel_Media_An8_An8Sphere_Geodesic.htm" />
         <HelpTOCNode Title="LongLatDivisions Property " Url="html/P_JeremyAnsel_Media_An8_An8Sphere_LongLatDivisions.htm" />
         <HelpTOCNode Title="Material Property " Url="html/P_JeremyAnsel_Media_An8_An8Sphere_Material.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Sphere Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Sphere.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="c1f26057-0ffb-4e37-b7c5-56adb902e405" Title="An8Subdivision Class" Url="html/T_JeremyAnsel_Media_An8_An8Subdivision.htm">
+    <HelpTOCNode Id="a708f155-6a64-4124-b11b-5d2f692a4d4c" Title="An8Subdivision Class" Url="html/T_JeremyAnsel_Media_An8_An8Subdivision.htm">
       <HelpTOCNode Title="An8Subdivision Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Subdivision__ctor.htm" />
-      <HelpTOCNode Title="An8Subdivision Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Subdivision.htm" />
-      <HelpTOCNode Id="78d2a54c-1e2a-4acf-b6bc-4d117f74ce61" Title="An8Subdivision Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Subdivision.htm">
+      <HelpTOCNode Id="4afe4aff-19ee-465f-be40-77589efcc14a" Title="An8Subdivision Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Subdivision.htm">
         <HelpTOCNode Title="Divisions Property " Url="html/P_JeremyAnsel_Media_An8_An8Subdivision_Divisions.htm" />
         <HelpTOCNode Title="Edges Property " Url="html/P_JeremyAnsel_Media_An8_An8Subdivision_Edges.htm" />
         <HelpTOCNode Title="Faces Property " Url="html/P_JeremyAnsel_Media_An8_An8Subdivision_Faces.htm" />
@@ -337,11 +336,11 @@
         <HelpTOCNode Title="SmoothAngleThreshold Property " Url="html/P_JeremyAnsel_Media_An8_An8Subdivision_SmoothAngleThreshold.htm" />
         <HelpTOCNode Title="TexCoords Property " Url="html/P_JeremyAnsel_Media_An8_An8Subdivision_TexCoords.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Subdivision Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Subdivision.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="5112d1f1-2fde-49c9-8433-1e48049088f5" Title="An8Surface Class" Url="html/T_JeremyAnsel_Media_An8_An8Surface.htm">
+    <HelpTOCNode Id="c50fb946-2fb4-44c4-9ad6-c93e71ab64d7" Title="An8Surface Class" Url="html/T_JeremyAnsel_Media_An8_An8Surface.htm">
       <HelpTOCNode Title="An8Surface Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Surface__ctor.htm" />
-      <HelpTOCNode Title="An8Surface Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Surface.htm" />
-      <HelpTOCNode Id="ed431fe4-1ba7-4541-bbbb-f8b814317973" Title="An8Surface Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Surface.htm">
+      <HelpTOCNode Id="d62265a3-46ad-4cd8-9c3d-ab1ecf74d8ae" Title="An8Surface Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Surface.htm">
         <HelpTOCNode Title="Alpha Property " Url="html/P_JeremyAnsel_Media_An8_An8Surface_Alpha.htm" />
         <HelpTOCNode Title="Ambiant Property " Url="html/P_JeremyAnsel_Media_An8_An8Surface_Ambiant.htm" />
         <HelpTOCNode Title="Brilliance Property " Url="html/P_JeremyAnsel_Media_An8_An8Surface_Brilliance.htm" />
@@ -352,44 +351,45 @@
         <HelpTOCNode Title="PhongRoughness Property " Url="html/P_JeremyAnsel_Media_An8_An8Surface_PhongRoughness.htm" />
         <HelpTOCNode Title="Specular Property " Url="html/P_JeremyAnsel_Media_An8_An8Surface_Specular.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Surface Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Surface.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="f5a2752a-7bbc-43c9-b19f-b9eadf95e319" Title="An8TexCoord Class" Url="html/T_JeremyAnsel_Media_An8_An8TexCoord.htm">
+    <HelpTOCNode Id="c2d18959-bbc9-4f0a-be4c-d6b0f528c653" Title="An8TexCoord Class" Url="html/T_JeremyAnsel_Media_An8_An8TexCoord.htm">
       <HelpTOCNode Title="An8TexCoord Constructor " Url="html/M_JeremyAnsel_Media_An8_An8TexCoord__ctor.htm" />
-      <HelpTOCNode Title="An8TexCoord Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8TexCoord.htm" />
-      <HelpTOCNode Id="b18634d0-e700-44a0-a6f4-b09ba165b753" Title="An8TexCoord Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8TexCoord.htm">
+      <HelpTOCNode Id="aabe7c54-777a-40ab-ad90-3bfa19cfdeeb" Title="An8TexCoord Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8TexCoord.htm">
         <HelpTOCNode Title="U Property " Url="html/P_JeremyAnsel_Media_An8_An8TexCoord_U.htm" />
         <HelpTOCNode Title="V Property " Url="html/P_JeremyAnsel_Media_An8_An8TexCoord_V.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8TexCoord Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8TexCoord.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="7c5d1705-cbe1-4aad-bc56-70b2ff5c9105" Title="An8TextCom Class" Url="html/T_JeremyAnsel_Media_An8_An8TextCom.htm">
+    <HelpTOCNode Id="c5ec6b3b-2b8a-4a1c-a150-eed22d8e5e8f" Title="An8TextCom Class" Url="html/T_JeremyAnsel_Media_An8_An8TextCom.htm">
       <HelpTOCNode Title="An8TextCom Constructor " Url="html/M_JeremyAnsel_Media_An8_An8TextCom__ctor.htm" />
-      <HelpTOCNode Title="An8TextCom Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8TextCom.htm" />
-      <HelpTOCNode Id="c0a78ce9-2695-4bfc-8e4d-d7750b2a62f9" Title="An8TextCom Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8TextCom.htm">
+      <HelpTOCNode Id="40daa17c-2664-4a5d-98a7-e8618bec8d97" Title="An8TextCom Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8TextCom.htm">
         <HelpTOCNode Title="FontFamily Property " Url="html/P_JeremyAnsel_Media_An8_An8TextCom_FontFamily.htm" />
         <HelpTOCNode Title="FontSize Property " Url="html/P_JeremyAnsel_Media_An8_An8TextCom_FontSize.htm" />
         <HelpTOCNode Title="IsBold Property " Url="html/P_JeremyAnsel_Media_An8_An8TextCom_IsBold.htm" />
         <HelpTOCNode Title="IsItalic Property " Url="html/P_JeremyAnsel_Media_An8_An8TextCom_IsItalic.htm" />
         <HelpTOCNode Title="Text Property " Url="html/P_JeremyAnsel_Media_An8_An8TextCom_Text.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8TextCom Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8TextCom.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="ce7102b9-46d9-4007-9d96-820460650348" Title="An8Texture Class" Url="html/T_JeremyAnsel_Media_An8_An8Texture.htm">
+    <HelpTOCNode Id="772b2353-e943-40b0-9c12-27c9bb75bebb" Title="An8Texture Class" Url="html/T_JeremyAnsel_Media_An8_An8Texture.htm">
       <HelpTOCNode Title="An8Texture Constructor " Url="html/M_JeremyAnsel_Media_An8_An8Texture__ctor.htm" />
-      <HelpTOCNode Title="An8Texture Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Texture.htm" />
-      <HelpTOCNode Id="0aaba683-f55d-45e3-85c2-0768ca4143f1" Title="An8Texture Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Texture.htm">
+      <HelpTOCNode Id="40bb26a9-83d8-460c-b931-964a6f73d50d" Title="An8Texture Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8Texture.htm">
         <HelpTOCNode Title="Files Property " Url="html/P_JeremyAnsel_Media_An8_An8Texture_Files.htm" />
         <HelpTOCNode Title="IsCubeMap Property " Url="html/P_JeremyAnsel_Media_An8_An8Texture_IsCubeMap.htm" />
         <HelpTOCNode Title="IsInverted Property " Url="html/P_JeremyAnsel_Media_An8_An8Texture_IsInverted.htm" />
         <HelpTOCNode Title="Name Property " Url="html/P_JeremyAnsel_Media_An8_An8Texture_Name.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8Texture Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8Texture.htm" />
     </HelpTOCNode>
-    <HelpTOCNode Id="cff782ec-ba28-4915-83a7-2340dcf9d94e" Title="An8TextureParams Class" Url="html/T_JeremyAnsel_Media_An8_An8TextureParams.htm">
+    <HelpTOCNode Id="f7d13a2b-7388-41c0-8703-fd67b4e1c053" Title="An8TextureParams Class" Url="html/T_JeremyAnsel_Media_An8_An8TextureParams.htm">
       <HelpTOCNode Title="An8TextureParams Constructor " Url="html/M_JeremyAnsel_Media_An8_An8TextureParams__ctor.htm" />
-      <HelpTOCNode Title="An8TextureParams Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8TextureParams.htm" />
-      <HelpTOCNode Id="6de40fdb-292c-41fa-b9e3-fe9d22e04136" Title="An8TextureParams Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8TextureParams.htm">
+      <HelpTOCNode Id="6a705ceb-9903-4b72-939e-f87043636b57" Title="An8TextureParams Properties" Url="html/Properties_T_JeremyAnsel_Media_An8_An8TextureParams.htm">
         <HelpTOCNode Title="AlphaMode Property " Url="html/P_JeremyAnsel_Media_An8_An8TextureParams_AlphaMode.htm" />
         <HelpTOCNode Title="BlendMode Property " Url="html/P_JeremyAnsel_Media_An8_An8TextureParams_BlendMode.htm" />
         <HelpTOCNode Title="Percent Property " Url="html/P_JeremyAnsel_Media_An8_An8TextureParams_Percent.htm" />
       </HelpTOCNode>
+      <HelpTOCNode Title="An8TextureParams Methods" Url="html/Methods_T_JeremyAnsel_Media_An8_An8TextureParams.htm" />
     </HelpTOCNode>
   </HelpTOCNode>
 </HelpTOC>
