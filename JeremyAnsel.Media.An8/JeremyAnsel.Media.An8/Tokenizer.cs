@@ -41,7 +41,11 @@ namespace JeremyAnsel.Media.An8
 
             if (string.IsNullOrEmpty(text))
             {
+#if NET40
                 return new string[0];
+#else
+                return Array.Empty<string>();
+#endif
             }
 
             bool isInString = false;
@@ -187,6 +191,7 @@ namespace JeremyAnsel.Media.An8
         /// <param name="tokens">The tokens.</param>
         /// <param name="startIndex">The start index.</param>
         /// <returns>A chunk.</returns>
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static An8ChunkTokens GetChunkTokens(string[] tokens, int startIndex)
         {
             string chunkIdent = tokens[startIndex];
@@ -233,6 +238,7 @@ namespace JeremyAnsel.Media.An8
         /// <param name="tokens">The tokens.</param>
         /// <param name="index">The index.</param>
         [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Justification = "Reviewed")]
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static void ReadOpenChunk(string[] tokens, ref int index)
         {
             if (!string.Equals(tokens[index++], "{", StringComparison.Ordinal))
@@ -266,6 +272,7 @@ namespace JeremyAnsel.Media.An8
         /// <param name="tokens">The tokens.</param>
         /// <param name="index">The index.</param>
         [SuppressMessage("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode", Justification = "Reviewed")]
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static void ReadCloseChunk(string[] tokens, ref int index)
         {
             if (!Tokenizer.IsClosedChunk(tokens, ref index))
@@ -279,6 +286,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="tokens">The tokens.</param>
         /// <param name="index">The index.</param>
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static void ReadOpenData(string[] tokens, ref int index)
         {
             if (!string.Equals(tokens[index++], "(", StringComparison.Ordinal))
@@ -310,6 +318,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="tokens">The tokens.</param>
         /// <param name="index">The index.</param>
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static void ReadCloseData(string[] tokens, ref int index)
         {
             if (!Tokenizer.IsClosedData(tokens, ref index))
@@ -324,6 +333,7 @@ namespace JeremyAnsel.Media.An8
         /// <param name="tokens">The tokens.</param>
         /// <param name="index">The index.</param>
         /// <returns>A string.</returns>
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static string ReadString(string[] tokens, ref int index)
         {
             string str = tokens[index++];
@@ -342,6 +352,7 @@ namespace JeremyAnsel.Media.An8
         /// <param name="tokens">The tokens.</param>
         /// <param name="index">The index.</param>
         /// <returns>A unicode string.</returns>
+        [SuppressMessage("Globalization", "CA1303:Ne pas passer de littéraux en paramètres localisés", Justification = "Reviewed.")]
         public static string ReadUnicodeString(string[] tokens, ref int index)
         {
             //// TODO: replace unicode characters

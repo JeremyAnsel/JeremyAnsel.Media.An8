@@ -43,7 +43,7 @@ namespace JeremyAnsel.Media.An8
             {
                 if (string.IsNullOrWhiteSpace(value))
                 {
-                    throw new ArgumentOutOfRangeException("value");
+                    throw new ArgumentOutOfRangeException(nameof(value));
                 }
 
                 this.kind = value;

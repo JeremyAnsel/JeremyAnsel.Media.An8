@@ -54,17 +54,17 @@ group { }
 ");
 
             Assert.Equal(11, group.Components.Count);
-            Assert.IsType(typeof(An8Mesh), group.Components[0]);
-            Assert.IsType(typeof(An8Sphere), group.Components[1]);
-            Assert.IsType(typeof(An8Cylinder), group.Components[2]);
-            Assert.IsType(typeof(An8Cube), group.Components[3]);
-            Assert.IsType(typeof(An8Subdivision), group.Components[4]);
-            Assert.IsType(typeof(An8Path), group.Components[5]);
-            Assert.IsType(typeof(An8TextCom), group.Components[6]);
-            Assert.IsType(typeof(An8Modifier), group.Components[7]);
-            Assert.IsType(typeof(An8Image), group.Components[8]);
-            Assert.IsType(typeof(An8NamedObject), group.Components[9]);
-            Assert.IsType(typeof(An8Group), group.Components[10]);
+            Assert.IsType<An8Mesh>(group.Components[0]);
+            Assert.IsType<An8Sphere>(group.Components[1]);
+            Assert.IsType<An8Cylinder>(group.Components[2]);
+            Assert.IsType<An8Cube>(group.Components[3]);
+            Assert.IsType<An8Subdivision>(group.Components[4]);
+            Assert.IsType<An8Path>(group.Components[5]);
+            Assert.IsType<An8TextCom>(group.Components[6]);
+            Assert.IsType<An8Modifier>(group.Components[7]);
+            Assert.IsType<An8Image>(group.Components[8]);
+            Assert.IsType<An8NamedObject>(group.Components[9]);
+            Assert.IsType<An8Group>(group.Components[10]);
         }
 
         /// <summary>
