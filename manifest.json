@@ -1,0 +1,581 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/projects/jeremyansel-media-an8/JeremyAnsel.Media.An8/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8AlphaMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8AlphaMode.html",
+          "hash": "W0craJQ449WoWQiZprnIPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Bezier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Bezier.html",
+          "hash": "DeFEFqkrXxc31iv80KMViw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8BlendMode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8BlendMode.html",
+          "hash": "8MHAoyzPd7oJT6YikTJ9sA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Bone.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Bone.html",
+          "hash": "i/ktIYwTCRPKc0dzZyXzHg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Chunk.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Chunk.html",
+          "hash": "z2reO0VJJg4sTJGYS5gNiA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Component.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Component.html",
+          "hash": "ZloGXoTAfTSN28z/5uuLhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Cube.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Cube.html",
+          "hash": "aVJbcxK8WEJzgs3uJudMsQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Cylinder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Cylinder.html",
+          "hash": "BPSZSMJCIOAPhslK6uXNkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8DegreeOfFreedom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8DegreeOfFreedom.html",
+          "hash": "RjOm7fxS55s4RYOsTSW3wA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Edge.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Edge.html",
+          "hash": "yZ3dM9eszudZy7YClJbS9A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Environment.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Environment.html",
+          "hash": "/Nfu3A7xLYapJIpU009AAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Face.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Face.html",
+          "hash": "cINWX1A3i6hptc8jIQkkcQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Figure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Figure.html",
+          "hash": "5MT2UR+iMF74voOSnHG70g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8File.html",
+          "hash": "LzfSL29gkAm9DEQrUdhQgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Group.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Group.html",
+          "hash": "bpx3NWF6vb3fnjocpiCEaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Header.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Header.html",
+          "hash": "kwCH5Olj3C7XDkH+ue1Ocw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Image.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Image.html",
+          "hash": "VVadTJuBztFamagFshXqjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Influence.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Influence.html",
+          "hash": "msvJe6JxpdDSh3QrEtDuaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Knot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Knot.html",
+          "hash": "Ki5fi9pt4GOmR+VGGClzSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8LongLat.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8LongLat.html",
+          "hash": "9LreUT5MhqBdzcRo0RVVkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Map.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Map.html",
+          "hash": "uTrIMRwdwZU2xedVfwt6kg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Material.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Material.html",
+          "hash": "NXBSKixoY+7zxgzvENh10Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8MaterialColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8MaterialColor.html",
+          "hash": "ULpHXQ89s34r+8fJ6w1A6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Mesh.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Mesh.html",
+          "hash": "FffRyUJMMuJXHZP5TcFM9w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Method.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Method.html",
+          "hash": "AY29C6JTXD3ulDz8mMGHmA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Modifier.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Modifier.html",
+          "hash": "nk7Zn5gNuFSTv2IYA7tdrA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8NamedObject.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8NamedObject.html",
+          "hash": "0dDeORG45KtJcagZMQRpeQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Object.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Object.html",
+          "hash": "8rfN9rMWQVz8IKkHTHw7NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Path.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Path.html",
+          "hash": "yB2a5cBTNQDAGW+6vBxZ0A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Point.html",
+          "hash": "29bka1a6EZ2V/eCSaUlHqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Quaternion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Quaternion.html",
+          "hash": "Oy/fgWyRsAG4QuTls24qDQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Sphere.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Sphere.html",
+          "hash": "/cVh08g9l/xZW0dUZ2XQVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Subdivision.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Subdivision.html",
+          "hash": "Suytwyl9MRT5psqWaG7JAA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Surface.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Surface.html",
+          "hash": "lwCSMEa/00em/sHlIpFz3Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8TexCoord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8TexCoord.html",
+          "hash": "IRbJDDmjEJGWTpRZy1Lsvw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8TextCom.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8TextCom.html",
+          "hash": "JrizHKZGSFWEhj6Z7GTjjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8Texture.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Texture.html",
+          "hash": "6biW+0YZScinNoXenNElnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.An8TextureParams.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.An8TextureParams.html",
+          "hash": "N3hG2AUD/XDMbnjsH1dabg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/JeremyAnsel.Media.An8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/JeremyAnsel.Media.An8.html",
+          "hash": "O1m8osMXB9T7XytrlIvezA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "Fcw1F4RUFFJ+SFk98AJ1iw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "tcMnZ3+ovVuN+C6P4T2FTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "e3a01YlgrHgMKpO5pzotSA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "4BRqAv946sRD3ioY7Tdv6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 39,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
