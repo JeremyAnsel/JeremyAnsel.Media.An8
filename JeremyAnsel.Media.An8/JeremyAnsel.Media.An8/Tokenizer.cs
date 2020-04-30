@@ -422,12 +422,7 @@ namespace JeremyAnsel.Media.An8
                 {
                     if (currentIndex != index)
                     {
-                        lines.Add(string.Join(
-                            " ",
-                            tokens
-                            .Skip(currentIndex)
-                            .Take(index - currentIndex)
-                            .Where(t => !BuildTokens.Contains(t, StringComparer.Ordinal))));
+                        lines.Add(JoinTokens(tokens, currentIndex, index));
                     }
 
                     currentIndex = index + 1;
@@ -436,12 +431,7 @@ namespace JeremyAnsel.Media.An8
 
             if (currentIndex != tokens.Length)
             {
-                lines.Add(string.Join(
-                    " ",
-                    tokens
-                    .Skip(currentIndex)
-                    .Take(tokens.Length - currentIndex)
-                    .Where(t => !BuildTokens.Contains(t, StringComparer.Ordinal))));
+                lines.Add(JoinTokens(tokens, currentIndex, tokens.Length));
             }
 
             var sb = new StringBuilder();
@@ -466,6 +456,31 @@ namespace JeremyAnsel.Media.An8
             }
 
             return sb.ToString();
+        }
+
+        /// <summary>
+        /// Joins tokens into a string.
+        /// </summary>
+        /// <param name="tokens">The tokens.</param>
+        /// <param name="start">The position of the first token.</param>
+        /// <param name="end">The position of the last token.</param>
+        /// <returns>A string with the tokens.</returns>
+        private static string JoinTokens(string[] tokens, int start, int end)
+        {
+            int count = end - start;
+
+            for (int i = 0; i < count; i++)
+            {
+                string t = tokens[start + i];
+
+                if (BuildTokens.Contains(t, StringComparer.Ordinal))
+                {
+                    count = i;
+                    break;
+                }
+            }
+
+            return string.Join(" ", tokens, start, count);
         }
 
         /// <summary>
