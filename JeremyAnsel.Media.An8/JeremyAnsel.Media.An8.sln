@@ -3,14 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32421.90
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeremyAnsel.Media.An8", "JeremyAnsel.Media.An8\JeremyAnsel.Media.An8.csproj", "{4032EBBF-99A5-44A3-BFD6-FD26927F76A6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeremyAnsel.Media.An8", "JeremyAnsel.Media.An8\JeremyAnsel.Media.An8.csproj", "{4032EBBF-99A5-44A3-BFD6-FD26927F76A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JeremyAnsel.Media.An8.Tests", "JeremyAnsel.Media.An8.Tests\JeremyAnsel.Media.An8.Tests.csproj", "{8E90CF77-1AF3-4203-B52F-A12CF0117F53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JeremyAnsel.Media.An8.Tests", "JeremyAnsel.Media.An8.Tests\JeremyAnsel.Media.An8.Tests.csproj", "{8E90CF77-1AF3-4203-B52F-A12CF0117F53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Documentation", "Documentation\Documentation.csproj", "{88FED4FB-15E0-44D4-A9FD-9BCA556CB758}"
-	ProjectSection(ProjectDependencies) = postProject
-		{4032EBBF-99A5-44A3-BFD6-FD26927F76A6} = {4032EBBF-99A5-44A3-BFD6-FD26927F76A6}
-	EndProjectSection
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Documentation", "Documentation\Documentation.csproj", "{88FED4FB-15E0-44D4-A9FD-9BCA556CB758}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
