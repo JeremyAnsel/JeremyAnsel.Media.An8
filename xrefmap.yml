@@ -41,15 +41,21 @@ references:
   name: An8Bezier()
   href: api/JeremyAnsel.Media.An8.An8Bezier.html#JeremyAnsel_Media_An8_An8Bezier__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Bezier.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Bezier.An8Bezier()
+  fullName.vb: JeremyAnsel.Media.An8.An8Bezier.New()
   nameWithType: An8Bezier.An8Bezier()
+  nameWithType.vb: An8Bezier.New()
 - uid: JeremyAnsel.Media.An8.An8Bezier.#ctor*
   name: An8Bezier
   href: api/JeremyAnsel.Media.An8.An8Bezier.html#JeremyAnsel_Media_An8_An8Bezier__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Bezier.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Bezier.An8Bezier
+  fullName.vb: JeremyAnsel.Media.An8.An8Bezier.New
   nameWithType: An8Bezier.An8Bezier
+  nameWithType.vb: An8Bezier.New
 - uid: JeremyAnsel.Media.An8.An8Bezier.IsClosed
   name: IsClosed
   href: api/JeremyAnsel.Media.An8.An8Bezier.html#JeremyAnsel_Media_An8_An8Bezier_IsClosed
@@ -110,15 +116,21 @@ references:
   name: An8Bone()
   href: api/JeremyAnsel.Media.An8.An8Bone.html#JeremyAnsel_Media_An8_An8Bone__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Bone.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Bone.An8Bone()
+  fullName.vb: JeremyAnsel.Media.An8.An8Bone.New()
   nameWithType: An8Bone.An8Bone()
+  nameWithType.vb: An8Bone.New()
 - uid: JeremyAnsel.Media.An8.An8Bone.#ctor*
   name: An8Bone
   href: api/JeremyAnsel.Media.An8.An8Bone.html#JeremyAnsel_Media_An8_An8Bone__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Bone.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Bone.An8Bone
+  fullName.vb: JeremyAnsel.Media.An8.An8Bone.New
   nameWithType: An8Bone.An8Bone
+  nameWithType.vb: An8Bone.New
 - uid: JeremyAnsel.Media.An8.An8Bone.Bones
   name: Bones
   href: api/JeremyAnsel.Media.An8.An8Bone.html#JeremyAnsel_Media_An8_An8Bone_Bones
@@ -256,11 +268,14 @@ references:
   fullName: JeremyAnsel.Media.An8.An8Chunk.GenerateText
   nameWithType: An8Chunk.GenerateText
 - uid: JeremyAnsel.Media.An8.An8Chunk.Parse(System.String)
-  name: Parse(String)
+  name: Parse(string)
   href: api/JeremyAnsel.Media.An8.An8Chunk.html#JeremyAnsel_Media_An8_An8Chunk_Parse_System_String_
   commentId: M:JeremyAnsel.Media.An8.An8Chunk.Parse(System.String)
-  fullName: JeremyAnsel.Media.An8.An8Chunk.Parse(System.String)
-  nameWithType: An8Chunk.Parse(String)
+  name.vb: Parse(String)
+  fullName: JeremyAnsel.Media.An8.An8Chunk.Parse(string)
+  fullName.vb: JeremyAnsel.Media.An8.An8Chunk.Parse(String)
+  nameWithType: An8Chunk.Parse(string)
+  nameWithType.vb: An8Chunk.Parse(String)
 - uid: JeremyAnsel.Media.An8.An8Chunk.Parse*
   name: Parse
   href: api/JeremyAnsel.Media.An8.An8Chunk.html#JeremyAnsel_Media_An8_An8Chunk_Parse_
@@ -866,15 +881,21 @@ references:
   name: An8Figure()
   href: api/JeremyAnsel.Media.An8.An8Figure.html#JeremyAnsel_Media_An8_An8Figure__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Figure.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Figure.An8Figure()
+  fullName.vb: JeremyAnsel.Media.An8.An8Figure.New()
   nameWithType: An8Figure.An8Figure()
+  nameWithType.vb: An8Figure.New()
 - uid: JeremyAnsel.Media.An8.An8Figure.#ctor*
   name: An8Figure
   href: api/JeremyAnsel.Media.An8.An8Figure.html#JeremyAnsel_Media_An8_An8Figure__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Figure.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Figure.An8Figure
+  fullName.vb: JeremyAnsel.Media.An8.An8Figure.New
   nameWithType: An8Figure.An8Figure
+  nameWithType.vb: An8Figure.New
 - uid: JeremyAnsel.Media.An8.An8Figure.Materials
   name: Materials
   href: api/JeremyAnsel.Media.An8.An8Figure.html#JeremyAnsel_Media_An8_An8Figure_Materials
@@ -924,15 +945,21 @@ references:
   name: An8File()
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File__ctor
   commentId: M:JeremyAnsel.Media.An8.An8File.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8File.An8File()
+  fullName.vb: JeremyAnsel.Media.An8.An8File.New()
   nameWithType: An8File.An8File()
+  nameWithType.vb: An8File.New()
 - uid: JeremyAnsel.Media.An8.An8File.#ctor*
   name: An8File
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8File.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8File.An8File
+  fullName.vb: JeremyAnsel.Media.An8.An8File.New
   nameWithType: An8File.An8File
+  nameWithType.vb: An8File.New
 - uid: JeremyAnsel.Media.An8.An8File.Description
   name: Description
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_Description
@@ -973,11 +1000,14 @@ references:
   fullName: JeremyAnsel.Media.An8.An8File.Figures
   nameWithType: An8File.Figures
 - uid: JeremyAnsel.Media.An8.An8File.FromFile(System.String)
-  name: FromFile(String)
+  name: FromFile(string)
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_FromFile_System_String_
   commentId: M:JeremyAnsel.Media.An8.An8File.FromFile(System.String)
-  fullName: JeremyAnsel.Media.An8.An8File.FromFile(System.String)
-  nameWithType: An8File.FromFile(String)
+  name.vb: FromFile(String)
+  fullName: JeremyAnsel.Media.An8.An8File.FromFile(string)
+  fullName.vb: JeremyAnsel.Media.An8.An8File.FromFile(String)
+  nameWithType: An8File.FromFile(string)
+  nameWithType.vb: An8File.FromFile(String)
 - uid: JeremyAnsel.Media.An8.An8File.FromFile*
   name: FromFile
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_FromFile_
@@ -1038,11 +1068,14 @@ references:
   fullName: JeremyAnsel.Media.An8.An8File.Objects
   nameWithType: An8File.Objects
 - uid: JeremyAnsel.Media.An8.An8File.Parse(System.String)
-  name: Parse(String)
+  name: Parse(string)
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_Parse_System_String_
   commentId: M:JeremyAnsel.Media.An8.An8File.Parse(System.String)
-  fullName: JeremyAnsel.Media.An8.An8File.Parse(System.String)
-  nameWithType: An8File.Parse(String)
+  name.vb: Parse(String)
+  fullName: JeremyAnsel.Media.An8.An8File.Parse(string)
+  fullName.vb: JeremyAnsel.Media.An8.An8File.Parse(String)
+  nameWithType: An8File.Parse(string)
+  nameWithType.vb: An8File.Parse(String)
 - uid: JeremyAnsel.Media.An8.An8File.Parse*
   name: Parse
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_Parse_
@@ -1051,11 +1084,14 @@ references:
   fullName: JeremyAnsel.Media.An8.An8File.Parse
   nameWithType: An8File.Parse
 - uid: JeremyAnsel.Media.An8.An8File.Save(System.String)
-  name: Save(String)
+  name: Save(string)
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_Save_System_String_
   commentId: M:JeremyAnsel.Media.An8.An8File.Save(System.String)
-  fullName: JeremyAnsel.Media.An8.An8File.Save(System.String)
-  nameWithType: An8File.Save(String)
+  name.vb: Save(String)
+  fullName: JeremyAnsel.Media.An8.An8File.Save(string)
+  fullName.vb: JeremyAnsel.Media.An8.An8File.Save(String)
+  nameWithType: An8File.Save(string)
+  nameWithType.vb: An8File.Save(String)
 - uid: JeremyAnsel.Media.An8.An8File.Save*
   name: Save
   href: api/JeremyAnsel.Media.An8.An8File.html#JeremyAnsel_Media_An8_An8File_Save_
@@ -1086,15 +1122,21 @@ references:
   name: An8Group()
   href: api/JeremyAnsel.Media.An8.An8Group.html#JeremyAnsel_Media_An8_An8Group__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Group.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Group.An8Group()
+  fullName.vb: JeremyAnsel.Media.An8.An8Group.New()
   nameWithType: An8Group.An8Group()
+  nameWithType.vb: An8Group.New()
 - uid: JeremyAnsel.Media.An8.An8Group.#ctor*
   name: An8Group
   href: api/JeremyAnsel.Media.An8.An8Group.html#JeremyAnsel_Media_An8_An8Group__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Group.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Group.An8Group
+  fullName.vb: JeremyAnsel.Media.An8.An8Group.New
   nameWithType: An8Group.An8Group
+  nameWithType.vb: An8Group.New
 - uid: JeremyAnsel.Media.An8.An8Group.Components
   name: Components
   href: api/JeremyAnsel.Media.An8.An8Group.html#JeremyAnsel_Media_An8_An8Group_Components
@@ -1472,15 +1514,21 @@ references:
   name: An8MaterialColor()
   href: api/JeremyAnsel.Media.An8.An8MaterialColor.html#JeremyAnsel_Media_An8_An8MaterialColor__ctor
   commentId: M:JeremyAnsel.Media.An8.An8MaterialColor.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8MaterialColor.An8MaterialColor()
+  fullName.vb: JeremyAnsel.Media.An8.An8MaterialColor.New()
   nameWithType: An8MaterialColor.An8MaterialColor()
+  nameWithType.vb: An8MaterialColor.New()
 - uid: JeremyAnsel.Media.An8.An8MaterialColor.#ctor*
   name: An8MaterialColor
   href: api/JeremyAnsel.Media.An8.An8MaterialColor.html#JeremyAnsel_Media_An8_An8MaterialColor__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8MaterialColor.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8MaterialColor.An8MaterialColor
+  fullName.vb: JeremyAnsel.Media.An8.An8MaterialColor.New
   nameWithType: An8MaterialColor.An8MaterialColor
+  nameWithType.vb: An8MaterialColor.New
 - uid: JeremyAnsel.Media.An8.An8MaterialColor.Blue
   name: Blue
   href: api/JeremyAnsel.Media.An8.An8MaterialColor.html#JeremyAnsel_Media_An8_An8MaterialColor_Blue
@@ -1569,15 +1617,21 @@ references:
   name: An8Mesh()
   href: api/JeremyAnsel.Media.An8.An8Mesh.html#JeremyAnsel_Media_An8_An8Mesh__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Mesh.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Mesh.An8Mesh()
+  fullName.vb: JeremyAnsel.Media.An8.An8Mesh.New()
   nameWithType: An8Mesh.An8Mesh()
+  nameWithType.vb: An8Mesh.New()
 - uid: JeremyAnsel.Media.An8.An8Mesh.#ctor*
   name: An8Mesh
   href: api/JeremyAnsel.Media.An8.An8Mesh.html#JeremyAnsel_Media_An8_An8Mesh__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Mesh.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Mesh.An8Mesh
+  fullName.vb: JeremyAnsel.Media.An8.An8Mesh.New
   nameWithType: An8Mesh.An8Mesh
+  nameWithType.vb: An8Mesh.New
 - uid: JeremyAnsel.Media.An8.An8Mesh.Edges
   name: Edges
   href: api/JeremyAnsel.Media.An8.An8Mesh.html#JeremyAnsel_Media_An8_An8Mesh_Edges
@@ -1692,15 +1746,21 @@ references:
   name: An8Method()
   href: api/JeremyAnsel.Media.An8.An8Method.html#JeremyAnsel_Media_An8_An8Method__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Method.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Method.An8Method()
+  fullName.vb: JeremyAnsel.Media.An8.An8Method.New()
   nameWithType: An8Method.An8Method()
+  nameWithType.vb: An8Method.New()
 - uid: JeremyAnsel.Media.An8.An8Method.#ctor*
   name: An8Method
   href: api/JeremyAnsel.Media.An8.An8Method.html#JeremyAnsel_Media_An8_An8Method__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Method.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Method.An8Method
+  fullName.vb: JeremyAnsel.Media.An8.An8Method.New
   nameWithType: An8Method.An8Method
+  nameWithType.vb: An8Method.New
 - uid: JeremyAnsel.Media.An8.An8Method.Kind
   name: Kind
   href: api/JeremyAnsel.Media.An8.An8Method.html#JeremyAnsel_Media_An8_An8Method_Kind
@@ -1821,15 +1881,21 @@ references:
   name: An8NamedObject()
   href: api/JeremyAnsel.Media.An8.An8NamedObject.html#JeremyAnsel_Media_An8_An8NamedObject__ctor
   commentId: M:JeremyAnsel.Media.An8.An8NamedObject.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8NamedObject.An8NamedObject()
+  fullName.vb: JeremyAnsel.Media.An8.An8NamedObject.New()
   nameWithType: An8NamedObject.An8NamedObject()
+  nameWithType.vb: An8NamedObject.New()
 - uid: JeremyAnsel.Media.An8.An8NamedObject.#ctor*
   name: An8NamedObject
   href: api/JeremyAnsel.Media.An8.An8NamedObject.html#JeremyAnsel_Media_An8_An8NamedObject__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8NamedObject.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8NamedObject.An8NamedObject
+  fullName.vb: JeremyAnsel.Media.An8.An8NamedObject.New
   nameWithType: An8NamedObject.An8NamedObject
+  nameWithType.vb: An8NamedObject.New
 - uid: JeremyAnsel.Media.An8.An8NamedObject.Material
   name: Material
   href: api/JeremyAnsel.Media.An8.An8NamedObject.html#JeremyAnsel_Media_An8_An8NamedObject_Material
@@ -1879,15 +1945,21 @@ references:
   name: An8Object()
   href: api/JeremyAnsel.Media.An8.An8Object.html#JeremyAnsel_Media_An8_An8Object__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Object.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Object.An8Object()
+  fullName.vb: JeremyAnsel.Media.An8.An8Object.New()
   nameWithType: An8Object.An8Object()
+  nameWithType.vb: An8Object.New()
 - uid: JeremyAnsel.Media.An8.An8Object.#ctor*
   name: An8Object
   href: api/JeremyAnsel.Media.An8.An8Object.html#JeremyAnsel_Media_An8_An8Object__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Object.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Object.An8Object
+  fullName.vb: JeremyAnsel.Media.An8.An8Object.New
   nameWithType: An8Object.An8Object
+  nameWithType.vb: An8Object.New
 - uid: JeremyAnsel.Media.An8.An8Object.Components
   name: Components
   href: api/JeremyAnsel.Media.An8.An8Object.html#JeremyAnsel_Media_An8_An8Object_Components
@@ -1937,15 +2009,21 @@ references:
   name: An8Path()
   href: api/JeremyAnsel.Media.An8.An8Path.html#JeremyAnsel_Media_An8_An8Path__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Path.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Path.An8Path()
+  fullName.vb: JeremyAnsel.Media.An8.An8Path.New()
   nameWithType: An8Path.An8Path()
+  nameWithType.vb: An8Path.New()
 - uid: JeremyAnsel.Media.An8.An8Path.#ctor*
   name: An8Path
   href: api/JeremyAnsel.Media.An8.An8Path.html#JeremyAnsel_Media_An8_An8Path__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Path.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Path.An8Path
+  fullName.vb: JeremyAnsel.Media.An8.An8Path.New
   nameWithType: An8Path.An8Path
+  nameWithType.vb: An8Path.New
 - uid: JeremyAnsel.Media.An8.An8Path.IsExtendable
   name: IsExtendable
   href: api/JeremyAnsel.Media.An8.An8Path.html#JeremyAnsel_Media_An8_An8Path_IsExtendable
@@ -2130,15 +2208,21 @@ references:
   name: An8Subdivision()
   href: api/JeremyAnsel.Media.An8.An8Subdivision.html#JeremyAnsel_Media_An8_An8Subdivision__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Subdivision.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Subdivision.An8Subdivision()
+  fullName.vb: JeremyAnsel.Media.An8.An8Subdivision.New()
   nameWithType: An8Subdivision.An8Subdivision()
+  nameWithType.vb: An8Subdivision.New()
 - uid: JeremyAnsel.Media.An8.An8Subdivision.#ctor*
   name: An8Subdivision
   href: api/JeremyAnsel.Media.An8.An8Subdivision.html#JeremyAnsel_Media_An8_An8Subdivision__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Subdivision.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Subdivision.An8Subdivision
+  fullName.vb: JeremyAnsel.Media.An8.An8Subdivision.New
   nameWithType: An8Subdivision.An8Subdivision
+  nameWithType.vb: An8Subdivision.New
 - uid: JeremyAnsel.Media.An8.An8Subdivision.Divisions
   name: Divisions
   href: api/JeremyAnsel.Media.An8.An8Subdivision.html#JeremyAnsel_Media_An8_An8Subdivision_Divisions
@@ -2279,15 +2363,21 @@ references:
   name: An8Surface()
   href: api/JeremyAnsel.Media.An8.An8Surface.html#JeremyAnsel_Media_An8_An8Surface__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Surface.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Surface.An8Surface()
+  fullName.vb: JeremyAnsel.Media.An8.An8Surface.New()
   nameWithType: An8Surface.An8Surface()
+  nameWithType.vb: An8Surface.New()
 - uid: JeremyAnsel.Media.An8.An8Surface.#ctor*
   name: An8Surface
   href: api/JeremyAnsel.Media.An8.An8Surface.html#JeremyAnsel_Media_An8_An8Surface__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Surface.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Surface.An8Surface
+  fullName.vb: JeremyAnsel.Media.An8.An8Surface.New
   nameWithType: An8Surface.An8Surface
+  nameWithType.vb: An8Surface.New
 - uid: JeremyAnsel.Media.An8.An8Surface.Alpha
   name: Alpha
   href: api/JeremyAnsel.Media.An8.An8Surface.html#JeremyAnsel_Media_An8_An8Surface_Alpha
@@ -2518,15 +2608,21 @@ references:
   name: An8Texture()
   href: api/JeremyAnsel.Media.An8.An8Texture.html#JeremyAnsel_Media_An8_An8Texture__ctor
   commentId: M:JeremyAnsel.Media.An8.An8Texture.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8Texture.An8Texture()
+  fullName.vb: JeremyAnsel.Media.An8.An8Texture.New()
   nameWithType: An8Texture.An8Texture()
+  nameWithType.vb: An8Texture.New()
 - uid: JeremyAnsel.Media.An8.An8Texture.#ctor*
   name: An8Texture
   href: api/JeremyAnsel.Media.An8.An8Texture.html#JeremyAnsel_Media_An8_An8Texture__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8Texture.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8Texture.An8Texture
+  fullName.vb: JeremyAnsel.Media.An8.An8Texture.New
   nameWithType: An8Texture.An8Texture
+  nameWithType.vb: An8Texture.New
 - uid: JeremyAnsel.Media.An8.An8Texture.Files
   name: Files
   href: api/JeremyAnsel.Media.An8.An8Texture.html#JeremyAnsel_Media_An8_An8Texture_Files
@@ -2589,15 +2685,21 @@ references:
   name: An8TextureParams()
   href: api/JeremyAnsel.Media.An8.An8TextureParams.html#JeremyAnsel_Media_An8_An8TextureParams__ctor
   commentId: M:JeremyAnsel.Media.An8.An8TextureParams.#ctor
+  name.vb: New()
   fullName: JeremyAnsel.Media.An8.An8TextureParams.An8TextureParams()
+  fullName.vb: JeremyAnsel.Media.An8.An8TextureParams.New()
   nameWithType: An8TextureParams.An8TextureParams()
+  nameWithType.vb: An8TextureParams.New()
 - uid: JeremyAnsel.Media.An8.An8TextureParams.#ctor*
   name: An8TextureParams
   href: api/JeremyAnsel.Media.An8.An8TextureParams.html#JeremyAnsel_Media_An8_An8TextureParams__ctor_
   commentId: Overload:JeremyAnsel.Media.An8.An8TextureParams.#ctor
   isSpec: "True"
+  name.vb: New
   fullName: JeremyAnsel.Media.An8.An8TextureParams.An8TextureParams
+  fullName.vb: JeremyAnsel.Media.An8.An8TextureParams.New
   nameWithType: An8TextureParams.An8TextureParams
+  nameWithType.vb: An8TextureParams.New
 - uid: JeremyAnsel.Media.An8.An8TextureParams.AlphaMode
   name: AlphaMode
   href: api/JeremyAnsel.Media.An8.An8TextureParams.html#JeremyAnsel_Media_An8_An8TextureParams_AlphaMode
