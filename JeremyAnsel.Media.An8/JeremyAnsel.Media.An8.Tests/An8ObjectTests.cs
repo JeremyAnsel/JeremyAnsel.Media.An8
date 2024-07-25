@@ -83,7 +83,7 @@ other { }
 material { }
 ");
 
-            Assert.Equal(1, obj.Materials.Count);
+            Assert.Single(obj.Materials);
         }
 
         /// <summary>
@@ -99,7 +99,7 @@ material { }
 group { }
 ");
 
-            Assert.Equal(1, obj.Components.Count);
+            Assert.Single(obj.Components);
         }
 
         /// <summary>

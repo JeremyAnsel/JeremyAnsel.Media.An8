@@ -106,7 +106,7 @@ materiallist {
 }
 ");
 
-            Assert.Equal(0, mesh.MaterialList.Count);
+            Assert.Empty(mesh.MaterialList);
         }
 
         /// <summary>
@@ -124,7 +124,7 @@ materiallist {
 }
 ");
 
-            Assert.Equal(1, mesh.MaterialList.Count);
+            Assert.Single(mesh.MaterialList);
             Assert.Equal("abc", mesh.MaterialList[0]);
         }
 
@@ -143,7 +143,7 @@ points {
 }
 ");
 
-            Assert.Equal(0, mesh.Points.Count);
+            Assert.Empty(mesh.Points);
         }
 
         /// <summary>
@@ -161,7 +161,7 @@ points {
 }
 ");
 
-            Assert.Equal(1, mesh.Points.Count);
+            Assert.Single(mesh.Points);
             Assert.Equal(2.0f, mesh.Points[0].X);
             Assert.Equal(3.0f, mesh.Points[0].Y);
             Assert.Equal(4.0f, mesh.Points[0].Z);
@@ -182,7 +182,7 @@ normals {
 }
 ");
 
-            Assert.Equal(0, mesh.Normals.Count);
+            Assert.Empty(mesh.Normals);
         }
 
         /// <summary>
@@ -200,7 +200,7 @@ normals {
 }
 ");
 
-            Assert.Equal(1, mesh.Normals.Count);
+            Assert.Single(mesh.Normals);
             Assert.Equal(2.0f, mesh.Normals[0].X);
             Assert.Equal(3.0f, mesh.Normals[0].Y);
             Assert.Equal(4.0f, mesh.Normals[0].Z);
@@ -221,7 +221,7 @@ edges {
 }
 ");
 
-            Assert.Equal(0, mesh.Edges.Count);
+            Assert.Empty(mesh.Edges);
         }
 
         /// <summary>
@@ -265,7 +265,7 @@ texcoords {
 }
 ");
 
-            Assert.Equal(0, mesh.TexCoords.Count);
+            Assert.Empty(mesh.TexCoords);
         }
 
         /// <summary>
@@ -283,7 +283,7 @@ texcoords {
 }
 ");
 
-            Assert.Equal(1, mesh.TexCoords.Count);
+            Assert.Single(mesh.TexCoords);
             Assert.Equal(2.0f, mesh.TexCoords[0].U);
             Assert.Equal(3.0f, mesh.TexCoords[0].V);
         }
@@ -303,7 +303,7 @@ faces {
 }
 ");
 
-            Assert.Equal(0, mesh.Faces.Count);
+            Assert.Empty(mesh.Faces);
         }
 
         /// <summary>
@@ -321,7 +321,7 @@ faces {
 }
 ");
 
-            Assert.Equal(1, mesh.Faces.Count);
+            Assert.Single(mesh.Faces);
         }
 
         /// <summary>

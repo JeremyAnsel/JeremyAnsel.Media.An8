@@ -183,7 +183,7 @@ phongsize { 2.0 }
 map { }
 ");
 
-            Assert.Equal(1, surface.Maps.Count);
+            Assert.Single(surface.Maps);
         }
 
         /// <summary>

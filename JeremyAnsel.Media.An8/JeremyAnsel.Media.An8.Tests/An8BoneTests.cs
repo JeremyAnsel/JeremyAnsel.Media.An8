@@ -156,7 +156,7 @@ locked { }
 dof { }
 ");
 
-            Assert.Equal(1, bone.DegreesOfFreedom.Count);
+            Assert.Single(bone.DegreesOfFreedom);
         }
 
         /// <summary>
@@ -188,7 +188,7 @@ influence { }
 bone { }
 ");
 
-            Assert.Equal(1, bone.Bones.Count);
+            Assert.Single(bone.Bones);
         }
 
         /// <summary>
@@ -204,7 +204,7 @@ bone { }
 group { }
 ");
 
-            Assert.Equal(1, bone.Components.Count);
+            Assert.Single(bone.Components);
         }
 
         /// <summary>

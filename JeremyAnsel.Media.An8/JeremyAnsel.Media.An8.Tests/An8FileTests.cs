@@ -131,7 +131,7 @@ environment {
 texture { }
 ");
 
-            Assert.Equal(1, file.Textures.Count);
+            Assert.Single(file.Textures);
         }
 
         /// <summary>
@@ -147,7 +147,7 @@ texture { }
 material { }
 ");
 
-            Assert.Equal(1, file.Materials.Count);
+            Assert.Single(file.Materials);
         }
 
         /// <summary>
@@ -163,7 +163,7 @@ material { }
 object { }
 ");
 
-            Assert.Equal(1, file.Objects.Count);
+            Assert.Single(file.Objects);
         }
 
         /// <summary>
@@ -179,7 +179,7 @@ object { }
 figure { }
 ");
 
-            Assert.Equal(1, file.Figures.Count);
+            Assert.Single(file.Figures);
         }
 
         /// <summary>

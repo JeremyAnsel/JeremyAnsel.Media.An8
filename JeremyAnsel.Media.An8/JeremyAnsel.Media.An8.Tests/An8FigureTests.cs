@@ -83,7 +83,7 @@ other { }
 material { }
 ");
 
-            Assert.Equal(1, figure.Materials.Count);
+            Assert.Single(figure.Materials);
         }
 
         /// <summary>

@@ -82,7 +82,7 @@ extendable { }
 bezier { }
 ");
 
-            Assert.Equal(1, path.Splines.Count);
+            Assert.Single(path.Splines);
         }
 
         /// <summary>

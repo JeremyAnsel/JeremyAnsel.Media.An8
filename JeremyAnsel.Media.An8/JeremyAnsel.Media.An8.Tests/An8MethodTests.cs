@@ -97,7 +97,7 @@ abc ""def""
 parameter { ""abc"" 2.0 }
 ");
 
-            Assert.Equal(1, method.Parameters.Count);
+            Assert.Single(method.Parameters);
             Assert.Equal("abc", method.Parameters.ElementAt(0).Key);
             Assert.Equal(2.0f, method.Parameters.ElementAt(0).Value);
         }

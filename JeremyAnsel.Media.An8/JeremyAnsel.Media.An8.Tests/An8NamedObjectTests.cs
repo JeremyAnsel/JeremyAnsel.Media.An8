@@ -99,7 +99,7 @@ material { }
 weightedby { ""abc"" }
 ");
 
-            Assert.Equal(1, named.WeightedBy.Count);
+            Assert.Single(named.WeightedBy);
             Assert.Equal("abc", named.WeightedBy[0]);
         }
 

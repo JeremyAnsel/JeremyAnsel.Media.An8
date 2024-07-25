@@ -65,7 +65,7 @@ other { }
 group { }
 ");
 
-            Assert.Equal(1, group.Components.Count);
+            Assert.Single(group.Components);
         }
 
         /// <summary>

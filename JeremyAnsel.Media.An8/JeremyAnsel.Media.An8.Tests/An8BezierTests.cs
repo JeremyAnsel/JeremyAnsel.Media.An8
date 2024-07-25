@@ -82,7 +82,7 @@ closed { }
 knot { }
 ");
 
-            Assert.Equal(1, bezier.Knots.Count);
+            Assert.Single(bezier.Knots);
         }
 
         /// <summary>

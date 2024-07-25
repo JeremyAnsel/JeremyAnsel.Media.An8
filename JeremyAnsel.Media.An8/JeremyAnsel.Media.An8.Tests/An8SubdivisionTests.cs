@@ -140,7 +140,7 @@ materiallist {
 }
 ");
 
-            Assert.Equal(0, sub.MaterialList.Count);
+            Assert.Empty(sub.MaterialList);
         }
 
         /// <summary>
@@ -158,7 +158,7 @@ materiallist {
 }
 ");
 
-            Assert.Equal(1, sub.MaterialList.Count);
+            Assert.Single(sub.MaterialList);
             Assert.Equal("abc", sub.MaterialList[0]);
         }
 
@@ -177,7 +177,7 @@ points {
 }
 ");
 
-            Assert.Equal(0, sub.Points.Count);
+            Assert.Empty(sub.Points);
         }
 
         /// <summary>
@@ -195,7 +195,7 @@ points {
 }
 ");
 
-            Assert.Equal(1, sub.Points.Count);
+            Assert.Single(sub.Points);
             Assert.Equal(2.0f, sub.Points[0].X);
             Assert.Equal(3.0f, sub.Points[0].Y);
             Assert.Equal(4.0f, sub.Points[0].Z);
@@ -216,7 +216,7 @@ normals {
 }
 ");
 
-            Assert.Equal(0, sub.Normals.Count);
+            Assert.Empty(sub.Normals);
         }
 
         /// <summary>
@@ -234,7 +234,7 @@ normals {
 }
 ");
 
-            Assert.Equal(1, sub.Normals.Count);
+            Assert.Single(sub.Normals);
             Assert.Equal(2.0f, sub.Normals[0].X);
             Assert.Equal(3.0f, sub.Normals[0].Y);
             Assert.Equal(4.0f, sub.Normals[0].Z);
@@ -255,7 +255,7 @@ edges {
 }
 ");
 
-            Assert.Equal(0, sub.Edges.Count);
+            Assert.Empty(sub.Edges);
         }
 
         /// <summary>
@@ -299,7 +299,7 @@ texcoords {
 }
 ");
 
-            Assert.Equal(0, sub.TexCoords.Count);
+            Assert.Empty(sub.TexCoords);
         }
 
         /// <summary>
@@ -317,7 +317,7 @@ texcoords {
 }
 ");
 
-            Assert.Equal(1, sub.TexCoords.Count);
+            Assert.Single(sub.TexCoords);
             Assert.Equal(2.0f, sub.TexCoords[0].U);
             Assert.Equal(3.0f, sub.TexCoords[0].V);
         }
@@ -337,7 +337,7 @@ faces {
 }
 ");
 
-            Assert.Equal(0, sub.Faces.Count);
+            Assert.Empty(sub.Faces);
         }
 
         /// <summary>
@@ -355,7 +355,7 @@ faces {
 }
 ");
 
-            Assert.Equal(1, sub.Faces.Count);
+            Assert.Single(sub.Faces);
         }
 
         /// <summary>

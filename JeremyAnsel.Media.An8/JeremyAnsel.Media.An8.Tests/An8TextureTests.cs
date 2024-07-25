@@ -116,7 +116,7 @@ cubemap { }
 file { ""abc"" }
 ");
 
-            Assert.Equal(1, texture.Files.Count);
+            Assert.Single(texture.Files);
             Assert.Equal("abc", texture.Files[0]);
         }
 
