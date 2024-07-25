@@ -48,12 +48,12 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the name of the texture.
         /// </summary>
-        public string TextureName { get; set; }
+        public string? TextureName { get; set; }
 
         /// <summary>
         /// Gets or sets the texture parameters.
         /// </summary>
-        public An8TextureParams TextureParams { get; set; }
+        public An8TextureParams? TextureParams { get; set; }
 
         /// <summary>
         /// Parses the tokens of the chunk.

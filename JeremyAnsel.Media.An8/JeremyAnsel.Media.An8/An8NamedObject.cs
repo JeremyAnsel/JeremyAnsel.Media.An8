@@ -25,12 +25,12 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the object name.
         /// </summary>
-        public string ObjectName { get; set; }
+        public string? ObjectName { get; set; }
 
         /// <summary>
         /// Gets or sets the material.
         /// </summary>
-        public An8Material Material { get; set; }
+        public An8Material? Material { get; set; }
 
         /// <summary>
         /// Gets the weighted by.

@@ -26,22 +26,22 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the ambiant material color.
         /// </summary>
-        public An8MaterialColor Ambiant { get; set; }
+        public An8MaterialColor? Ambiant { get; set; }
 
         /// <summary>
         /// Gets or sets the diffuse material color.
         /// </summary>
-        public An8MaterialColor Diffuse { get; set; }
+        public An8MaterialColor? Diffuse { get; set; }
 
         /// <summary>
         /// Gets or sets the specular material color.
         /// </summary>
-        public An8MaterialColor Specular { get; set; }
+        public An8MaterialColor? Specular { get; set; }
 
         /// <summary>
         /// Gets or sets the emissive material color.
         /// </summary>
-        public An8MaterialColor Emissive { get; set; }
+        public An8MaterialColor? Emissive { get; set; }
 
         /// <summary>
         /// Gets or sets the alpha transparency.

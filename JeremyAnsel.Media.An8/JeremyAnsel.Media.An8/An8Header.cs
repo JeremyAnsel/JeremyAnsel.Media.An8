@@ -17,12 +17,12 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the version string.
         /// </summary>
-        public string Version { get; set; }
+        public string? Version { get; set; }
 
         /// <summary>
         /// Gets or sets the build string.
         /// </summary>
-        public string Build { get; set; }
+        public string? Build { get; set; }
 
         /// <summary>
         /// Parses the tokens of the chunk.

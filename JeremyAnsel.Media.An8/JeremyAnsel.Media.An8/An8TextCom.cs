@@ -17,12 +17,12 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the text.
         /// </summary>
-        public string Text { get; set; }
+        public string? Text { get; set; }
 
         /// <summary>
         /// Gets or sets the font face.
         /// </summary>
-        public string FontFamily { get; set; }
+        public string? FontFamily { get; set; }
 
         /// <summary>
         /// Gets or sets the font size.

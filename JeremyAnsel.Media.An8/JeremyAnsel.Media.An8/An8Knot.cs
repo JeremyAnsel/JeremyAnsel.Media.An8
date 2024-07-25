@@ -17,17 +17,17 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the location.
         /// </summary>
-        public An8Point Location { get; set; }
+        public An8Point? Location { get; set; }
 
         /// <summary>
         /// Gets or sets the forward direction.
         /// </summary>
-        public An8Point ForwardDirection { get; set; }
+        public An8Point? ForwardDirection { get; set; }
 
         /// <summary>
         /// Gets or sets the reverse direction.
         /// </summary>
-        public An8Point ReverseDirection { get; set; }
+        public An8Point? ReverseDirection { get; set; }
 
         /// <summary>
         /// Gets or sets the segments count.
@@ -43,7 +43,7 @@ namespace JeremyAnsel.Media.An8
         /// Parses the tokens of the chunk.
         /// </summary>
         /// <param name="tokens">The tokens.</param>
-        internal override void ParseTokens(string[] tokens)
+        internal override void ParseTokens(string[]? tokens)
         {
             var chunks = Tokenizer.SplitChunks(tokens);
 

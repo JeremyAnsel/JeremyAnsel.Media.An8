@@ -70,6 +70,7 @@ faces {
             Assert.False(face.IsBackShown);
             Assert.False(face.HasNormalIndexes);
             Assert.False(face.HasTexCoordIndexes);
+            Assert.NotNull(face.PointIndexes);
             Assert.Equal(3, face.PointIndexes.Length);
             Assert.Null(face.NormalIndexes);
             Assert.Null(face.TexCoordIndexes);
@@ -100,6 +101,9 @@ faces {
             Assert.True(face.IsBackShown);
             Assert.True(face.HasNormalIndexes);
             Assert.True(face.HasTexCoordIndexes);
+            Assert.NotNull(face.PointIndexes);
+            Assert.NotNull(face.NormalIndexes);
+            Assert.NotNull(face.TexCoordIndexes);
             Assert.Equal(3, face.PointIndexes.Length);
             Assert.Equal(3, face.NormalIndexes.Length);
             Assert.Equal(3, face.TexCoordIndexes.Length);

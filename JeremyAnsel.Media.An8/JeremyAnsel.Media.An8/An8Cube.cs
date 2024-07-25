@@ -17,7 +17,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the material.
         /// </summary>
-        public An8Material Material { get; set; }
+        public An8Material? Material { get; set; }
 
         /// <summary>
         /// Gets or sets the x dimension.

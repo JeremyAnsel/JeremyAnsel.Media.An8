@@ -51,7 +51,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the file description.
         /// </summary>
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
         /// <summary>
         /// Gets the environment settings.

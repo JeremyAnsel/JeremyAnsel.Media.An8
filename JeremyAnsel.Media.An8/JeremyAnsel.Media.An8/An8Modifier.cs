@@ -33,12 +33,12 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the method.
         /// </summary>
-        public An8Method Method { get; set; }
+        public An8Method? Method { get; set; }
 
         /// <summary>
         /// Gets or sets the component.
         /// </summary>
-        public An8Component Component { get; set; }
+        public An8Component? Component { get; set; }
 
         /// <summary>
         /// Parses the tokens of the chunk.

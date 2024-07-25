@@ -17,7 +17,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the file name.
         /// </summary>
-        public string FileName { get; set; }
+        public string? FileName { get; set; }
 
         /// <summary>
         /// Gets or sets the width.

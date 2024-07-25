@@ -18,7 +18,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// The kind of the method.
         /// </summary>
-        private string kind;
+        private string? kind;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="An8Method"/> class.
@@ -32,7 +32,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the kind of the method.
         /// </summary>
-        public string Kind
+        public string? Kind
         {
             get
             {
@@ -53,7 +53,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Gets the parameters.
@@ -99,7 +99,7 @@ namespace JeremyAnsel.Media.An8
             var tokens = new List<string>();
 
             Tokenizer.BuildOpenChunk(tokens, "method");
-            tokens.Add(this.Kind);
+            tokens.Add(this.Kind ?? string.Empty);
             Tokenizer.BuildString(tokens, this.Name);
             Tokenizer.BuildIndent(tokens);
 

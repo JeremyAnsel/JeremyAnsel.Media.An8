@@ -34,13 +34,13 @@ namespace JeremyAnsel.Media.An8
         /// Gets or sets the point indexes.
         /// </summary>
         [SuppressMessage("Microsoft.Performance", "CA1819:PropertiesShouldNotReturnArrays", Justification = "Reviewed")]
-        public int[] PointIndexes { get; set; }
+        public int[]? PointIndexes { get; set; }
 
         /// <summary>
         /// Gets or sets the normal indexes.
         /// </summary>
         [SuppressMessage("Microsoft.Performance", "CA1819:PropertiesShouldNotReturnArrays", Justification = "Reviewed")]
-        public int[] NormalIndexes { get; set; }
+        public int[]? NormalIndexes { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the face has normal indexes.
@@ -54,7 +54,7 @@ namespace JeremyAnsel.Media.An8
         /// Gets or sets the texture coordinates indexes.
         /// </summary>
         [SuppressMessage("Microsoft.Performance", "CA1819:PropertiesShouldNotReturnArrays", Justification = "Reviewed")]
-        public int[] TexCoordIndexes { get; set; }
+        public int[]? TexCoordIndexes { get; set; }
 
         /// <summary>
         /// Gets a value indicating whether the face has texture coordinates indexes.
@@ -118,12 +118,12 @@ namespace JeremyAnsel.Media.An8
 
                 if (hasNormals)
                 {
-                    face.NormalIndexes[i] = Tokenizer.ReadInt(tokens, ref index);
+                    face.NormalIndexes![i] = Tokenizer.ReadInt(tokens, ref index);
                 }
 
                 if (hasTexCoords)
                 {
-                    face.TexCoordIndexes[i] = Tokenizer.ReadInt(tokens, ref index);
+                    face.TexCoordIndexes![i] = Tokenizer.ReadInt(tokens, ref index);
                 }
 
                 Tokenizer.ReadCloseData(tokens, ref index);
@@ -174,16 +174,16 @@ namespace JeremyAnsel.Media.An8
             {
                 Tokenizer.BuildOpenData(tokens);
 
-                Tokenizer.BuildInt(tokens, this.PointIndexes[i]);
+                Tokenizer.BuildInt(tokens, this.PointIndexes![i]);
 
                 if (hasNormals)
                 {
-                    Tokenizer.BuildInt(tokens, this.NormalIndexes[i]);
+                    Tokenizer.BuildInt(tokens, this.NormalIndexes![i]);
                 }
 
                 if (hasTexCoords)
                 {
-                    Tokenizer.BuildInt(tokens, this.TexCoordIndexes[i]);
+                    Tokenizer.BuildInt(tokens, this.TexCoordIndexes![i]);
                 }
 
                 Tokenizer.BuildCloseData(tokens);

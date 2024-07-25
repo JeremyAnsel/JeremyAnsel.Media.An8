@@ -281,7 +281,7 @@ edges {
             Assert.Equal(4, sub.Edges[1].Index1);
             Assert.Equal(5, sub.Edges[1].Index2);
             Assert.True(sub.Edges[1].Sharpness.HasValue);
-            Assert.Equal(6, sub.Edges[1].Sharpness.Value);
+            Assert.Equal(6, sub.Edges[1].Sharpness!.Value);
         }
 
         /// <summary>

@@ -16,7 +16,7 @@ namespace JeremyAnsel.Media.An8
         /// Parses a chunk content.
         /// </summary>
         /// <param name="text">The chunk content.</param>
-        public void Parse(string text)
+        public void Parse(string? text)
         {
             this.ParseTokens(Tokenizer.Tokenize(text));
         }

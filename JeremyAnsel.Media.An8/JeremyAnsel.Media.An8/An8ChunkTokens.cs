@@ -15,11 +15,11 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the identifier.
         /// </summary>
-        public string Ident { get; set; }
+        public string? Ident { get; set; }
 
         /// <summary>
         /// Gets or sets the tokens.
         /// </summary>
-        public string[] Tokens { get; set; }
+        public string[] Tokens { get; set; } = Array.Empty<string>();
     }
 }

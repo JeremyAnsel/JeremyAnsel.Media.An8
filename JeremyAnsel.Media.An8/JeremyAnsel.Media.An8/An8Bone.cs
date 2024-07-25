@@ -27,7 +27,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Gets or sets the length.
@@ -42,7 +42,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the orientation.
         /// </summary>
-        public An8Quaternion Orientation { get; set; }
+        public An8Quaternion? Orientation { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether the bone is locked.
@@ -57,7 +57,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the influence.
         /// </summary>
-        public An8Influence Influence { get; set; }
+        public An8Influence? Influence { get; set; }
 
         /// <summary>
         /// Gets the components.

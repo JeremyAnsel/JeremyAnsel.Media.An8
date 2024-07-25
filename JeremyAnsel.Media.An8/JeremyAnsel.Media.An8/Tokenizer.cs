@@ -35,17 +35,13 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="text">The text.</param>
         /// <returns>The tokens.</returns>
-        public static string[] Tokenize(string text)
+        public static string[] Tokenize(string? text)
         {
             var tokens = new List<string>();
 
             if (string.IsNullOrEmpty(text))
             {
-#if NET40
-                return new string[0];
-#else
                 return Array.Empty<string>();
-#endif
             }
 
             bool isInString = false;
@@ -54,7 +50,7 @@ namespace JeremyAnsel.Media.An8
             var currentString = new StringBuilder();
             bool isEscaping = false;
 
-            for (int i = 0; i < text.Length; i++)
+            for (int i = 0; i < text!.Length; i++)
             {
                 char c = text[i];
 
@@ -133,7 +129,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="text">The text.</param>
         /// <returns>The chunks.</returns>
-        public static List<An8ChunkTokens> SplitChunks(string text)
+        public static List<An8ChunkTokens> SplitChunks(string? text)
         {
             return Tokenizer.SplitChunks(Tokenizer.Tokenize(text));
         }
@@ -143,7 +139,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="tokens">The tokens.</param>
         /// <returns>The chunks.</returns>
-        public static List<An8ChunkTokens> SplitChunks(string[] tokens)
+        public static List<An8ChunkTokens> SplitChunks(string[]? tokens)
         {
             var chunks = new List<An8ChunkTokens>();
 
@@ -555,7 +551,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="tokens">The tokens.</param>
         /// <param name="str">The string.</param>
-        public static void BuildString(List<string> tokens, string str)
+        public static void BuildString(List<string> tokens, string? str)
         {
             if (string.IsNullOrEmpty(str))
             {
@@ -565,7 +561,7 @@ namespace JeremyAnsel.Media.An8
             {
                 tokens.Add(string.Concat(
                     "\"",
-                    str.Replace("\\", "\\\\").Replace("\"", "\\\""),
+                    str!.Replace("\\", "\\\\").Replace("\"", "\\\""),
                     "\""));
             }
         }
@@ -575,7 +571,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         /// <param name="tokens">The tokens.</param>
         /// <param name="str">The unicode string.</param>
-        public static void BuildUnicodeString(List<string> tokens, string str)
+        public static void BuildUnicodeString(List<string> tokens, string? str)
         {
             //// TODO: replace unicode characters
 
@@ -587,7 +583,7 @@ namespace JeremyAnsel.Media.An8
             {
                 tokens.Add(string.Concat(
                     "L\"",
-                    str.Replace("\\", "\\\\").Replace("\"", "\\\""),
+                    str!.Replace("\\", "\\\\").Replace("\"", "\\\""),
                     "\""));
             }
         }

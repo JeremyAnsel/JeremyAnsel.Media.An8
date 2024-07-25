@@ -17,17 +17,17 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the kind of the map.
         /// </summary>
-        public string Kind { get; set; }
+        public string? Kind { get; set; }
 
         /// <summary>
         /// Gets or sets the texture name.
         /// </summary>
-        public string TextureName { get; set; }
+        public string? TextureName { get; set; }
 
         /// <summary>
         /// Gets or sets the texture parameters.
         /// </summary>
-        public An8TextureParams TextureParams { get; set; }
+        public An8TextureParams? TextureParams { get; set; }
 
         /// <summary>
         /// Parses the tokens of the chunk.

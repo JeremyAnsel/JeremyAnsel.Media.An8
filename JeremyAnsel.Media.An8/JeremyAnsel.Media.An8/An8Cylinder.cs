@@ -17,7 +17,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the material.
         /// </summary>
-        public An8Material Material { get; set; }
+        public An8Material? Material { get; set; }
 
         /// <summary>
         /// Gets or sets the length.
@@ -37,7 +37,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the number of divisions.
         /// </summary>
-        public An8LongLat LongLatDivisions { get; set; }
+        public An8LongLat? LongLatDivisions { get; set; }
 
         /// <summary>
         /// Gets or sets a value indicating whether the start is capped.

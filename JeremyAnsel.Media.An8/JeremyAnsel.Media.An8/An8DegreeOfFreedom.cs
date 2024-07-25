@@ -17,7 +17,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the axis.
         /// </summary>
-        public string Axis { get; set; }
+        public string? Axis { get; set; }
 
         /// <summary>
         /// Gets or sets the minimum angle.

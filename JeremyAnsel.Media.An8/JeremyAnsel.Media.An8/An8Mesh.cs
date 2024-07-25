@@ -21,7 +21,7 @@ namespace JeremyAnsel.Media.An8
         /// </summary>
         public An8Mesh()
         {
-            this.MaterialList = new List<string>();
+            this.MaterialList = new List<string?>();
             this.Points = new List<An8Point>();
             this.Normals = new List<An8Point>();
             this.Edges = new List<An8Edge>();
@@ -32,7 +32,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the material.
         /// </summary>
-        public An8Material Material { get; set; }
+        public An8Material? Material { get; set; }
 
         /// <summary>
         /// Gets or sets smooth angle threshold.
@@ -42,7 +42,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets the material list.
         /// </summary>
-        public IList<string> MaterialList { get; private set; }
+        public IList<string?> MaterialList { get; private set; }
 
         /// <summary>
         /// Gets the points.

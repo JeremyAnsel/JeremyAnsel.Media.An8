@@ -247,7 +247,7 @@ edges {
             Assert.Equal(4, mesh.Edges[1].Index1);
             Assert.Equal(5, mesh.Edges[1].Index2);
             Assert.True(mesh.Edges[1].Sharpness.HasValue);
-            Assert.Equal(6, mesh.Edges[1].Sharpness.Value);
+            Assert.Equal(6, mesh.Edges[1].Sharpness!.Value);
         }
 
         /// <summary>

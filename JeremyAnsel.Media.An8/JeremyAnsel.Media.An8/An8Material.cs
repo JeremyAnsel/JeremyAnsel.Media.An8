@@ -17,17 +17,17 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Gets or sets the front surface.
         /// </summary>
-        public An8Surface FrontSurface { get; set; }
+        public An8Surface? FrontSurface { get; set; }
 
         /// <summary>
         /// Gets or sets the back surface.
         /// </summary>
-        public An8Surface BackSurface { get; set; }
+        public An8Surface? BackSurface { get; set; }
 
         /// <summary>
         /// Parses the tokens of the chunk.

@@ -17,27 +17,27 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Gets or sets the base location.
         /// </summary>
-        public An8Point BaseOrigin { get; set; }
+        public An8Point? BaseOrigin { get; set; }
 
         /// <summary>
         /// Gets or sets the base orientation.
         /// </summary>
-        public An8Quaternion BaseOrientation { get; set; }
+        public An8Quaternion? BaseOrientation { get; set; }
 
         /// <summary>
         /// Gets or sets the pivot location.
         /// </summary>
-        public An8Point PivotOrigin { get; set; }
+        public An8Point? PivotOrigin { get; set; }
 
         /// <summary>
         /// Gets or sets the pivot orientation.
         /// </summary>
-        public An8Quaternion PivotOrientation { get; set; }
+        public An8Quaternion? PivotOrientation { get; set; }
 
         /// <summary>
         /// Parses the tokens of components.
@@ -52,7 +52,7 @@ namespace JeremyAnsel.Media.An8
 
             foreach (var chunk in chunks)
             {
-                An8Component component = null;
+                An8Component? component = null;
 
                 switch (chunk.Ident)
                 {

@@ -25,7 +25,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the name.
         /// </summary>
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         /// <summary>
         /// Gets the materials.
@@ -35,7 +35,7 @@ namespace JeremyAnsel.Media.An8
         /// <summary>
         /// Gets or sets the root bone.
         /// </summary>
-        public An8Bone RootBone { get; set; }
+        public An8Bone? RootBone { get; set; }
 
         /// <summary>
         /// Parses the tokens of the chunk.
