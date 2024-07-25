@@ -244,7 +244,7 @@ var assemblies = [
       { "name": "JeremyAnsel.Media.An8.An8Material", "rp": "JeremyAnsel.Media.An8_An8Material.html", "cl": 32, "ucl": 0, "cal": 32, "tl": 103, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8MaterialColor", "rp": "JeremyAnsel.Media.An8_An8MaterialColor.html", "cl": 51, "ucl": 0, "cal": 51, "tl": 138, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8Mesh", "rp": "JeremyAnsel.Media.An8_An8Mesh.html", "cl": 120, "ucl": 0, "cal": 120, "tl": 274, "cb": 59, "tb": 59, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "JeremyAnsel.Media.An8.An8Method", "rp": "JeremyAnsel.Media.An8_An8Method.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 122, "cb": 10, "tb": 10, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "JeremyAnsel.Media.An8.An8Method", "rp": "JeremyAnsel.Media.An8_An8Method.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 122, "cb": 11, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8Modifier", "rp": "JeremyAnsel.Media.An8_An8Modifier.html", "cl": 46, "ucl": 0, "cal": 46, "tl": 131, "cb": 14, "tb": 14, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8NamedObject", "rp": "JeremyAnsel.Media.An8_An8NamedObject.html", "cl": 36, "ucl": 0, "cal": 36, "tl": 112, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8Object", "rp": "JeremyAnsel.Media.An8_An8Object.html", "cl": 32, "ucl": 0, "cal": 32, "tl": 106, "cb": 12, "tb": 12, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
@@ -258,7 +258,7 @@ var assemblies = [
       { "name": "JeremyAnsel.Media.An8.An8TextCom", "rp": "JeremyAnsel.Media.An8_An8TextCom.html", "cl": 47, "ucl": 0, "cal": 47, "tl": 130, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8Texture", "rp": "JeremyAnsel.Media.An8_An8Texture.html", "cl": 39, "ucl": 0, "cal": 39, "tl": 119, "cb": 16, "tb": 16, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
       { "name": "JeremyAnsel.Media.An8.An8TextureParams", "rp": "JeremyAnsel.Media.An8_An8TextureParams.html", "cl": 54, "ucl": 0, "cal": 54, "tl": 172, "cb": 28, "tb": 28, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
-      { "name": "JeremyAnsel.Media.An8.Tokenizer", "rp": "JeremyAnsel.Media.An8_Tokenizer.html", "cl": 156, "ucl": 22, "cal": 178, "tl": 616, "cb": 71, "tb": 88, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "JeremyAnsel.Media.An8.Tokenizer", "rp": "JeremyAnsel.Media.An8_Tokenizer.html", "cl": 156, "ucl": 22, "cal": 178, "tl": 612, "cb": 71, "tb": 88, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
     ]},
 ];
 
@@ -327,7 +327,7 @@ var riskHotspots = [
       { "value": 20, "exceeded": true },
     ]},
   {
-    "assembly": "JeremyAnsel.Media.An8", "class": "JeremyAnsel.Media.An8.Tokenizer", "reportPath": "JeremyAnsel.Media.An8_Tokenizer.html", "methodName": "Build(System.String[])", "methodShortName": "Build(...)", "fileIndex": 0, "line": 408,
+    "assembly": "JeremyAnsel.Media.An8", "class": "JeremyAnsel.Media.An8.Tokenizer", "reportPath": "JeremyAnsel.Media.An8_Tokenizer.html", "methodName": "Build(System.String[])", "methodShortName": "Build(...)", "fileIndex": 0, "line": 404,
     "metrics": [
       { "value": 16, "exceeded": false },
       { "value": 16, "exceeded": true },
