@@ -268,13 +268,13 @@ references:
   fullName: JeremyAnsel.Media.An8.An8Chunk.GenerateText
   nameWithType: An8Chunk.GenerateText
 - uid: JeremyAnsel.Media.An8.An8Chunk.Parse(System.String)
-  name: Parse(string)
+  name: Parse(string?)
   href: api/JeremyAnsel.Media.An8.An8Chunk.html#JeremyAnsel_Media_An8_An8Chunk_Parse_System_String_
   commentId: M:JeremyAnsel.Media.An8.An8Chunk.Parse(System.String)
   name.vb: Parse(String)
-  fullName: JeremyAnsel.Media.An8.An8Chunk.Parse(string)
+  fullName: JeremyAnsel.Media.An8.An8Chunk.Parse(string?)
   fullName.vb: JeremyAnsel.Media.An8.An8Chunk.Parse(String)
-  nameWithType: An8Chunk.Parse(string)
+  nameWithType: An8Chunk.Parse(string?)
   nameWithType.vb: An8Chunk.Parse(String)
 - uid: JeremyAnsel.Media.An8.An8Chunk.Parse*
   name: Parse
