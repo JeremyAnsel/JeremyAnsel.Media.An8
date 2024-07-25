@@ -1,5 +1,4 @@
 {
-  "homepages": [],
   "source_base_path": "C:/projects/jeremyansel-media-an8/JeremyAnsel.Media.An8/Documentation",
   "xrefmap": "xrefmap.yml",
   "files": [
@@ -16,8 +15,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8AlphaMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8AlphaMode.html",
-          "hash": "QljM8oEbTxzbIlcGgna09IjgTbRfYmKcUI1VjeiT6Xs="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8AlphaMode.html"
         }
       },
       "version": ""
@@ -27,8 +25,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Bezier.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Bezier.html",
-          "hash": "2r26d19dFZ6wnMh46A181eeLyZwoa5PIYMMfrAYb8Sc="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Bezier.html"
         }
       },
       "version": ""
@@ -38,8 +35,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8BlendMode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8BlendMode.html",
-          "hash": "yEArP/L5e3GksUhtLwM7fhlh7E1LzRGd1P1InNIuGUs="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8BlendMode.html"
         }
       },
       "version": ""
@@ -49,8 +45,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Bone.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Bone.html",
-          "hash": "1x/6HWcQCb2y409svm7+3tv+0aAqCd+kxiRUvyLVud8="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Bone.html"
         }
       },
       "version": ""
@@ -60,8 +55,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Chunk.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Chunk.html",
-          "hash": "1UiWXQ+5lw/kq7RPMAHOouEdRlIHkwT0zBu/G0L1tqQ="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Chunk.html"
         }
       },
       "version": ""
@@ -71,8 +65,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Component.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Component.html",
-          "hash": "A0Qu4HYJzRh6CHkCWPO7uIS/9ckNuQqWT6q0bFUM/kU="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Component.html"
         }
       },
       "version": ""
@@ -82,8 +75,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Cube.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Cube.html",
-          "hash": "Laln1hhDAiqIeHIF1ztdg8quYEPKgux+mELcUlSonu4="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Cube.html"
         }
       },
       "version": ""
@@ -93,8 +85,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Cylinder.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Cylinder.html",
-          "hash": "TFGmJhqxuox3d1287v475XJMn2cIwuyS+V429q580qY="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Cylinder.html"
         }
       },
       "version": ""
@@ -104,8 +95,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8DegreeOfFreedom.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8DegreeOfFreedom.html",
-          "hash": "hcd1fEr23O/CpPyIwYarLRu35XQMseSFgfE2QpCqavA="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8DegreeOfFreedom.html"
         }
       },
       "version": ""
@@ -115,8 +105,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Edge.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Edge.html",
-          "hash": "f3DR4HGbwT4NqB9u1l4gW9nIV9lLr/nNUHk02oKWiIE="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Edge.html"
         }
       },
       "version": ""
@@ -126,8 +115,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Environment.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Environment.html",
-          "hash": "8iJv6R7+kWtYeIRkrQ1nkJUqvnc8Rup1jdoaKx8imYU="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Environment.html"
         }
       },
       "version": ""
@@ -137,8 +125,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Face.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Face.html",
-          "hash": "uZk8ZFL+aoDRwY8sFy8ADdit2DP7hKtOCB74ObR6zws="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Face.html"
         }
       },
       "version": ""
@@ -148,8 +135,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Figure.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Figure.html",
-          "hash": "YknyyQeKD5/xVpRjP23146UbZnfkR56J+l6Fhj9jZp0="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Figure.html"
         }
       },
       "version": ""
@@ -159,8 +145,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8File.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8File.html",
-          "hash": "rOnUEyOTe22N3WGM/ixU8Uh97MoQvtJKiJHMQWVA1dU="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8File.html"
         }
       },
       "version": ""
@@ -170,8 +155,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Group.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Group.html",
-          "hash": "+mJtFdf2iFcDOdTDx0tLOFmRkH/guktPUO4EZXqBx24="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Group.html"
         }
       },
       "version": ""
@@ -181,8 +165,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Header.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Header.html",
-          "hash": "gPiO16Zt4PdLJec2fcuz8m6BnnPeYabxV+2hMPf/OC8="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Header.html"
         }
       },
       "version": ""
@@ -192,8 +175,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Image.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Image.html",
-          "hash": "umgp4RGlA620UH0GJ53Gw3FZBoW710HLFvsUPiMDSjQ="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Image.html"
         }
       },
       "version": ""
@@ -203,8 +185,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Influence.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Influence.html",
-          "hash": "RoVStl66vDmRAtRj3xYYx7XyIBHqYL1P+L5wS/p4EbA="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Influence.html"
         }
       },
       "version": ""
@@ -214,8 +195,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Knot.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Knot.html",
-          "hash": "Gt3RRaRqxtYIuiVmhysSvqX/1pRlZBav2Sm5uduMyUU="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Knot.html"
         }
       },
       "version": ""
@@ -225,8 +205,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8LongLat.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8LongLat.html",
-          "hash": "vLzOGOHtGYsa0vEet88Mfhy9eDaEbVd52jS+yaPQ1Oo="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8LongLat.html"
         }
       },
       "version": ""
@@ -236,8 +215,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Map.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Map.html",
-          "hash": "SghjAFusOj6V4fplFbAAtXYhzQg5iPCwGkKoT82+rCk="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Map.html"
         }
       },
       "version": ""
@@ -247,8 +225,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Material.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Material.html",
-          "hash": "Ov5vPNw0YRy5wRoiLzOQ3lddZTuG5FZVMBkaOU76b84="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Material.html"
         }
       },
       "version": ""
@@ -258,8 +235,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8MaterialColor.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8MaterialColor.html",
-          "hash": "arg6fdQk3vL567dnlXdm8Ka8j2p3AWBfVequhrhCOVk="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8MaterialColor.html"
         }
       },
       "version": ""
@@ -269,8 +245,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Mesh.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Mesh.html",
-          "hash": "66QtMz7d8TJditzgBbxCkpVFm9lbvLn1IW7m2RZOBJQ="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Mesh.html"
         }
       },
       "version": ""
@@ -280,8 +255,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Method.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Method.html",
-          "hash": "eI/yOmzlO4wl/tLWuR8Az/Zvcqogr47qqQpS+ovaXEU="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Method.html"
         }
       },
       "version": ""
@@ -291,8 +265,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Modifier.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Modifier.html",
-          "hash": "gJiZM6uB7HXK4bBTr/hqjhvtmZyk3AYstoiyCLFOul4="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Modifier.html"
         }
       },
       "version": ""
@@ -302,8 +275,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8NamedObject.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8NamedObject.html",
-          "hash": "N3acCQyUSWwly6i/4I5oHwOPrVXLaZ7o3GyDfM9EdYQ="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8NamedObject.html"
         }
       },
       "version": ""
@@ -313,8 +285,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Object.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Object.html",
-          "hash": "I93NGyYvpGeaiYcYowY4s1Gp/JsTr2EcrC9VHn6mP9M="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Object.html"
         }
       },
       "version": ""
@@ -324,8 +295,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Path.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Path.html",
-          "hash": "Sp0bmmb+znitbojUcCZVGrIaF68qcgM3QkpqOOIdttY="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Path.html"
         }
       },
       "version": ""
@@ -335,8 +305,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Point.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Point.html",
-          "hash": "kl4L5wJwN2kW8ORv4uC1/zL8mUJUlzRCTSFfBg0waS0="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Point.html"
         }
       },
       "version": ""
@@ -346,8 +315,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Quaternion.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Quaternion.html",
-          "hash": "4HhjQd1g3xT4oSJSMlfP7UqSa+ArMuLLW9QXGJ4cRF4="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Quaternion.html"
         }
       },
       "version": ""
@@ -357,8 +325,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Sphere.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Sphere.html",
-          "hash": "w0hOUqUFnEUG8cfDByyLe5fLHGVUzpqS3slXSCGCoNg="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Sphere.html"
         }
       },
       "version": ""
@@ -368,8 +335,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Subdivision.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Subdivision.html",
-          "hash": "siA5WU/Stx7Y5PsC0D+cY4SR9taunxu3IG7AYOwx3uY="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Subdivision.html"
         }
       },
       "version": ""
@@ -379,8 +345,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Surface.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Surface.html",
-          "hash": "9BcP5Ps15H256dLZVVlMh9ynKdiknT6lFZUtTW8bYOk="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Surface.html"
         }
       },
       "version": ""
@@ -390,8 +355,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8TexCoord.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8TexCoord.html",
-          "hash": "3eFeiWiunGqLCsXkDbzKQTJo2SFgpeXqz83RVYWMNis="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8TexCoord.html"
         }
       },
       "version": ""
@@ -401,8 +365,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8TextCom.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8TextCom.html",
-          "hash": "3GsLqpzplKQPrf/OQBE7myFTWg2rJlb1oX8r3+3m49U="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8TextCom.html"
         }
       },
       "version": ""
@@ -412,8 +375,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8Texture.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8Texture.html",
-          "hash": "TATBaWE51tlHVZA9IKMEfXRYZxd3B3uWQe/+33pwBdA="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8Texture.html"
         }
       },
       "version": ""
@@ -423,8 +385,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.An8TextureParams.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.An8TextureParams.html",
-          "hash": "UVy9KF/IIRDXtNCFSi4O+D85DyWIQaQzCUdtTaNrt/o="
+          "relative_path": "api/JeremyAnsel.Media.An8.An8TextureParams.html"
         }
       },
       "version": ""
@@ -434,8 +395,7 @@
       "source_relative_path": "api/JeremyAnsel.Media.An8.yml",
       "output": {
         ".html": {
-          "relative_path": "api/JeremyAnsel.Media.An8.html",
-          "hash": "9zztCTSxedh/X4G4TIgeYK47Qo9c9WmDpFxZA7Y4W5o="
+          "relative_path": "api/JeremyAnsel.Media.An8.html"
         }
       },
       "version": ""
@@ -445,8 +405,17 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html",
-          "hash": "unoIz7G5z3s12OE3UGs24leEi1SM2RESPf/P0htGJTg="
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "api/toc.json"
         }
       },
       "version": ""
@@ -456,14 +425,22 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html",
-          "hash": "vyK2Om4enYSPjXGgkzm9gEmnei+aYSJDk9wnkGe95zg="
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".json": {
+          "relative_path": "toc.json"
         }
       },
       "version": ""
     }
   ],
-  "version_info": {},
   "groups": [
     {
       "xrefmap": "xrefmap.yml"
